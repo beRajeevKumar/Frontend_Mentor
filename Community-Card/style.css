@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  display: grid;
+  place-content: center;
+  font-family: "Karla", sans-serif;
+}
+.container {
+  max-width: 60rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+}
+.banner {
+  padding: 3.2rem;
+  background-color: white;
+}
+.heading-primary {
+  color: hsl(179, 62%, 43%);
+  font-size: 3.2rem;
+  letter-spacing: -2px;
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+}
+.heading-secondary {
+  color: hsl(71, 73%, 54%);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.banner-text {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.6rem;
+}
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pricing {
+  background-color: hsl(179, 62%, 43%);
+  padding: 3.2rem;
+}
+.pricing .heading-secondary {
+  color: #fff;
+}
+.price {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.price span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.per-day-price {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+}
+.btn:link,
+.btn:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.8rem;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1.4rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 6px;
+}
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  color: #fff;
+  padding: 3.2rem;
+}
+.why-us .heading-secondary {
+  color: #fff;
+}
+.features-list {
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 620px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 490px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    margin: 1rem;
+  }
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+  .description {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
