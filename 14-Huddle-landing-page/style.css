@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ******************* */
+/* Header */
+/* ******************* */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  width: 14rem;
+}
+.header-cta:link,
+.header-cta:visited {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #fff;
+  color: hsl(192, 100%, 9%);
+  text-decoration: none;
+  padding: 1rem 3.2rem;
+  border-radius: 100px;
+  box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.header-cta:hover,
+.header-cta:active {
+  transition: all 0.3s;
+  color: hsl(208, 11%, 55%);
+  transform: translate(0, -0.3rem);
+}
+/* ******************* */
+/* Hero Section */
+/* ******************* */
+.hero {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 8rem;
+}
+.hero-content {
+  margin: 9.6rem 0;
+  gap: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.primary-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.6rem;
+}
+.hero-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(192, 100%, 9%);
+  /* padding-right: 6.4rem; */
+}
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(193, 100%, 96%);
+  text-decoration: none;
+  padding: 1.2rem 3.2rem;
+  border-radius: 100px;
+  box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  margin-top: 4rem;
+}
+.cta:hover,
+.cta:active {
+  transition: all 0.3s;
+  background-color: hsl(322, 100%, 70%);
+  transform: translate(0, -0.3rem);
+}
+.img {
+  width: 100%;
+}
+
+/* ******************* */
+/* Features Section */
+/* ******************* */
+.section-features {
+  margin: 9.6rem 8rem;
+}
+.feature {
+  margin-bottom: 4.8rem;
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.secondary-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.4rem;
+}
+.feature-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(208, 11%, 55%);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+.card-img {
+  max-width: 100%;
+  height: 30rem;
+}
+/* ******************* */
+/* Message Section */
+/* ******************* */
+.section-message {
+  margin: 9.6rem 8rem -9.6rem 8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.message {
+  background-color: #fff;
+  max-width: 80rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.1);
+  padding: 4rem 8rem;
+}
+.message .primary-heading {
+  margin-bottom: 0rem;
+  font-size: 3.2rem;
+  display: inline-block;
+}
+.message .cta {
+  padding: 1.6rem 4.8rem;
+}
+
+/* ******************* */
+/* Footer Section */
+/* ******************* */
+
+.footer-container {
+  background-color: hsl(192, 100%, 9%);
+  padding: 4rem 8rem;
+  color: hsl(193, 100%, 96%);
+}
+.logo {
+  margin-top: 12.8rem;
+}
+.footer-logo {
+  width: 14rem;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3.2rem;
+  gap: 6.4rem;
+}
+.address-col {
+  display: flex;
+  flex-direction: column;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.4rem;
+}
+.address {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1.6rem;
+  gap: 1rem;
+}
+.address img {
+  margin-top: 0.2rem;
+  margin-right: 1.2rem;
+}
+.mobile-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: hsl(193, 100%, 96%);
+  transition: all 0.3s;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.footer-nav-link:link,
+.footer-nav-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: hsl(193, 100%, 96%);
+  transition: all 0.3s;
+}
+.footer-nav-link:hover,
+.footer-nav-link:active {
+  transition: all 0.3s;
+  border-bottom: 1px solid hsl(193, 100%, 96%);
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.socials-list {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  align-items: center;
+}
+.social-icon {
+  font-size: medium;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 1rem 1.3rem;
+  border-radius: 50%;
+}
+.social-icon:hover {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(322, 100%, 66%);
+  border: hsl(322, 100%, 66%) 1px solid;
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 37.5%;
+  }
+  .feature {
+    gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 37.5%;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero {
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 4rem 8rem;
+  }
+  .cta:link,
+  .cta:visited {
+    padding: 1.6rem 4.8rem;
+  }
+  .feature:nth-child(odd) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .feature {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+    text-align: center;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  .copyright {
+    margin-top: 1.6rem;
+  }
+}

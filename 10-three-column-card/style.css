@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article {
+  font-size: 1.6rem;
+  display: flex;
+  max-width: 60%;
+}
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+.card-1,
+.card-2,
+.card-3 {
+  padding: 4.8rem;
+}
+.img,
+.card-title {
+  margin-bottom: 3.2rem;
+}
+.card-title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.2rem;
+}
+.card-text {
+  margin-bottom: 8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.card-1 .btn {
+  color: hsl(31, 77%, 52%);
+}
+.card-2 .btn {
+  color: hsl(184, 100%, 22%);
+}
+.card-3 .btn {
+  color: hsl(179, 100%, 13%);
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    padding: 3.2rem;
+  }
+}
+@media only screen and (max-width: 824px) {
+  html {
+    font-size: 37.5%;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    padding: 3.2rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    height: 100%;
+    margin: 1rem;
+  }
+  .article {
+    flex-direction: column;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    padding: 2.4rem;
+  }
+  .card-1 {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .card-3 {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .card-text {
+    margin-bottom: 6.4rem;
+  }
+  .btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+}

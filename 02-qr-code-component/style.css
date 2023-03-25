@@ -1,0 +1,72 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* we know default size of any browser is 16px
+16/16px *100=100% 
+10/16px *100=62.5%
+*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  padding: 0.5em;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* flex-direction: column; */
+
+  /* Alternate Method to do the same thing */
+  display: grid;
+  place-content: center;
+}
+.article {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 30rem;
+}
+
+.img {
+  border-radius: 1.2rem;
+  max-width: 100%;
+}
+.text-container {
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+.text-header {
+  color: hsl(218, 44%, 22%);
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-top: 1.2rem;
+}
+.text-paragraph {
+  color: hsl(220, 15%, 55%);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-top: 1.2rem;
+}
+@media (min-width: 375px) {
+  .container {
+    padding: 1rem;
+  }
+}

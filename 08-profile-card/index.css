@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.01rem);
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.bg-top {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.container {
+  background-color: #fff;
+  /* width: 100%; */
+  max-width: 50rem;
+  border-radius: 10px;
+}
+
+.container article:first-child {
+  position: relative;
+}
+
+.container article:first-child img {
+  border-radius: 10px 10px 0 0;
+}
+
+.container article:first-child div img {
+  border-radius: 50%;
+  width: 25%;
+  border: 5px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.container article:nth-child(2) {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.container article:nth-child(2) h1 {
+  color: hsl(229, 23%, 23%);
+  font-size: 2.4rem;
+}
+
+.container article:nth-child(2) span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.container article:nth-child(2) p {
+  color: hsl(227, 10%, 46%);
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.container article:nth-child(3) {
+  border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+  padding: 2rem;
+}
+
+.container article:nth-child(3) ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container article:nth-child(3) ul li {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container article:nth-child(3) ul li span {
+  display: block;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 0.15rem;
+  margin-top: 0.3rem;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.attribution a {
+  color: hsl(228, 53%, 18%);
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    margin: 1rem;
+  }
+}

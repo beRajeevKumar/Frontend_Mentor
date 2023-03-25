@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1rem;
+        color: hsl(228, 45%, 44%);
+      }
+      .attribution a {
+        color: #fff;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main>
+      <section class="container">
+        <img class="img" src="./images/icon-star.svg" alt="star icon" />
+        <div class="text">
+          <h1 class="title">How did we do?</h1>
+          <p class="parah">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="btns">
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+        </div>
+        <button class="submit">Submit</button>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="thanks hidden">
+        <img src="./images/illustration-thank-you.svg" alt="thankyou image" />
+
+        <div class="rating">
+          <p class="user-rating">
+            You selected
+            <span class="points">4</span>
+            <!-- Add rating here -->
+            out of 5
+          </p>
+        </div>
+        <h1 class="title">Thank you!</h1>
+        <p class="parah">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <!-- Thank you state end -->
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Rajeev Kumar</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

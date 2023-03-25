@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* font-family: "Fraunces", serif; */
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 55rem;
+  margin: 2rem;
+}
+.img {
+  max-width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.text-container {
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  margin-top: 1rem;
+}
+.heading {
+  font-size: 3.2rem;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  margin-top: 1rem;
+}
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: hsl(228, 12%, 48%);
+  margin-top: 1rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.new-price {
+  color: hsl(158, 36%, 37%);
+}
+.btn {
+  background: none;
+  border: none;
+  text-align: center;
+  background-color: hsl(157, 34%, 23%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 590px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 466px) {
+  html {
+    font-size: 50%;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .img {
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+  }
+  .text-container {
+    padding: 3rem;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .btn {
+    font-size: 2.4rem;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  height: 100vh;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  background-size: cover;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+.header{
+  margin: 4.8rem 0rem 0rem 9.6rem;
+}
+.img{
+  max-width: 100%;
+  height: 100%;
+}
+.section-hero{
+  margin: 9.6rem;
+}
+.hero-content{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+}
+.content-container{
+margin-top: 4rem;
+}
+.primary-heading{
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+.text{
+  font-size:1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1.8rem 0 3.2rem 0;
+  color:#fff;
+}
+.btn{
+  padding: 1.6rem 6.4rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8rem;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;   
+  box-shadow: 0.1rem 0.5rem 1rem rgba(0,0,0,0.6);
+}
+.btn:hover{
+  transform: translateX(-0.5rem);
+  box-shadow: 0.1rem 0.5rem 1rem rgba(0,0,0,0.6);
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+.social-media{
+  display:flex;
+  justify-content: flex-end;
+}
+.social-icon{
+  margin-left: 1rem;
+  font-size: 2.4rem;
+  border: 2px solid #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease-in-out;   
+} 
+.social-icon:hover{
+  transition: all 0.3s ease-in-out;   
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+/* Responsive Design */
+@media (max-width: 1135px) {
+html{
+  font-size: 50%;
+}
+
+}
+@media (max-width: 915px) {
+  html{
+    font-size: 37.5%;
+  }
+  }
+  @media (max-width: 700px) {
+    html{
+      font-size: 37.5%;
+    }
+    body{
+      background-image: url(./images/bg-mobile.svg);
+    }
+    .img{
+      width: 100%;
+    }
+    .hero-content{
+      grid-template-columns: 1fr;
+      gap: 4.8rem;
+    }
+  }

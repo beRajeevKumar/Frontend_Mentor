@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #fefefe;
+}
+h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+.container {
+  width: 120rem;
+  margin: auto;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  position: relative;
+  font-weight: 600;
+  margin-top: 2.4rem;
+}
+
+h2::after {
+  content: "";
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  width: 70px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8rem;
+}
+
+ul li {
+  background-color: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  width: 350px;
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul li img {
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  height: 200px;
+  width: 350px;
+}
+
+ul li p {
+  padding: 0 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.links-container {
+  padding: 1.5rem;
+  margin-top: 2.4rem;
+}
+
+.links-container a {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  height: 35px;
+  width: 35px;
+  transition: transform 0.3s ease;
+}
+
+.links-container a.blue {
+  background-color: #34a0e9;
+}
+
+.links-container a.youtube {
+  background-color: #ea0000;
+}
+
+.links-container a:hover {
+  transform: scale(1.2);
+}
