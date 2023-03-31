@@ -46,6 +46,9 @@ const projects = [
   {
     name: "15-Article-Preview",
   },
+  {
+    name: "16-base-apparel-coming-soon",
+  },
 ];
 
 const list = document.getElementById("list");
