@@ -14,11 +14,12 @@ body {
   font-family: "Manrope", sans-serif;
 }
 .advice-container {
-  width: 60rem;
+  max-width: 60rem;
   background-color: hsl(217, 19%, 24%);
   border-radius: 12px;
   position: relative;
   padding: 4.4rem;
+  margin: 0 2rem;
 }
 .advice-box {
   text-align: center;
@@ -52,4 +53,9 @@ body {
 .advice-btn:active {
   box-shadow: 0 0.1rem 2rem hsl(150, 100%, 66%);
   transition: all 0.5s;
+}
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
 }
