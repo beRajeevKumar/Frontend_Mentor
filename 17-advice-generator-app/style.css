@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Manrope", sans-serif;
+}
+.advice-container {
+  width: 60rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 12px;
+  position: relative;
+  padding: 4.4rem;
+}
+.advice-box {
+  text-align: center;
+}
+.advice-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 1.6px;
+}
+.advice {
+  font-size: 3.2rem;
+  margin: 3.2rem 0;
+  color: hsl(193, 38%, 86%);
+}
+.btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advice-btn:link,
+.advice-btn:visited {
+  background-color: hsl(150, 100%, 66%);
+  padding: 2.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.advice-btn:hover,
+.advice-btn:active {
+  box-shadow: 0 0.1rem 2rem hsl(150, 100%, 66%);
+  transition: all 0.5s;
+}
