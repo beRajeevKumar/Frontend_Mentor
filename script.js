@@ -52,6 +52,9 @@ const projects = [
   {
     name: "17-advice-generator-app",
   },
+  {
+    name: "18-chat-app-css-illustration",
+  },
 ];
 
 const list = document.getElementById("list");
