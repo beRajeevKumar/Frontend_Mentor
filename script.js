@@ -55,6 +55,9 @@ const projects = [
   {
     name: "18-chat-app-css-illustration",
   },
+  {
+    name: "19-news-homepage",
+  },
 ];
 
 const list = document.getElementById("list");
