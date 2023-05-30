@@ -58,6 +58,9 @@ const projects = [
   {
     name: "19-news-homepage",
   },
+  {
+    name: "20-testimonials-grid-section",
+  },
 ];
 
 const list = document.getElementById("list");
