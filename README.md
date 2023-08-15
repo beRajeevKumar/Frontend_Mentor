@@ -8,7 +8,7 @@ Frontend Mentor is an excellent platform for front-end developers who want to im
 
 Click [here](https://www.frontendmentor.io/profile/Rajeevjewar) to checkout my Frontend Mentor Profile.
 
-## Lsiting of all the projects
+## Listing of all the projects
 
 | Name of the Project           |                                         Live Project View                                          | Source Code                                                                                                    |
 | :---------------------------- | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------- |
