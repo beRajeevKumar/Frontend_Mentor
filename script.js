@@ -61,6 +61,9 @@ const projects = [
   {
     name: "20-testimonials-grid-section",
   },
+  {
+    name: "21-ecommerce-product-page",
+  },
 ];
 
 const list = document.getElementById("list");
