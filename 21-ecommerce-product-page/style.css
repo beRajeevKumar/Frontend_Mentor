@@ -35,6 +35,7 @@ body {
   display: flex;
   gap: 2.4rem;
   font-size: 1.6rem;
+  position: relative;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -47,19 +48,19 @@ body {
 .main-nav-link:active {
   color: hsl(220, 13%, 13%);
 }
-/* .main-nav-link::before {
-  content: " ";
-  position: absolute;
-  bottom: 0;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  height: 5px;
+.main-nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  margin: auto;
+  display: block;
   background-color: orange;
-  transform-origin: center;
-  transform: scaleX(0);
-  transition: transform 0.5s;
-} */
+  transition: width 0.3s linear;
+}
+.main-nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+}
 .nav-images {
   display: flex;
   align-items: center;
@@ -117,6 +118,10 @@ main {
   border-radius: 12px;
   overflow: hidden;
 }
+.product-item-img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .product-item-img img {
   width: 100%;
   height: 100%;
@@ -166,20 +171,37 @@ del {
   display: flex;
   justify-content: space-between;
   margin-top: 2.4rem;
+  gap: 2.4rem;
 }
 .counter {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: hsl(223, 64%, 98%);
-  gap: 1.2rem;
+  gap: 3.2rem;
   border-radius: 8px;
-  padding: 1.6rem 4.8rem;
+  padding: 1.6rem 3.2rem;
 }
 .remove,
 .add {
   background: none !important;
   border: none;
+}
+.remove img,
+.add img {
+  width: 1.6rem;
+}
+
+.remove:hover,
+.add:hover {
+  color: hsla(26, 100%, 55%, 0.5);
+  stroke: hsla(26, 100%, 55%, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.count {
+  font-size: 1.6rem;
+  font-weight: 800;
 }
 .addCartBtn {
   border: none !important;
@@ -192,4 +214,9 @@ del {
   align-items: center;
   gap: 2rem;
   padding: 1.8rem 6.4rem;
+  transition: all 0.2s ease;
+}
+.addCartBtn:hover {
+  background-color: hsla(26, 100%, 55%, 0.9);
+  cursor: pointer;
 }
