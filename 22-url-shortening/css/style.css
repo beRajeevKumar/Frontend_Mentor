@@ -66,3 +66,46 @@
 .hero-img {
   width: 120%;
 }
+/**************************/
+/* STATISTICS SECTION */
+/**************************/
+.section-statistics {
+  padding: 9.6rem 0;
+  background-color: hsl(0, 0%, 98%);
+}
+.form {
+  width: 100rem;
+  height: 150px;
+  background-color: hsl(257, 27%, 26%);
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+/* form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.input {
+  padding: 1.6rem 2.4rem;
+  width: 100%;
+}
+.input::placeholder {
+  color: hsl(257, 7%, 63%);
+  font-size: 2.2rem;
+}
+.btn--stats {
+  color: red;
+  display: block;
+} */
+
+/**************************/
+/* STATISTICS TEXT SECTION */
+/**************************/
+.statistics-text {
+  margin-left: 16rem;
+  margin-bottom: 9.6rem;
+}
