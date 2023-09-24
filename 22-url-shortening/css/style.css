@@ -47,7 +47,7 @@
 /* HERO SECTION */
 /**************************/
 .section-hero {
-  padding: 3.2rem 0 9.6rem 0;
+  padding: 3.2rem 0 16rem 0;
 }
 
 .hero {
@@ -69,43 +69,74 @@
 /**************************/
 /* STATISTICS SECTION */
 /**************************/
-.section-statistics {
+.section-stats {
   padding: 9.6rem 0;
-  background-color: hsl(0, 0%, 98%);
+  background-color: rgb(243, 249, 255);
+  position: relative;
 }
 .form {
-  width: 100rem;
-  height: 150px;
-  background-color: hsl(257, 27%, 26%);
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-}
-/* form {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
+  position: absolute;
+
+  top: -9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+form {
+  width: 110.5rem;
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  isolation: isolate;
+  padding: 6.4rem 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 12px;
 }
 
 .input {
   padding: 1.6rem 2.4rem;
-  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 2.2rem;
+  color: hsl(260, 8%, 14%);
+  width: 80%;
 }
 .input::placeholder {
   color: hsl(257, 7%, 63%);
   font-size: 2.2rem;
 }
 .btn--stats {
-  color: red;
-  display: block;
-} */
+  border-radius: 8px;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  width: 20%;
+}
 
-/**************************/
-/* STATISTICS TEXT SECTION */
-/**************************/
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  margin: 1.6rem 0 9.6rem 0;
+  background-color: pink;
+  height: 200px;
+  width: 110.5rem;
+}
 .statistics-text {
-  margin-left: 16rem;
-  margin-bottom: 9.6rem;
+  text-align: center;
+}
+.statistics-description {
+  color: hsl(257, 7%, 63%);
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+  padding: 0 36rem;
 }

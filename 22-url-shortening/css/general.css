@@ -75,6 +75,14 @@ body {
   color: hsl(260, 8%, 14%);
   margin-bottom: 1.2rem;
 }
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: hsl(260, 8%, 14%);
+  margin-bottom: 1.2rem;
+}
 
 .btn,
 .btn:link,
