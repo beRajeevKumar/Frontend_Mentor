@@ -3,18 +3,18 @@
 Frontend Mentor is an excellent platform for front-end developers who want to improve their skills and build real-world projects. It offers a range of challenges that cater to different skill levels and provides resources and support to help developers learn and grow their skills in HTML, CSS, and JavaScript.
 
 <p align="center">  
-<img src="./images/preview.png"/>  
+<img src="./preview.png"/>  
 </p>
 
 Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my Frontend Mentor Profile.
 
-## About the Journey
+### About the Journey
 
 - My Frontend Mentor Profile: [@beRajeevKumar](https://www.frontendmentor.io/profile/beRajeevKumar)
 - My Github Repository: [Frontend Mentor Projects](https://github.com/beRajeevKumar/Frontend_Mentor)
 - What I learn after complete these projects: [Read Blog](https://iamrajeev.me/blog)
 
-## Listing of all the projects
+### Listing of all the projects
 
 | S.No | Name of the Project         | Live Project View | Source Code      | Read Blog     |
 | :--: | :-------------------------- | :---------------- | :--------------- | :------------ |
@@ -47,12 +47,11 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 
 ### Tech stack
 
-- HTML
-- CSS
-- JavaScript
-- SASS
-- React.Js
-- APIs
+- `HTML` | `CSS` | `SASS` | `TailwindCSS` | `Responsive Design`
+- `JavaScript` | `DOM Manipulation` | `OOPs` | `ES6` | `ES7`
+- `React.Js` | `Redux` | `UseState` | `UseEffect` | `Framer Motion`
+- `APIs` | `Libraries` | `npm` |
+- `Git` | `GitHub` | `Markdown` | `VS Code` | `CodePen` | `Netlify` | `Vercel` | `Material UI` | more...
 
 ### Continuous Learning & Development
 
