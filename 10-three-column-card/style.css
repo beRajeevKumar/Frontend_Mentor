@@ -15,7 +15,7 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .article {
@@ -50,6 +50,7 @@ main {
 }
 .card-text {
   margin-bottom: 8rem;
+  width: 200px;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
@@ -71,6 +72,8 @@ main {
   background-color: #fff;
   padding: 1.2rem 2.4rem;
   border-radius: 100px;
+  /* margin-left:30px;  */
+  
 }
 .btn:hover,
 .btn:active {
@@ -90,7 +93,7 @@ main {
 
 @media only screen and (max-width: 1200px) {
   html {
-    font-size: 50%;
+    font-size: 50%; 
   }
   .card-1,
   .card-2,
@@ -107,22 +110,37 @@ main {
   .card-3 {
     padding: 3.2rem;
   }
+  .card-text{
+    padding-left: 10px;
+  }
+  .card-title{
+    padding-left: 10px;
+  }
+  .btn{
+    margin-left: 8px;
+    /* margin-bottom: 10px; */
+
+  } 
+  
 }
 @media only screen and (max-width: 620px) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
   body {
     height: 100%;
-    margin: 1rem;
   }
   .article {
     flex-direction: column;
   }
+  
   .card-1,
   .card-2,
   .card-3 {
     padding: 2.4rem;
+    padding-bottom: 4rem;
+    width: 400px;
+    text-align: center;
   }
   .card-1 {
     border-radius: 1rem 1rem 0 0;
@@ -131,10 +149,9 @@ main {
     border-radius: 0 0 1rem 1rem;
   }
   .card-text {
-    margin-bottom: 6.4rem;
+    margin-bottom: 4.4rem;
+    width: 325px;
   }
-  .btn {
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
+
+  
 }
