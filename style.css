@@ -12,11 +12,22 @@ body {
   color: #333;
   background: #fefefe;
 }
-h1 {
+span {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin: 1.2rem 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo img{
+ width: 400px;
 }
 
 .container {
