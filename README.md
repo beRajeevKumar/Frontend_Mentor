@@ -18,32 +18,28 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 
 | S.No | Name of the Project         | Live Project View | Source Code      | Read Blog     |
 | :--: | :-------------------------- | :---------------- | :--------------- | :------------ |
-|  1.  | Kanban Task Management      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  2.  | Memory Game                 | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  3.  | In-browser Markdown Editor  | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  4.  | URL Shortening API Page     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  5.  | Easybank Landing Page       | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  6.  | E-Commerce Product Page     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  7.  | Testimonials Grid Section   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  8.  | News Homepage Website       | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  9.  | Chat App CSS Illustration   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 10.  | Advice Generator App        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 11.  | Base Apparel Coming Soon    | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 12.  | Article Preview Component   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 13.  | Huddle Landing Page         | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 14.  | Stats Preview Card          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 15.  | Huddle Introductory Section | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 16.  | Order Summary Component     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 17.  | Three Column Cards          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 18.  | Clipboard Landing Page      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 19.  | Profile Card Component      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 20.  | Fylo Two Column Layout      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 21.  | Product Preview Card        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 22.  | Intractive Rating Card      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 23.  | NFT Preview Card            | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 24.  | Social Proof Section        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 25.  | Single Price Grid Component | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 26.  | QR Code Component           | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  1.  | Community Card              | [Project Demo](https://openfrontendmentor.netlify.app/01-community-card/)| [Project Code](./01-Community-Card/index.html) | [Read Blog](./01-Community-Card/README.md) |
+|  2.  | QR Code Component           | [Project Demo](https://openfrontendmentor.netlify.app/02-qr-code-component/index.html)  | [Project Code](./02-qr-code-component/index.html) | [Read Blog]() |
+|  3.  | Social Proof                | [Project Demo](https://openfrontendmentor.netlify.app/03-social-proof/index.html)  | [Project Code](./03-social-proof/index.html) | [Read Blog](./03-social-proof/README.md) |
+|  4.  | NFT Preview Card            | [Project Demo](https://openfrontendmentor.netlify.app/04-nft-project/index.html)  | [Project Code](./04-nft-project/index.html) | [Read Blog](./04-nft-project/README.md) |
+|  5.  |Intractive Rating Card       | [Project Demo](https://openfrontendmentor.netlify.app/05-intractive-rating/index.html)  | [Project Code](./05-intractive-rating/) | [Read Blog](./05-intractive-rating/README.md) |
+|  6.  |  Product Preview Card       | [Project Demo](https://openfrontendmentor.netlify.app/06-product-preview/index.html)  | [Project Code](./06-product-preview/) | [Read Blog](./06-product-preview/README.md) |
+|  7.  | Fylo Two Column Layout      | [Project Demo](https://openfrontendmentor.netlify.app/07-fylo-two-column-layout/index.html)  | [Project Code](./07-fylo-two-column-layout/index.html) | [Read Blog](./07-fylo-two-column-layout/README.md) |
+|  8.  | Profile Card Component      | [Project Demo](https://openfrontendmentor.netlify.app/08-profile-card/index.html)  | [Project Code](./08-profile-card/index.html) | [Read Blog](./08-profile-card/README.md) |
+|  9.  | Clipboard Landing Page | [Project Demo](https://openfrontendmentor.netlify.app/09-clipboard-landing-page/index.html)  | [Project Code](./09-clipboard-landing-page/index.html) | [Read Blog](./09-clipboard-landing-page/README.md) |
+| 10.  | Three Column Cards          | [Project Demo](https://openfrontendmentor.netlify.app/10-three-column-card/index.html)  | [Project Code](./10-three-column-card/index.html) | [Read Blog](./10-three-column-card/README.md) |
+| 11.  | Order Summary Component     | [Project Demo](https://openfrontendmentor.netlify.app/11-Order-summery-component/index.html)  | [Project Code](./11-Order-summery-component/index.html) | [Read Blog](./11-Order-summery-component/README.md) |
+| 12.  | Huddle Community Page         | [Project Demo](https://openfrontendmentor.netlify.app/12-Huddle-comm-page/index.html)  | [Project Code](./12-Huddle-comm-page/index.html) | [Read Blog](./12-Huddle-comm-page/README.md) |
+| 13.  | Stats Preview Card          | [Project Demo](https://openfrontendmentor.netlify.app/13-stat-preview-card/index.html)  | [Project Code](./13-stat-preview-card/index.html) | [Read Blog](./13-stat-preview-card/README.md) |
+| 14.  | Huddle Landing Page          | [Project Demo](https://openfrontendmentor.netlify.app/14-Huddle-landing-page/index.html)  | [Project Code](./14-Huddle-landing-page/index.html) | [Read Blog](./14-Huddle-landing-page/README.md) |
+| 15.  | Article Preview Card | [Project Demo](https://openfrontendmentor.netlify.app/15-Article-Preview/index.html)  | [Project Code](./15-Article-Preview/index.html) | [Read Blog]() |
+| 16.  | Base Apparel Comming Soon   | [Project Demo](https://openfrontendmentor.netlify.app/16-base-apparel-coming-soon/index.html)  | [Project Code](./16-base-apparel-coming-soon/index.html) | [Read Blog](./16-base-apparel-coming-soon/README.md) |
+| 17.  | Three Column Cards          | [Project Demo](https://openfrontendmentor.netlify.app/17-advice-generator-app/index.html)  | [Project Code](./17-advice-generator-app/index.html) | [Read Blog](./17-advice-generator-app/README.md) |
+| 18.  | Clipboard Landing Page      | [Project Demo](https://openfrontendmentor.netlify.app/18-chat-app-css-illustration/index.html)  | [Project Code](./18-chat-app-css-illustration/index.html) | [Read Blog](./18-chat-app-css-illustration/README.md) |
+| 19.  | Profile Card Component      | [Project Demo](https://openfrontendmentor.netlify.app/19-news-homepage/index.html)  | [Project Code](./19-news-homepage/index.html) | [Read Blog](./19-news-homepage/README.md) |
+| 20.  | Fylo Two Column Layout      | [Project Demo](https://openfrontendmentor.netlify.app/20-testimonials-grid-section/index.html)  | [Project Code](./20-testimonials-grid-section/index.html) | [Read Blog](./20-testimonials-grid-section/README.md) |
+| 21.  | Product Preview Card        | [Project Demo](https://openfrontendmentor.netlify.app/21-ecommerce-product-page/index.html)  | [Project Code](./21-ecommerce-product-page/index.html) | [Read Blog](./21-ecommerce-product-page/README.md) |
+| 22.  | Intractive Rating Card      | [Project Demo](https://openfrontendmentor.netlify.app/22-url-shortening/index.html)  | [Project Code](./22-url-shortening/index.html) | [Read Blog](./22-url-shortening/README.md) |
 
 ### Tech stack
 

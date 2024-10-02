@@ -64,6 +64,9 @@ const projects = [
   {
     name: "21-ecommerce-product-page",
   },
+  {
+    name: "22-url-shortening",
+  },
 ];
 
 const list = document.getElementById("list");
