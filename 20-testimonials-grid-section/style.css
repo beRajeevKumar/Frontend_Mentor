@@ -3,6 +3,175 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.customer-reviews{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    color: #333;
+    margin-top:20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    /* background-color: #ffb3ba; */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+    
+}
+.customer-reviews:hover{
+  color: white;
+  background-color: #c79dfd;
+  transition: transform 1s ease, background-color 1s ease;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four uneven columns */
+  grid-auto-rows: 150px; /* Automatic height for rows */
+  gap: 20px; /* Spacing between the boxes */
+  width: 90%;
+  padding: 20px;
+}
+
+/* Create uneven boxes by adjusting column and row spans */
+.review-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  border: 4px solid transparent;
+  overflow: hidden;
+}
+
+/* Bright pastel colors for each review box */
+.review-box:nth-child(1) {
+  background-color: #ffb3ba; /* Light coral */
+  border-color: #ff9999;
+  grid-column: span 2; /* Spans 2 columns */
+  grid-row: span 2;    /* Spans 2 rows */
+}
+
+.review-box:nth-child(2) {
+  background-color: #ffdfba; /* Peach */
+  border-color: #ffc299;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 2  ;    /* Spans 1 row */
+}
+
+.review-box:nth-child(3) {
+  background-color: #ffffba; /* Light yellow */
+  border-color: #ffeb99;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 3;    /* Spans 2 rows */
+}
+
+.review-box:nth-child(4) {
+  background-color: #baffc9; /* Mint */
+  border-color: #99ffb3;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 2;    /* Spans 2 rows */
+}
+
+.review-box:nth-child(5) {
+  background-color: #bae1ff; /* Light blue */
+  border-color: #99d6ff;
+  grid-column: span 2; /* Spans 2 columns */
+  grid-row: span 2;    /* Spans 1 row */
+}
+
+.review-box:nth-child(6) {
+  background-color: #ffccf9; /* Light Pink */
+  border-color: #fda4e6;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 1;    /* Spans 1 row */
+}
+
+.review-box:nth-child(7) {
+  background-color: #c1c0e7; /* Light purple */
+  border-color: #b6a3e3;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 1;    /* Spans 1 row */
+}
+
+.review-box:nth-child(8) {
+  background-color: #ffd6a5; /* Pastel orange */
+  border-color: #ffcc80;
+  grid-column: span 2; /* Spans 2 columns */
+  grid-row: span 2;    /* Spans 2 rows */
+}
+
+.review-box:nth-child(9) {
+  background-color: #a0e7e5; /* Light teal */
+  border-color: #87d9d7;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 1;    /* Spans 1 row */
+}
+
+.review-box:nth-child(10) {
+  background-color: #b4f8c8; /* Soft green */
+  border-color: #a3f4b8;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 2;    /* Spans 2 rows */
+}
+
+.review-box:nth-child(11) {
+  background-color: #d4a5a5; /* Dusty pink */
+  border-color: #cc9191;
+  grid-column: span 2; /* Spans 2 columns */
+  grid-row: span 1;    /* Spans 1 row */
+}
+
+.review-box:nth-child(12) {
+  background-color: #ffadad; /* Soft red */
+  border-color: #ff9a9a;
+  grid-column: span 1; /* Spans 1 column */
+  grid-row: span 1;    /* Spans 1 row */
+}
+
+.review-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  background-color: #f4f4f4; /* Subtle grey on hover */
+}
+
+.review-box h1 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.review-box h3 {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.review-box p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+.attribution a {
+  color: #00aaff;
 }
