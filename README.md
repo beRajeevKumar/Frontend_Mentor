@@ -34,12 +34,12 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 | 14.  | Huddle Landing Page          | [Project Demo](https://openfrontendmentor.netlify.app/14-Huddle-landing-page/index.html)  | [Project Code](./14-Huddle-landing-page/index.html) | [Read Blog](./14-Huddle-landing-page/README.md) |
 | 15.  | Article Preview Card | [Project Demo](https://openfrontendmentor.netlify.app/15-Article-Preview/index.html)  | [Project Code](./15-Article-Preview/index.html) | [Read Blog]() |
 | 16.  | Base Apparel Comming Soon   | [Project Demo](https://openfrontendmentor.netlify.app/16-base-apparel-coming-soon/index.html)  | [Project Code](./16-base-apparel-coming-soon/index.html) | [Read Blog](./16-base-apparel-coming-soon/README.md) |
-| 17.  | Three Column Cards          | [Project Demo](https://openfrontendmentor.netlify.app/17-advice-generator-app/index.html)  | [Project Code](./17-advice-generator-app/index.html) | [Read Blog](./17-advice-generator-app/README.md) |
-| 18.  | Clipboard Landing Page      | [Project Demo](https://openfrontendmentor.netlify.app/18-chat-app-css-illustration/index.html)  | [Project Code](./18-chat-app-css-illustration/index.html) | [Read Blog](./18-chat-app-css-illustration/README.md) |
-| 19.  | Profile Card Component      | [Project Demo](https://openfrontendmentor.netlify.app/19-news-homepage/index.html)  | [Project Code](./19-news-homepage/index.html) | [Read Blog](./19-news-homepage/README.md) |
-| 20.  | Fylo Two Column Layout      | [Project Demo](https://openfrontendmentor.netlify.app/20-testimonials-grid-section/index.html)  | [Project Code](./20-testimonials-grid-section/index.html) | [Read Blog](./20-testimonials-grid-section/README.md) |
-| 21.  | Product Preview Card        | [Project Demo](https://openfrontendmentor.netlify.app/21-ecommerce-product-page/index.html)  | [Project Code](./21-ecommerce-product-page/index.html) | [Read Blog](./21-ecommerce-product-page/README.md) |
-| 22.  | Intractive Rating Card      | [Project Demo](https://openfrontendmentor.netlify.app/22-url-shortening/index.html)  | [Project Code](./22-url-shortening/index.html) | [Read Blog](./22-url-shortening/README.md) |
+| 17.  | Advice Generator App        | [Project Demo](https://openfrontendmentor.netlify.app/17-advice-generator-app/index.html)  | [Project Code](./17-advice-generator-app/index.html) | [Read Blog](./17-advice-generator-app/README.md) |
+| 18.  | ChatApp Css Illustration    | [Project Demo](https://openfrontendmentor.netlify.app/18-chat-app-css-illustration/index.html)  | [Project Code](./18-chat-app-css-illustration/index.html) | [Read Blog](./18-chat-app-css-illustration/README.md) |
+| 19.  | News Homepage    | [Project Demo](https://openfrontendmentor.netlify.app/19-news-homepage/index.html)  | [Project Code](./19-news-homepage/index.html) | [Read Blog](./19-news-homepage/README.md) |
+| 20.  | Testimonials Grid Section  | [Project Demo](https://openfrontendmentor.netlify.app/20-testimonials-grid-section/index.html)  | [Project Code](./20-testimonials-grid-section/index.html) | [Read Blog](./20-testimonials-grid-section/README.md) |
+| 21.  | Ecommerce Product Page       | [Project Demo](https://openfrontendmentor.netlify.app/21-ecommerce-product-page/index.html)  | [Project Code](./21-ecommerce-product-page/index.html) | [Read Blog](./21-ecommerce-product-page/README.md) |
+| 22.  | Url Shortening              | [Project Demo](https://openfrontendmentor.netlify.app/22-url-shortening/index.html)  | [Project Code](./22-url-shortening/index.html) | [Read Blog](./22-url-shortening/README.md) |
 
 ### Tech stack
 
