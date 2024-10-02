@@ -38,18 +38,23 @@ span {
 
 h2 {
   font-size: 2.4rem;
-  position: relative;
+  align-items: center;
   font-weight: 600;
   margin-top: 2.4rem;
+  margin-left: 45%;
+  
+  text-decoration: underline solid blue 3px ;
+  
+ 
 }
 
 h2::after {
   content: "";
-  background-color: #000;
+  background-color: blue;
   border-radius: 10px;
-  position: absolute;
+  
   bottom: -5px;
-  left: 0;
+  left: 50%;
   height: 4px;
   width: 70px;
 }
@@ -118,3 +123,6 @@ ul li p {
 .links-container a:hover {
   transform: scale(1.2);
 }
+
+
+

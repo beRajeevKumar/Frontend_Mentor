@@ -101,3 +101,45 @@ function formatProjectName(name) {
 // const arr1 = "14-Hudd÷le-landing-page";
 
 // for (let i = 0; i < projects.length; i++) {}
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Animate the logo to fade in and slide up
+  gsap.from(".logo", {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    ease: "power3.out",
+  });
+
+  // Animate the heading to fade in and slide up
+  gsap.from("h2", {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    delay: 0.5,
+    ease: "power3.out",
+  });
+
+  // Array of project names (you can replace these with your actual project data)
+  const projects = ["Project 1", "Project 2", "Project 3"]; 
+  const listElement = document.getElementById("list");
+
+  // Create and animate each project list item
+  projects.forEach((project, index) => {
+    // Create a new list item
+    const listItem = document.createElement("li");
+    listItem.textContent = project;
+
+    // Append the list item to the list
+    listElement.appendChild(listItem);
+
+    // Animate the list item to fade in and slide up
+    gsap.from(listItem, {
+      duration: 0.5,
+      opacity: 0,
+      y: 20,
+      delay: 1 + index * 0.2, // Stagger animation after heading animation
+      ease: "power3.out",
+    });
+  });
+});
