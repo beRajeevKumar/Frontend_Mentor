@@ -5,25 +5,28 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f4f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  
+  background-color: hsl(210, 46%, 95%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding-top: 25px;
 }
 
 .customer-reviews{
     font-size: 36px;
-    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
     color: #333;
     margin-top:20px;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    /* background-color: #ffb3ba; */
+    
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -31,137 +34,130 @@ body {
     
     
 }
-.customer-reviews:hover{
-  color: white;
-  background-color: #c79dfd;
-  transition: transform 1s ease, background-color 1s ease;
-}
+
 
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four uneven columns */
-  grid-auto-rows: 150px; /* Automatic height for rows */
-  gap: 20px; /* Spacing between the boxes */
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: 150px; 
+  gap: 20px; 
   width: 90%;
   padding: 20px;
 }
 
-/* Create uneven boxes by adjusting column and row spans */
+
 .review-box {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 30px;
   transition: transform 0.2s ease, background-color 0.3s ease;
   border: 4px solid transparent;
   overflow: hidden;
 }
 
-/* Bright pastel colors for each review box */
+
 .review-box:nth-child(1) {
-  background-color: #ffb3ba; /* Light coral */
-  border-color: #ff9999;
-  grid-column: span 2; /* Spans 2 columns */
-  grid-row: span 2;    /* Spans 2 rows */
+  background-color: hsl(263, 55%, 52%);
+  
+  color: white;
+  grid-column: span 2; 
+  grid-row: span 2;    
 }
 
 .review-box:nth-child(2) {
-  background-color: #ffdfba; /* Peach */
-  border-color: #ffc299;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 2  ;    /* Spans 1 row */
+  background-color: hsl(217, 19%, 35%); 
+  
+  grid-column: span 1; 
+  grid-row: span 2  ;    
 }
 
 .review-box:nth-child(3) {
-  background-color: #ffffba; /* Light yellow */
-  border-color: #ffeb99;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 3;    /* Spans 2 rows */
+  background-color: white; 
+  
+  grid-column: span 1; 
+  grid-row: span 4;    
 }
 
 .review-box:nth-child(4) {
-  background-color: #baffc9; /* Mint */
-  border-color: #99ffb3;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 2;    /* Spans 2 rows */
+  background-color: #ffffff; 
+  
+  grid-column: span 1; 
+  grid-row: span 2;    
 }
 
 .review-box:nth-child(5) {
-  background-color: #bae1ff; /* Light blue */
-  border-color: #99d6ff;
-  grid-column: span 2; /* Spans 2 columns */
-  grid-row: span 2;    /* Spans 1 row */
+  background-color: hsl(219, 29%, 14%); 
+  
+  grid-column: span 2; 
+  grid-row: span 2;    
 }
 
 .review-box:nth-child(6) {
-  background-color: #ffccf9; /* Light Pink */
-  border-color: #fda4e6;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 1;    /* Spans 1 row */
+  background-color: #ffccf9; 
+  
+  grid-column: span 1; 
+  grid-row: span 1;    
 }
 
 .review-box:nth-child(7) {
-  background-color: #c1c0e7; /* Light purple */
-  border-color: #b6a3e3;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 1;    /* Spans 1 row */
+  background-color: #c1c0e7; 
+  
+  grid-column: span 1; 
+  grid-row: span 1;    
 }
 
 .review-box:nth-child(8) {
-  background-color: #ffd6a5; /* Pastel orange */
-  border-color: #ffcc80;
-  grid-column: span 2; /* Spans 2 columns */
-  grid-row: span 2;    /* Spans 2 rows */
+  background-color: #ffd6a5; 
+  
+  grid-column: span 2; 
+  grid-row: span 2;    
 }
 
 .review-box:nth-child(9) {
-  background-color: #a0e7e5; /* Light teal */
-  border-color: #87d9d7;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 1;    /* Spans 1 row */
+  background-color: #a0e7e5; 
+  
+  grid-column: span 1; 
+  grid-row: span 1;    
 }
 
 .review-box:nth-child(10) {
-  background-color: #b4f8c8; /* Soft green */
-  border-color: #a3f4b8;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 2;    /* Spans 2 rows */
+  background-color: #b4f8c8; 
+  
+  grid-column: span 1; 
+  grid-row: span 2;    
 }
 
 .review-box:nth-child(11) {
-  background-color: #d4a5a5; /* Dusty pink */
-  border-color: #cc9191;
-  grid-column: span 2; /* Spans 2 columns */
-  grid-row: span 1;    /* Spans 1 row */
+  background-color: #d4a5a5; 
+  
+  grid-column: span 2; 
+  grid-row: span 1;    
 }
 
 .review-box:nth-child(12) {
-  background-color: #ffadad; /* Soft red */
-  border-color: #ff9a9a;
-  grid-column: span 1; /* Spans 1 column */
-  grid-row: span 1;    /* Spans 1 row */
+  background-color: #ffadad; 
+  
+  grid-column: span 1; 
+  grid-row: span 1;    
 }
 
-.review-box:hover {
-  transform: translateY(-10px) scale(1.05);
-  background-color: #f4f4f4; /* Subtle grey on hover */
-}
 
 .review-box h1 {
-  color: #333;
+  
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .review-box h3 {
-  color: #777;
+  color: hsl(0, 0%, 81%);
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .review-box p {
-  color: #555;
+  
   line-height: 1.6;
 }
 
@@ -174,4 +170,68 @@ body {
 
 .attribution a {
   color: #00aaff;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%; 
+  margin-right: 20px; 
+}
+
+.profile-text h1, .profile-text h3 {
+  margin: 0;
+}
+.para{
+  
+  letter-spacing: 1px;
+}
+
+.new-para{
+  font-size: 20px; 
+  font-weight:bold;
+}
+.verified{
+  padding-top: 5px;
+  
+}
+.inner-text-1{
+  color: hsl(0, 0%, 81%)
+}
+.inner-text-2{
+  color: hsl(217, 19%, 35%);
+}
+.match-1{
+  color: #ffffff;
+}
+.match-2{
+  color: hsl(217, 19%, 35%);
+}
+#mat-1{
+  color: hsl(0, 0%, 100%);
+}
+#mat-2{
+  color: hsl(217, 19%, 35%);
+}
+
+
+
+
+@media (max-width: 375px) {
+  .container {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .review-box {
+    width: 100% Blank;
+    margin-bottom: 20px; 
+    grid-column: span 1; 
+  }
 }
