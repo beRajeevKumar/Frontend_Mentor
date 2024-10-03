@@ -18,32 +18,28 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 
 | S.No | Name of the Project         | Live Project View | Source Code      | Read Blog     |
 | :--: | :-------------------------- | :---------------- | :--------------- | :------------ |
-|  1.  | Kanban Task Management      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  2.  | Memory Game                 | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  3.  | In-browser Markdown Editor  | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  4.  | URL Shortening API Page     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  5.  | Easybank Landing Page       | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  6.  | E-Commerce Product Page     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  7.  | Testimonials Grid Section   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  8.  | News Homepage Website       | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  9.  | Chat App CSS Illustration   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 10.  | Advice Generator App        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 11.  | Base Apparel Coming Soon    | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 12.  | Article Preview Component   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 13.  | Huddle Landing Page         | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 14.  | Stats Preview Card          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 15.  | Huddle Introductory Section | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 16.  | Order Summary Component     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 17.  | Three Column Cards          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 18.  | Clipboard Landing Page      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 19.  | Profile Card Component      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 20.  | Fylo Two Column Layout      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 21.  | Product Preview Card        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 22.  | Intractive Rating Card      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 23.  | NFT Preview Card            | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 24.  | Social Proof Section        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 25.  | Single Price Grid Component | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 26.  | QR Code Component           | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  1.  | Community Card              | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  2.  | E-Commerce Product Page     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  3.  | Testimonials Grid Section   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  4.  | News Homepage Website       | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  5.  | Chat App CSS Illustration   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  6.  | Advice Generator App        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  7.  | Base Apparel Coming Soon    | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  8.  | Article Preview Component   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+|  9.  | Huddle Landing Page         | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 10.  | Stats Preview Card          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 11.  | Huddle Introductory Section | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 12.  | Order Summary Component     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 13.  | Three Column Cards          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 14.  | Clipboard Landing Page      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 15.  | Profile Card Component      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 16.  | Fylo Two Column Layout      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 17.  | Product Preview Card        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 18.  | Intractive Rating Card      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 19.  | NFT Preview Card            | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 20.  | Social Proof Section        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 21.  | Single Price Grid Component | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 22.  | QR Code Component           | [Project Demo]()  | [Project Code]() | [Read Blog]() |
 
 ### Tech stack
 
