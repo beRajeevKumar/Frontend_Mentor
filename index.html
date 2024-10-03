@@ -13,6 +13,9 @@
     <title>Frontend Mentor Projects | Rajeev</title>
   </head>
   <body>
+    <button class="scroll-up-btn">
+      <i class="arrow-up"></i>
+ </button> 
      <nav>
          <li><img src="./preview.png" alt=""></li>
         <li class="text">Challenges</li>
@@ -23,5 +26,14 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      const btn = document.querySelector(".scroll-up-btn");
+      btn.addEventListener("click", () => {
+          document.documentElement.scrollTo({
+              top: 0,
+              behavior: "smooth",
+          })
+      });
+  </script>
   </body>
 </html>

@@ -7,6 +7,29 @@
 html {
   font-size: 62.5%;
 }
+.scroll-up-btn {
+  all: unset;
+  position: fixed;
+  bottom: 35px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  background-color:#34a0e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.scroll-up-btn .arrow-up {
+  width:26px;
+  height:26px;
+  border-left: 3px solid #f9f9f9;
+  border-bottom: 3px solid #f9f9f9;
+  transform: rotate(135deg);
+  margin-bottom: -9px;
+  pointer-events: none;
+}
 body {
   font-family: "Poppins", sans-serif;
   color: #333;
