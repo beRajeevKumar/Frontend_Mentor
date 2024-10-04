@@ -67,7 +67,7 @@ ul li {
   width: 350px;
 }
 
-ul li: hover{
+ul li:hover{
   tranform: scale(1.1);
 }
 
