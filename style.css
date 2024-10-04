@@ -1,37 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   color: #333;
   background: #fefefe;
 }
-nav{
-  display:flex;
-  justify-content: space-around;
-  
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Align items from the bottom */
+  padding: 1.5rem 5rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, rgba(137, 196, 244, 0.5) 0%, rgba(199, 232, 241, 0.5) 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-nav li{
+
+.navbar:hover {
+  background: linear-gradient(90deg, rgba(152, 239, 204, 0.7) 0%, rgba(145, 196, 243, 0.7) 100%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Styling */
+.logo img {
+  width: 300px; /* Keeping logo size same */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.9); /* Subtle effect to make the logo blend well */
+}
+
+.logo img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  filter: brightness(1); /* Brighten on hover */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
   list-style: none;
+  align-items: flex-end; /* Align text from the bottom */
 }
-nav li img{
-  width:400px;
-  margin-left:-15%;
-  margin-top:2%;
- 
+
+.nav-links li {
+  margin: 0 2rem;
 }
-.text{
-      font-size:35px;
-      margin-top:5rem;
-      font-weight: medium;
-      text-decoration: underline;
+
+.nav-link {
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 3.8rem;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #4badea; /* Light blue hover color */
+  box-shadow: 0 4px 15px rgba(75, 173, 234, 0.5); /* Soft blue glow */
+}
+
+/* Active Link Styling */
+.active-link {
+  background: linear-gradient(90deg, #4badea, #86e3ff); /* Blue gradient */
+  color: white;
+  box-shadow: 0 4px 10px rgba(75, 173, 234, 0.5);
+}
+
 h2 {
   font-size: 2.4rem;
   position: relative;
@@ -58,13 +108,6 @@ ul {
   list-style-type: none;
   padding: 0;
   margin-top: 8rem;
-}
-
-ul li {
-  background-color: #fff;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
-  margin: 20px;
-  width: 350px;
 }
 
 ul li a {
