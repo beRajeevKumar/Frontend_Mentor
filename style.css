@@ -67,6 +67,10 @@ ul li {
   width: 350px;
 }
 
+ul li: hover{
+  tranform: scale(1.1);
+}
+
 ul li a {
   color: #000;
   text-decoration: none;
