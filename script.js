@@ -77,7 +77,7 @@ projects.forEach(({ name }, i) => {
 			<p>${i + 1}. ${formatProjectName(name)}</p>
 		</a>
 		<div class="links-container">
-			<a href="./${name}/index.html" class="blue">
+			<a href="./${name}/index.html" class="blue" target = "_blank">
 				<i class="fas fa-eye"></i>
 			</a>
 		</div>
