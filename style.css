@@ -10,46 +10,45 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #333;
-  background:#fefefe;
+  background: #fefefe;
 }
-nav{
-  display:flex;
+nav {
+  display: flex;
   justify-content: space-between;
-  align-items:start;
+  align-items: start;
   background-color: #050505;
   position: fixed;
   width: 100%;
-  
+}
+.navBar {
+  z-index: 6;
 }
 
-nav  img{
-  width:200px;
+nav img {
+  width: 200px;
   height: 70px;
   margin-left: 2rem;
 
-  margin-top:2px;
-margin-bottom: 2px;
-display: flex;
-align-items: start;
-
- 
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: start;
 }
 
-.lists{
-margin-right: 20rem;
- 
+.lists {
+  margin-right: 20rem;
+
   list-style: none;
 }
-.texts{
-      font-size:25px;
-      margin-top:2rem;
-      font-weight: medium;
-      color:white;
-      position: relative;
-      padding-right: 20rem;
-     
+.texts {
+  font-size: 25px;
+  margin-top: 2rem;
+  font-weight: medium;
+  color: white;
+  position: relative;
+  padding-right: 20rem;
 }
-.texts::after{
+.texts::after {
   content: "";
   background-color: #34a0e9;
   border-radius: 10px;
@@ -57,7 +56,7 @@ margin-right: 20rem;
   bottom: 0px;
   left: 0;
   height: 4px;
-width: 150px;
+  width: 150px;
 }
 h2 {
   font-size: 2.4rem;
@@ -79,9 +78,6 @@ h2::after {
   width: 100px;
 }
 
-
-
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +85,6 @@ ul {
   list-style-type: none;
   padding: 0;
   padding-top: 10rem;
-  
 }
 
 ul li {
@@ -99,11 +94,11 @@ ul li {
   border-radius: 25px;
   width: 350px;
 }
-ul li:hover  {
+ul li:hover {
   transform: scale(1.1);
-  box-shadow:0px 0 0px 4px #9f9b9b;
+  box-shadow: 0px 0 0px 4px #9f9b9b;
 
-transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 ul li a {
