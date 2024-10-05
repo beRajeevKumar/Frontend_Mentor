@@ -13,27 +13,33 @@
     <title>Frontend Mentor Projects | Rajeev</title>
   </head>
   <body>
+    <!-- Scroll-to-Top Button -->
     <button class="scroll-up-btn">
       <i class="arrow-up"></i>
- </button> 
-     <nav>
-         <li><img src="./preview.png" alt=""></li>
-        <li class="text">Challenges</li>
-      </nav>
+    </button>
 
+    <!-- Navigation Section -->
+    <nav>
+      <img src="./preview.png" alt="Preview Image" />
       <h2>Projects</h2>
+      <h2 class="texts">Challenges</h2>
+    </nav>
+
+    <!-- Main Content -->
+    <div>
       <ul id="list"></ul>
     </div>
 
+    <!-- JavaScript Section -->
     <script src="script.js"></script>
     <script>
       const btn = document.querySelector(".scroll-up-btn");
       btn.addEventListener("click", () => {
-          document.documentElement.scrollTo({
-              top: 0,
-              behavior: "smooth",
-          })
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       });
-  </script>
+    </script>
   </body>
 </html>
