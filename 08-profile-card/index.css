@@ -46,7 +46,10 @@ body {
   max-width: 50rem;
   border-radius: 10px;
 }
-
+.container:hover{
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
 .container article:first-child {
   position: relative;
 }
@@ -120,9 +123,13 @@ body {
   margin-top: 1rem;
   color: #fff;
 }
+.name{
+  padding-bottom: 7px;
+}
 
 .attribution a {
   color: hsl(228, 53%, 18%);
+  padding-bottom: 10px;
 }
 @media (max-width: 375px) {
   html {
