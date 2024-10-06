@@ -64,6 +64,9 @@ const projects = [
   {
     name: "21-ecommerce-product-page",
   },
+  {
+    name: "23-Weather-App",
+  },
 ];
 
 const list = document.getElementById("list");
