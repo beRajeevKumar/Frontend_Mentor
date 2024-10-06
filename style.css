@@ -1,4 +1,5 @@
 * {
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,9 +7,10 @@
 
 .lists {
   margin-right: 20rem;
-
-  list-style: none;
+ list-style: none;
 }
+
+
 
 h2 {
   font-size: 2.4rem;
@@ -18,7 +20,6 @@ h2 {
   text-align: center;
   color:black;
 }
-
 
 .list {
   display: flex;
@@ -37,7 +38,6 @@ h2 {
 .list li:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 0px 4px #9f9b9b;
-
   transition: 0.5s ease;
 }
 
@@ -90,9 +90,6 @@ h2 {
 .links-container a:hover {
   transform: scale(1.2);
 }
-
-
-
 
 .btn-sub{
   padding: 12px 30px;
