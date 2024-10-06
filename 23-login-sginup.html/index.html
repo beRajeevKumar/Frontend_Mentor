@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,42 +14,56 @@
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
-            margin: 10px; /* Reduced gap around body */
+            margin: 10px;
+            /* Reduced gap around body */
         }
+
         .card {
             width: 400px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            margin: 10px; /* Reduced gap around card */
+            margin: 10px;
+            /* Reduced gap around card */
         }
-        .card-header, .card-footer {
+
+        .card-header,
+        .card-footer {
             padding: 16px;
             text-align: center;
-            margin: 10px; /* Reduced gap around card header and footer */
+            margin: 10px;
+            /* Reduced gap around card header and footer */
         }
+
         .card-title {
             font-size: 24px;
             margin-bottom: 8px;
-            font-weight: bold; /* Make title bold */
-            font-style: italic; /* Make title italic */
+            font-weight: bold;
+            /* Make title bold */
+            font-style: italic;
+            /* Make title italic */
         }
+
         .card-description {
             color: #666;
         }
+
         .tabs {
             display: flex;
             justify-content: space-around;
             border-bottom: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            margin: 10px; /* Reduced gap around tabs */
+            margin: 10px;
+            /* Reduced gap around tabs */
             background-color: rgb(240, 236, 236);
         }
+
         .tabs button {
             flex: 1;
-            padding: 8px; /* Reduced padding to make the height smaller */
+            padding: 8px;
+            /* Reduced padding to make the height smaller */
             background: none;
             border: none;
             cursor: pointer;
@@ -57,58 +72,84 @@
             margin: 5px;
             color: darkgrey;
         }
+
         .tabs button.active {
             border-bottom: 2px solid #eceef0;
-            color: black; /* Change text color to black when active */
-            background-color: white; /* Change background color to white when active */
+            color: black;
+            /* Change text color to black when active */
+            background-color: white;
+            /* Change background color to white when active */
         }
+
         .tabs button:hover {
             background-color: white;
             color: darkgrey;
         }
+
         .tabs button.active:hover {
             background-color: white;
             color: black;
         }
+
         .tabs button:not(.active) {
             background-color: transparent;
             color: darkgrey;
         }
+
         .tab-content {
             display: none;
             padding: 16px;
-            margin: 10px; /* Reduced gap around tab content */
+            margin: 10px;
+            /* Reduced gap around tab content */
         }
+
         .tab-content.active {
             display: block;
         }
+
         .form-group {
             margin-bottom: 16px;
-            margin: 10px; /* Reduced gap around form group */
-            position: relative; /* Add relative positioning for icon positioning */
+            margin: 10px;
+            /* Reduced gap around form group */
+            position: relative;
+            /* Add relative positioning for icon positioning */
         }
+
         .form-group label {
             display: block;
             margin-bottom: 8px;
-            font-weight: bold; /* Make labels bold */
+            font-weight: bold;
+            /* Make labels bold */
         }
+
         .form-group input {
             width: 100%;
             padding: 8px;
-            padding-right: 40px; /* Add padding to the right to make room for the icon */
+            padding-right: 40px;
+            /* Add padding to the right to make room for the icon */
             box-sizing: border-box;
-            border-radius: 8px; /* Add round border to input tags */
-            border: 2px solid grey; /* Add 2px grey border to input tags */
-            transition: border-color 0.3s; /* Smooth transition for border color */
-            margin: 10px 0; /* Reduced gap around input fields */
+            border-radius: 8px;
+            /* Add round border to input tags */
+            border: 2px solid grey;
+            /* Add 2px grey border to input tags */
+            transition: border-color 0.3s;
+            /* Smooth transition for border color */
+            margin: 10px 0;
+            /* Reduced gap around input fields */
         }
+
         .form-group input:hover {
-            border-color: #888a8d; /* Change border color on hover */
+            border-color: #888a8d;
+            /* Change border color on hover */
         }
+
         .form-group input:focus {
-            border-color: darkgrey; /* Change border color to dark grey on focus */
-            outline: none; /* Remove default outline */
+            border-color: darkgrey;
+            /* Change border color to dark grey on focus */
+            outline: none;
+            /* Remove default outline */
         }
+
         .form-group .toggle-password {
             position: absolute;
             right: 16px;
@@ -116,12 +157,16 @@
             transform: translateY(-50%);
             cursor: pointer;
             color: #888a8d;
-            font-size: 1.2em; /* Adjust the size of the icon */
-            margin-top: 12px; /* Add top margin of 1px */
+            font-size: 1.2em;
+            /* Adjust the size of the icon */
+            margin-top: 12px;
+            /* Add top margin of 1px */
         }
+
         .form-group .toggle-password:hover {
             color: darkgrey;
         }
+
         .btn {
             width: 100%;
             padding: 12px;
@@ -129,53 +174,66 @@
             color: white;
             border: none;
             cursor: pointer;
-            margin: 10px 0; /* Reduced gap around buttons */
-            border-radius: 50px; /* Make buttons round */
+            margin: 10px 0;
+            /* Reduced gap around buttons */
+            border-radius: 50px;
+            /* Make buttons round */
         }
+
         .btn:disabled {
             background-color: #aaa;
         }
+
         .card-footer p {
             font-size: 12px;
             color: #666;
         }
+
         .error {
             color: red;
             font-size: 12px;
             margin-top: -12px;
             margin-bottom: 12px;
         }
+
         .success {
             color: green;
             font-size: 14px;
             margin-top: 12px;
             display: none;
         }
+
         .forgot-password {
             text-align: right;
             margin-top: -10px;
             margin-bottom: 10px;
         }
+
         .forgot-password a {
             color: #3b56cc;
             text-decoration: none;
             font-size: 12px;
         }
+
         .forgot-password a:hover {
             text-decoration: underline;
         }
+
         .already-have-account {
             text-align: center;
             margin-top: 10px;
         }
+
         .already-have-account a {
             color: #3b56cc;
             text-decoration: none;
             font-size: 12px;
         }
+
         .already-have-account a:hover {
             text-decoration: underline;
         }
+
         .modal {
             display: none;
             position: fixed;
@@ -189,6 +247,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .modal-content {
             background-color: #fefefe;
             margin: auto;
@@ -198,12 +257,14 @@
             max-width: 400px;
             border-radius: 8px;
         }
+
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
+
         .close:hover,
         .close:focus {
             color: black;
@@ -212,6 +273,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="card">
         <div class="card-header">
@@ -262,7 +324,8 @@
                     </div>
                     <div class="form-group">
                         <label for="signup-confirm-password">Confirm Password</label>
-                        <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                        <input type="password" id="signup-confirm-password" placeholder="Confirm your password"
+                            required>
                         <i class="fas fa-eye toggle-password" onclick="togglePassword('signup-confirm-password')"></i>
                         <div class="error" id="signup-confirm-password-error"></div>
                     </div>
@@ -469,4 +532,5 @@
         }
     </script>
 </body>
+
 </html>
