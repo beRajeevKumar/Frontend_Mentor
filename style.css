@@ -34,18 +34,9 @@ h2 {
   border-radius: 25px;
   width: 350px;
 }
-<<<<<<< HEAD
 .list li:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 0px 4px #9f9b9b;
-=======
-ul li:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 0px 4px #9f9b9b;
-
-  transition: 0.5s ease;
-}
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
 
   transition: 0.5s ease;
 }
