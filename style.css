@@ -10,22 +10,47 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #333;
-  background: #fefefe;
+  background: #f4f1f1;
 }
 nav{
-  display:flex;
-  justify-content: space-around;
-  
+  display: flex;
+  background-color: #ffffff;
+  height:70px;
 }
-nav li{
-  list-style: none;
+nav img{
+  width:15%;
+
 }
-nav li img{
-  width:400px;
-  margin-left:-15%;
-  margin-top:2%;
- 
+.links {
+  width:80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:10px;
 }
+.link{
+  padding:10px;
+  font-family:monospace;
+  font-size: 20px;
+  margin:30px;
+  color: #000;
+  text-decoration: none;
+}
+.link:hover{
+  background-color:#c8c8c8;
+  border-radius:5%;
+}
+/* Search bar styling */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
 .text{
       font-size:35px;
       margin-top:5rem;
@@ -114,4 +139,111 @@ ul li p {
 
 .links-container a:hover {
   transform: scale(1.2);
+}
+.pagination {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content div {
+  margin: 10px;
+  flex-basis: 22%;
+}
+
+.footer-content .logo img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin: 5px 0;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+  color: #f4b400; /* Hover color */
+}
+
+.branding-message {
+  flex-basis: 50%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.branding-message p {
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  background-color: #f4b400;
+  color: #2c2c2c;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
 }

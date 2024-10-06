@@ -5,22 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/jpg" href="/images/clipboard.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor Projects | Rajeev</title>
+    <title>Fronten Projects | Rajeev</title>
   </head>
   <body>
      <nav>
-         <li><img src="./preview.png" alt=""></li>
-        <li class="text">Challenges</li>
-      </nav>
-
-      <h2>Projects</h2>
-      <ul id="list"></ul>
+      <img src="./preview.png" alt="Logo" class="logo">
+      <div class="links">
+      <a href="#Projects" class="link">Projects</a>
+      <a href="#Contact" class="link">Contact Us</a>
     </div>
+      </nav>
+      <input
+      type="text"
+      id="search"
+      placeholder="Search projects..."
+      onkeyup="searchProjects()"
+      class="search-bar"
+    />
+<section>
+      <h2 id="Projects">Projects</h2>
+      <ul id="list"></ul>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </div>
+</section>
+<footer>
+  <div class="footer-content">
+      <div class="logo">
+          <img src="logo.png" alt="Recode-Hive Logo">
+      </div>
+      <div class="about">
+          <h4>ABOUT RECODE-HIVE</h4>
+          <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+          </ul>
+      </div>
+      <div class="get-involved">
+          <h4>GET INVOLVED</h4>
+          <ul>
+              <li><a href="#">Add Your Profile</a></li>
+              <li><a href="#">Join the Organization</a></li>
+          </ul>
+      </div>
+      <div class="branding-message">
+          <p>We focus on quality content for the right people at the right time⏱️. What we are trying to do is help you to brand personal skills through GitHub readme.md, so we are listing the best profiles and offering an opportunity to list your profile to the world 🌎.</p>
+          <a href="#" class="explore-btn">Explore</a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2024 Recode-Hive. Made with 🖤 by the community. All rights reserved.</p>
+  </div>
+</footer>
 
     <script src="script.js"></script>
   </body>

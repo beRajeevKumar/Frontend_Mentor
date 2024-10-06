@@ -85,6 +85,14 @@ projects.forEach(({ name }, i) => {
 
   list.appendChild(listItem);
 });
+// Search projects function
+function searchProjects() {
+  const searchInput = document.getElementById("search").value.toLowerCase();
+  const filteredProjects = projects.filter(({ name }) =>
+    name.toLowerCase().includes(searchInput)
+  );
+  displayProjects(filteredProjects);
+}
 
 function formatProjectName(name) {
   return name
@@ -93,11 +101,38 @@ function formatProjectName(name) {
     .map((word) => word[0].toUpperCase() + word.slice(1))
     .join(" ");
 }
+const itemsPerPage = 5;
+let currentPage = 1;
 
-// projects.forEach(({ name }, i) => {
-//   const splitArr = console.log(splitArr);
-// });
+function displayItems(page) {
+    const items = document.querySelectorAll('.card'); // Assuming your projects have a "card" class
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    
+    items.forEach((item, index) => {
+        item.style.display = (index >= start && index < end) ? 'block' : 'none';
+    });
+}
 
-// const arr1 = "14-Hudd÷le-landing-page";
+function setActivePage(page) {
+    const paginationLinks = document.querySelectorAll('.pagination a');
+    paginationLinks.forEach(link => link.classList.remove('active'));
+    paginationLinks[page].classList.add('active');
+}
 
-// for (let i = 0; i < projects.length; i++) {}
+document.querySelectorAll('.pagination a').forEach((link, index) => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (index > 0 && index < paginationLinks.length - 1) {
+            currentPage = index;
+        } else if (index === 0) {
+            currentPage = Math.max(1, currentPage - 1);
+        } else {
+            currentPage = Math.min(paginationLinks.length - 2, currentPage + 1);
+        }
+        displayItems(currentPage);
+        setActivePage(currentPage);
+    });
+});
+
+displayItems(currentPage);
