@@ -150,3 +150,58 @@ ul li p {
 .links-container a:hover {
   transform: scale(1.2);
 }
+
+/* New Footer Styles */
+footer {
+  background-color: #050505;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+
+.social-links a {
+  color: white;
+  font-size: 2rem; /* Icon size */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #34a0e9; /* Change color on hover */
+}
+
+.heading {
+  font-size: 25px;
+  margin-top: 2rem;
+  font-weight: medium;
+  color: white;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  margin: 0% auto;
+  border-radius: 10px;
+  width: 225px; 
+  height: 4px; /* Thickness of the underline */
+  background-color: #34a0e9; /* Blue color */
+  margin-top: 2px; /* Space between text and line */
+}
+
+.msg{
+  font-size: 13px;
+}
