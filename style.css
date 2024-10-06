@@ -12,6 +12,7 @@ body {
   color: #333;
   background: #f4f1f1;
 }
+
 nav{
   display: flex;
   background-color: #ffffff;
@@ -56,24 +57,71 @@ nav img{
       margin-top:5rem;
       font-weight: medium;
       text-decoration: underline;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #050505;
+  position: fixed;
+  width: 100%;
+}
+.navBar {
+  z-index: 6;
+}
+
+nav img {
+  width: 200px;
+  height: 70px;
+  margin-left: 2rem;
+
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: start;
+}
+
+.lists {
+  margin-right: 20rem;
+
+  list-style: none;
+}
+.texts {
+  font-size: 25px;
+  margin-top: 2rem;
+  font-weight: medium;
+  color: white;
+  position: relative;
+  padding-right: 20rem;
+}
+.texts::after {
+  content: "";
+  background-color: #34a0e9;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 4px;
+  width: 150px;
+
 }
 h2 {
   font-size: 2.4rem;
   position: relative;
   font-weight: 600;
   margin-top: 2.4rem;
-  margin-left: 12%;
+
+  color: white;
 }
 
 h2::after {
   content: "";
-  background-color: #000;
+  background-color: #34a0e9;
   border-radius: 10px;
   position: absolute;
-  bottom: -5px;
+  bottom: 0px;
   left: 0;
   height: 4px;
-  width: 70px;
+  width: 100px;
 }
 
 ul {
@@ -82,14 +130,21 @@ ul {
   justify-content: center;
   list-style-type: none;
   padding: 0;
-  margin-top: 8rem;
+  padding-top: 10rem;
 }
 
 ul li {
   background-color: #fff;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
   margin: 20px;
+  border-radius: 25px;
   width: 350px;
+}
+ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0 0px 4px #9f9b9b;
+
+  transition: 0.5s ease;
 }
 
 ul li a {
@@ -101,6 +156,7 @@ ul li img {
   display: block;
   object-fit: cover;
   margin-bottom: 15px;
+  border-radius: 25px;
   transition: transform 0.3s ease;
   height: 200px;
   width: 350px;
