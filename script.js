@@ -32,7 +32,7 @@ const projects = [
     name: "10-three-column-card",
   },
   {
-    name: "11-Order-summery-component",
+    name: "11-Order-summary-component",
   },
   {
     name: "12-Huddle-comm-page",
