@@ -24,10 +24,11 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   background-image: url(./images/pattern-background-desktop.svg);
   background-position: top;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .main-container {
   max-width: 35rem;
