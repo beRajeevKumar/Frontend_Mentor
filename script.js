@@ -64,6 +64,9 @@ const projects = [
   {
     name: "21-ecommerce-product-page",
   },
+  {
+    name: "23-Weather-App",
+  },
 ];
 
 const list = document.getElementById("list");
@@ -93,6 +96,7 @@ function formatProjectName(name) {
     .map((word) => word[0].toUpperCase() + word.slice(1))
     .join(" ");
 }
+
 
 // projects.forEach(({ name }, i) => {
 //   const splitArr = console.log(splitArr);
@@ -143,3 +147,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
