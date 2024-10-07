@@ -1,11 +1,4 @@
 * {
-<<<<<<< HEAD
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-=======
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,88 +64,24 @@ nav {
   position: fixed;
   width: 100%;
 }
-.navBar {
-  z-index: 6;
-}
-
-nav img {
-  width: 200px;
-  height: 70px;
-  margin-left: 2rem;
-
-  margin-top: 2px;
-  margin-bottom: 2px;
-  display: flex;
-  align-items: start;
-}
-
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
 .lists {
   margin-right: 20rem;
-
   list-style: none;
-<<<<<<< HEAD
-=======
 }
-.texts {
-  font-size: 25px;
-  margin-top: 2rem;
-  font-weight: medium;
-  color: white;
-  position: relative;
-  padding-right: 20rem;
-}
-.texts::after {
-  content: "";
-  background-color: #34a0e9;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  height: 4px;
-  width: 150px;
-
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
-}
-
 h2 {
   font-size: 2.4rem;
   position: relative;
   font-weight: 600;
   margin-top: 2.4rem;
-<<<<<<< HEAD
   text-align: center;
   color:black;
 }
-
-=======
-
-  color: white;
-}
-
-h2::after {
-  content: "";
-  background-color: #34a0e9;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  height: 4px;
-  width: 100px;
-}
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
 
 .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-<<<<<<< HEAD
-
-=======
-  padding: 0;
-  padding-top: 10rem;
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
 }
 
 .list li {
@@ -162,22 +91,11 @@ h2::after {
   border-radius: 25px;
   width: 350px;
 }
-<<<<<<< HEAD
 .list li:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 0px 4px #9f9b9b;
-=======
-ul li:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 0px 4px #9f9b9b;
-
   transition: 0.5s ease;
 }
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
-
-  transition: 0.5s ease;
-}
-
 .list li a {
   color: #000;
   text-decoration: none;
@@ -227,9 +145,6 @@ ul li:hover {
 .links-container a:hover {
   transform: scale(1.2);
 }
-
-
-
 
 .btn-sub{
   padding: 12px 30px;
