@@ -1,73 +1,178 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 20px;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "League Spartan", sans-serif;
-  background-image: url(images/bg-pattern-top-desktop.svg);
+  background-image: url(images/bg-pattern-top-mobile.svg); /* Use mobile-optimized background */
   background-repeat: no-repeat;
-  /* position: relative; */
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom:40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 .main-container {
-  background-image: url(images/bg-pattern-bottom-desktop.svg);
+  background-image: url(images/bg-pattern-bottom-mobile.svg); /* Mobile background */
   background-position: 100% 100%;
-  /* background-position: bottom 10px right 10px; */
   background-repeat: no-repeat;
   position: relative;
 }
+
+/* Container for Mobile */
 .container {
   display: flex;
-  padding: 120px;
-  justify-content: flex-start;
-  column-gap: 150px;
+  flex-direction: column;
+  padding: 20px; /* Reduced padding for mobile */
+  padding-top: 100px;
+  /* margin-top:50px; */
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px; /* Adjusted gap for mobile */
 }
+
 h1 {
   color: hsl(300, 43%, 22%);
-  font-size: 52px;
+  font-size: 36px; /* Reduced font size */
   font-weight: 700;
-  height: 80px;
-  width: 400px;
-  margin-bottom: 90px;
+  width: 100%; /* Full width for mobile */
+  text-align: center;
+  margin-bottom: 30px;
 }
+
 .hero p {
-  font-size: 20px;
+  font-size: 16px; /* Reduced font size */
   font-weight: 400;
   color: hsl(303, 10%, 53%);
-  width: 420px;
+  width: 100%;
   line-height: 1.4;
-  letter-spacing: 0px;
+  text-align: center;
 }
+
+/* Review Section for Mobile */
 .review {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   position: relative;
 }
+
 .review-1,
 .review-2,
 .review-3 {
   background-color: hsl(300, 24%, 96%);
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center; /* Center reviews on mobile */
   align-items: center;
-  gap: 30px;
-  width: 400px;
-  height: 60px;
-  padding: 20px;
+  gap: 10px; /* Reduced gap */
+  width: 100%; /* Full width for mobile */
+  padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
   color: hsl(300, 46%, 30%);
   font-weight: 600;
+}
+
+.review-2,
+.review-3 {
+  position: static; /* Removed positioning for mobile */
+  /* margin-top: 10px; */
+}
+
+/* Buyer Review Cards for Mobile */
+.buyer-review {
+  display: flex;
+  flex-direction: column; /* Stack reviews vertically */
+  gap: 20px;
+  align-items: center;
+}
+
+.buyer-review-1,
+.buyer-review-2,
+.buyer-review-3 {
+  background-color: hsl(300, 43%, 22%);
+  width: 100%; /* Full width for mobile */
+  max-width: 320px; /* Set a max-width */
+  padding: 20px; /* Reduced padding */
+  border-radius: 10px;
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 18px; /* Adjusted font size */
+}
+
+span {
+  color: hsl(333, 80%, 67%);
+  font-size: 14px; /* Adjusted font size */
+  display: inline-table;
+}
+
+.buyer-image {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+/* Buyer Details for Mobile */
+.buyer-details-1,
+.buyer-details-2,
+.buyer-details-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduced gap */
+  margin-bottom: 20px;
+}
+
+.buyer-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.buyer-text {
+  color: hsl(300, 24%, 96%);
+  line-height: 1.2;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .container {
+    padding: 120px;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 150px;
+  }
+  h1 {
+    font-size: 52px;
+    height: 80px;
+    width: 400px;
+    margin-bottom: 90px;
+  }
+  .hero p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .review-1,
+.review-2,
+.review-3 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 400px;
+  height: 60px;
+  padding: 20px;
 }
 .review-2 {
   position: absolute;
@@ -83,7 +188,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 25px;
-  /* position: relative; */
+  flex-direction: row;
 }
 .buyer-review-1,
 .buyer-review-2,
@@ -135,4 +240,5 @@ span {
 }
 .buyer-review-3 {
   margin-top: 50px;
+}
 }

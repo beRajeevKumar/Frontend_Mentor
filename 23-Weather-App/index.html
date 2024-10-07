@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Frontend Mentor | Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Enter your location"
+            class="input-box" id="input-box"
+          />
+          <button id="searchBtn" class="fa-solid fa-magnifying-glass"></button>
+        </div>
+      </div>
+      <div class="weatherbody">
+        <img src="cloud.png" class="weather-img" />
+      </div>
+      <div class="weather-box">
+        <p class="temperature">0 <sup>°C</sup></p>
+        <p class="description">Light rain</p>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+              <span id="humidity">0%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span id="wind-speed">0km/h</span>
+              <p>Windspeed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+    src="https://kit.fontawesome.com/595a890311.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
