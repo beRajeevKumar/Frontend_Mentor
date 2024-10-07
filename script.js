@@ -65,7 +65,7 @@ const projects = [
     name: "21-ecommerce-product-page",
   },
   {
-    name: "23-login-sginup.html",
+    name: "23-login-signup",
   },
 ];
 
