@@ -67,6 +67,9 @@ const projects = [
   {
     name: "23-Weather-App",
   },
+  {
+    name: "24-joke-generator",
+  },
 ];
 
 const list = document.getElementById("list");

@@ -1,92 +1,9 @@
 * {
-<<<<<<< HEAD
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-=======
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  background: #f4f1f1;
-}
-
-nav{
-  display: flex;
-  background-color: #ffffff;
-  height:70px;
-}
-nav img{
-  width:15%;
-
-}
-.links {
-  width:80%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding:10px;
-}
-.link{
-  padding:10px;
-  font-family:monospace;
-  font-size: 20px;
-  margin:30px;
-  color: #000;
-  text-decoration: none;
-}
-.link:hover{
-  background-color:#c8c8c8;
-  border-radius:5%;
-}
-/* Search bar styling */
-.search-bar {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 20px auto;
-  display: block;
-  font-size: 1.2rem;
-  border-radius: 8px;
-}
-
-.text{
-      font-size:35px;
-      margin-top:5rem;
-      font-weight: medium;
-      text-decoration: underline;
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  background-color: #050505;
-  position: fixed;
-  width: 100%;
-}
-.navBar {
-  z-index: 6;
-}
-
-nav img {
-  width: 200px;
-  height: 70px;
-  margin-left: 2rem;
-
-  margin-top: 2px;
-  margin-bottom: 2px;
-  display: flex;
-  align-items: start;
-}
-
->>>>>>> 95acef3fb53d61495a4c0b3d15caaab1962408d2
 .lists {
   margin-right: 20rem;
 
