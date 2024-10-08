@@ -60,6 +60,15 @@ h2 {
   font-size: 1.6rem;
   font-weight: 600;
 } 
+.list li .tags {
+    background-color: #34a0e9;
+    text-align: center;
+    color: #fff; 
+    font-weight: 500;
+    padding: 10px 15px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
 
 .links-container {
   padding: 1.5rem;
