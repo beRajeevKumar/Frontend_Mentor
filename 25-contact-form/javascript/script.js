@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const queryRadios = document.querySelectorAll("input[name='query-type']");
     const modalContainer = document.querySelector(".modal-container");
 
-     // Regular Expressions for validation
-     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-     const nameRegex = /^[a-zA-Z]+$/;
+    // Regular Expressions for validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nameRegex = /^[a-zA-Z]+$/;
 
-     // Utility function to show error for specific input
+    // Utility function to show error for specific input
     function showError(input, message) {
         const parent = input.closest(".input-holder");
         if (parent) {
@@ -33,4 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
             errorText.style.display = "none";
         }
         input.classList.remove("error");
+    }
+
+    // Validate input fields
+    function validateInput(input, regex, message) {
+        if (!regex.test(input.value.trim())) {
+            showError(input, message);
+            return false;
+        } else {
+            hideError(input);
+            return true;
+        }
     }
