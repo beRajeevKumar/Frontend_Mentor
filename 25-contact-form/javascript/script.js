@@ -77,3 +77,15 @@ document.addEventListener("DOMContentLoaded", function () {
             return true;
         }
     }
+
+    
+    // Function to handle the selection of radio buttons
+    document.querySelectorAll(".query-container .sec-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+            // Remove 'selected' class from all buttons
+            document.querySelectorAll(".query-container .sec-btn").forEach((b) => b.classList.remove("selected"));
+
+            // Add 'selected' class to the clicked button
+            this.classList.add("selected");
+        });
+    });
