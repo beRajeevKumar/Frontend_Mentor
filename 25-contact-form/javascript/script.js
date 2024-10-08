@@ -89,3 +89,17 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("selected");
         });
     });
+
+     // Validate consent checkbox
+     function validateCheckbox(input) {
+        const parent = input.closest(".checkbox-container");
+        const errorText = parent.querySelector(".consent-error"); 
+        if (!input.checked) {
+            errorText.textContent = "You must consent to be contacted.";
+            errorText.style.display = "block"; 
+            return false;
+        } else {
+            errorText.style.display = "none"; 
+            return true;
+        }
+    }
