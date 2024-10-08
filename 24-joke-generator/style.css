@@ -1,0 +1,50 @@
+*{
+font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: orange;
+}
+.container{
+    position: absolute;
+    padding: 50px , 40px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    box-shadow: 20px 15px 20px 0 #232323;
+    width: 80vmin;
+}
+.container span{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+.container p{
+    color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 10px 5;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 30px;
+}
+.container button{
+    display: block;
+    background-color: orange;
+    border: none;
+    padding: 12px 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.container button:hover{
+     box-shadow: 3px 0px 5px 5px orange;
+}
+.designer{
+text-align: center;
+padding-top: 20px;
+}
