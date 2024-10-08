@@ -57,3 +57,23 @@ document.addEventListener("DOMContentLoaded", function () {
             return true;
         }
     }
+
+      // Validate radio buttons for query type
+      function validateQuery() {
+        let isSelected = false;
+        queryRadios.forEach((radio) => {
+            if (radio.checked) isSelected = true;
+        });
+
+        const parent = document.querySelector(".query-input");
+        const errorText = parent.querySelector(".error-text");
+
+        if (!isSelected) {
+            errorText.textContent = "Please select a query type.";
+            errorText.style.display = "block";
+            return false;
+        } else {
+            errorText.style.display = "none";
+            return true;
+        }
+    }
