@@ -24,9 +24,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Fronten Projects | Rajeev</title>
+    <title>Frontend Projects | Rajeev</title>
   </head>
   <body>
+<main>
     <header>
       <div class="navbar">
         <div class="logo">
@@ -76,6 +77,13 @@
   </header>
 
     <!-- <nav class="navbar navbar-expand-lg bg-body-white">
+=======
+     <!-- Scroll-to-Top Button -->
+     <button class="scroll-up-btn">
+      <i class="arrow-up"></i>
+    </button>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+      </main>
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
           ><img
@@ -249,8 +257,8 @@
         <h1>Subscribe to Newsletter</h1>
         <ul class="footer-list">
           <li>
-            Maxime quae inventore sunt odio perspiciatis vitae saepe officia
-            dolorem.
+            Get the latest updates, exclusive offers, and industry insights
+            delivered straight to your inbox.
           </li>
           <li class="sub">
             <input type="text" placeholder="Enter your email" />
@@ -260,5 +268,14 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      const btn = document.querySelector(".scroll-up-btn");
+      btn.addEventListener("click", () => {
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
