@@ -137,3 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+     // Save data to localStorage before form submission
+     function saveFormData() {
+        localStorage.setItem("firstName", firstNameInput.value);
+        localStorage.setItem("lastName", lastNameInput.value);
+        localStorage.setItem("email", emailInput.value);
+        localStorage.setItem("message", messageInput.value);
+
+        let selectedQuery = document.querySelector("input[name='query-type']:checked");
+        localStorage.setItem("queryType", selectedQuery ? selectedQuery.id : "");
+
+        localStorage.setItem("consent", consentCheckbox.checked);
+    }
