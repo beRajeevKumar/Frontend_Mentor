@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    
+
     // Validate if input is not empty
     function validateRequired(input, message) {
         if (input.value.trim() === "") {
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-      // Validate radio buttons for query type
-      function validateQuery() {
+    // Validate radio buttons for query type
+    function validateQuery() {
         let isSelected = false;
         queryRadios.forEach((radio) => {
             if (radio.checked) isSelected = true;
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    
+
     // Function to handle the selection of radio buttons
     document.querySelectorAll(".query-container .sec-btn").forEach((btn) => {
         btn.addEventListener("click", function () {
@@ -90,16 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-     // Validate consent checkbox
-     function validateCheckbox(input) {
+    // Validate consent checkbox
+    function validateCheckbox(input) {
         const parent = input.closest(".checkbox-container");
-        const errorText = parent.querySelector(".consent-error"); 
+        const errorText = parent.querySelector(".consent-error");
         if (!input.checked) {
             errorText.textContent = "You must consent to be contacted.";
-            errorText.style.display = "block"; 
+            errorText.style.display = "block";
             return false;
         } else {
-            errorText.style.display = "none"; 
+            errorText.style.display = "none";
             return true;
         }
     }
@@ -137,8 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-     // Save data to localStorage before form submission
-     function saveFormData() {
+    // Save data to localStorage before form submission
+    function saveFormData() {
         localStorage.setItem("firstName", firstNameInput.value);
         localStorage.setItem("lastName", lastNameInput.value);
         localStorage.setItem("email", emailInput.value);
@@ -149,3 +149,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
         localStorage.setItem("consent", consentCheckbox.checked);
     }
+
+
+    // Final form validation and submission
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Perform final validation checks
+        const isFirstNameValid = validateInput(firstNameInput, nameRegex, "Please enter a valid first name.");
+        const isLastNameValid = validateInput(lastNameInput, nameRegex, "Please enter a valid last name.");
+        const isEmailValid = validateInput(emailInput, emailRegex, "Please enter a valid email address.");
+        const isMessageValid = validateRequired(messageInput, "This field is required.");
+        const isQueryValid = validateQuery();
+        const isConsentValid = validateCheckbox(consentCheckbox);
+
+        // If all validations pass, store the data and display modal
+        if (isFirstNameValid && isLastNameValid && isEmailValid && isMessageValid && isQueryValid && isConsentValid) {
+            saveFormData();
+            if (modalContainer) { // Check if modalContainer exists
+                modalContainer.style.display = "block";
+
+                // Hide the modal after 5 seconds
+                setTimeout(() => {
+                    modalContainer.style.display = "none";
+                }, 5000);
+            } else {
+                console.error("Modal container not found.");
+            }
+        }
+    });
+});
