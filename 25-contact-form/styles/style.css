@@ -1,0 +1,299 @@
+/* Importing the Karla font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Root variables for colors and typography */
+:root {
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey-500: hsl(186, 15%, 59%);
+    --grey-900: hsl(187, 24%, 22%);
+    --font-family: 'Karla', sans-serif;
+    --font-size-labels: 16px;
+}
+
+/* Global styles */
+body {
+    font-family: var(--font-family);
+    color: var(--grey-900);
+    background: var(--green-200);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    display: flex;
+    margin: auto;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Modified the .flex, .flex-row, and .flex-col for reusability */
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+
+}
+.modal-container {
+    position: fixed; /* Changed to fixed to ensure it overlays properly */
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: var(--grey-900);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 14px;
+    color: var(--white);
+    display: none; /* Default to hidden */
+}
+
+.modal-header{
+    display: flex;
+    gap:4px;
+    margin-bottom: 8px;
+}
+
+.modal-header i{
+    background-color: transparent;
+}
+.modal-header h2{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.modal-body p{
+font-size: 12px;
+}
+
+/* Input Holder styles, used for structuring form fields */
+.input-container,
+.input-holder {
+    display: flex;
+
+}
+
+.input-holder {
+    /* alignment changes */
+    align-items: start;
+    width: 100%;
+}
+
+.checkbox-container {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+/* Ensured uniform alignment for input containers */
+.input-holder div {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Input styles for form fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--grey-500);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* Input styles and focus effect */
+input,
+textarea {
+    border: 1px solid var(--grey-500);
+    padding: 10px;
+    font-size: var(--font-size-labels);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--green-600);
+    outline: none;
+}
+
+/* Form styling */
+form {
+    width: 97%;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 10px;
+    height: max-content;
+}
+
+/* Main form container styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 20px;
+}
+
+label,
+.label-container {
+    font-size: var(--font-size-labels);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: var(--green-600);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-labels);
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--grey-900);
+}
+
+.sec-btn {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--grey-900);
+    border: 1px solid var(--grey-500);
+    border-radius: 5px;
+}
+
+.sec-btn:hover {
+    background-color: var(--green-200);
+}
+
+/* When the button is selected, apply the green background */
+.sec-btn.selected {
+    background-color: var(--green-200);
+    border: 1px solid var(--grey-500);
+  }
+
+/* Query container styles for spacing */
+.query-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.query-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+button label {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 0;
+}
+
+button input {
+    width: 10%;
+}
+
+
+/* Error message display */
+.error-text {
+    display: none;
+    color: var(--red);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+input.error,
+textarea.error {
+    border-color: var(--red);
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        padding: 15px;
+        height: 100vh;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1025px) {
+    main {
+        flex-direction: row;
+        padding: 20px;
+        height: 100vh;
+    }
+
+    form {
+        width: 33%;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1440px) {
+    main {
+        padding: 30px;
+    }
+
+    form {
+        width: 25%;
+    }
+}
+
+/* Common styles for query-input and query-container */
+@media (min-width: 768px) {
+    .query-input {
+        flex-direction: column;
+    }
+
+    .query-container {
+        flex-direction: row;
+    }
+}
