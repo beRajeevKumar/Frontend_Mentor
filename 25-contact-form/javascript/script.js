@@ -120,3 +120,20 @@ document.addEventListener("DOMContentLoaded", function () {
     consentCheckbox.addEventListener("change", () =>
         validateCheckbox(consentCheckbox)
     );
+
+    // Adding click event listeners to the radio button container to simulate selection by clicking on the label
+    queryRadios.forEach((radio) => {
+        const radioButtonWrapper = radio.closest(".sec-btn");
+        if (radioButtonWrapper) {
+            radioButtonWrapper.addEventListener("click", function (e) {
+                e.preventDefault();
+                queryRadios.forEach((r) => {
+                    r.checked = false;
+                    r.closest(".sec-btn").classList.remove("selected");
+                });
+                radio.checked = true;
+                this.classList.add("selected");
+            });
+        }
+    });
+
