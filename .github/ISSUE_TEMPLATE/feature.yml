@@ -10,7 +10,7 @@ body:
       description: A clear and concise description of any alternative solution or features you've considered.
     validations:
       required: true
-  - type: textareas
+  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
