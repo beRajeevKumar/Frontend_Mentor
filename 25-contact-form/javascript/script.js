@@ -1,3 +1,49 @@
+/**
+ * This script handles form validation and submission for a contact form.
+ * It includes functions for validating input fields, displaying error messages,
+ * saving form data to localStorage, and displaying a modal upon successful submission.
+ * 
+ * Functions:
+ * 
+ * - showError(input, message): Displays the error message for a specific input field.
+ *   @param {HTMLElement} input - The input element to show the error for.
+ *   @param {string} message - The error message to display.
+ * 
+ * - hideError(input): Hides the error message for a specific input field.
+ *   @param {HTMLElement} input - The input element to hide the error for.
+ * 
+ * - validateInput(input, regex, message): Validates an input field based on a regular expression.
+ *   @param {HTMLElement} input - The input element to validate.
+ *   @param {RegExp} regex - The regular expression to test the input value against.
+ *   @param {string} message - The error message to display if validation fails.
+ *   @returns {boolean} - Returns true if the input is valid, otherwise false.
+ * 
+ * - validateRequired(input, message): Validates if an input field is not empty.
+ *   @param {HTMLElement} input - The input element to validate.
+ *   @param {string} message - The error message to display if validation fails.
+ *   @returns {boolean} - Returns true if the input is not empty, otherwise false.
+ * 
+ * - validateQuery(): Validates the radio buttons for query type.
+ *   @returns {boolean} - Returns true if a query type is selected, otherwise false.
+ * 
+ * - validateCheckbox(input): Validates the consent checkbox.
+ *   @param {HTMLElement} input - The checkbox element to validate.
+ *   @returns {boolean} - Returns true if the checkbox is checked, otherwise false.
+ * 
+ * - saveFormData(): Saves form data to localStorage before submission.
+ * 
+ * Event Listeners:
+ * 
+ * - Adds blur event listeners to input fields for real-time validation.
+ * - Adds change event listener to the consent checkbox for validation.
+ * - Adds click event listeners to radio button containers to simulate selection by clicking on the label.
+ * - Adds submit event listener to the form for final validation and submission.
+ * 
+ * The script also includes functionality to display a modal upon successful form submission
+ * and hide it after 5 seconds.
+ */
+
+// Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const firstNameInput = document.getElementById("first-name");
@@ -46,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
     // Validate if input is not empty
     function validateRequired(input, message) {
         if (input.value.trim() === "") {
@@ -78,7 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
     // Function to handle the selection of radio buttons
     document.querySelectorAll(".query-container .sec-btn").forEach((btn) => {
         btn.addEventListener("click", function () {
@@ -93,13 +137,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validate consent checkbox
     function validateCheckbox(input) {
         const parent = input.closest(".checkbox-container");
-        const errorText = parent.querySelector(".consent-error");
+        const errorText = parent.querySelector(".consent-error"); 
         if (!input.checked) {
             errorText.textContent = "You must consent to be contacted.";
-            errorText.style.display = "block";
+            errorText.style.display = "block"; 
             return false;
         } else {
-            errorText.style.display = "none";
+            errorText.style.display = "none"; 
             return true;
         }
     }
@@ -149,7 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         localStorage.setItem("consent", consentCheckbox.checked);
     }
-
 
     // Final form validation and submission
     form.addEventListener("submit", function (e) {
