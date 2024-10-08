@@ -24,3 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         input.classList.add("error");
     }
+
+    // Utility function to hide error for specific input
+    function hideError(input) {
+        const parent = input.closest(".input-holder");
+        const errorText = parent.querySelector(".error-text");
+        if (errorText) { // Check if errorText exists
+            errorText.style.display = "none";
+        }
+        input.classList.remove("error");
+    }
