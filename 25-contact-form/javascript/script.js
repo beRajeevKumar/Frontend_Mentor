@@ -7,3 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const consentCheckbox = document.getElementById("consent");
     const queryRadios = document.querySelectorAll("input[name='query-type']");
     const modalContainer = document.querySelector(".modal-container");
+
+     // Regular Expressions for validation
+     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+     const nameRegex = /^[a-zA-Z]+$/;
+ 
