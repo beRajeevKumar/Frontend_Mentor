@@ -11,4 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
      // Regular Expressions for validation
      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
      const nameRegex = /^[a-zA-Z]+$/;
- 
+
+     // Utility function to show error for specific input
+    function showError(input, message) {
+        const parent = input.closest(".input-holder");
+        if (parent) {
+            const errorText = parent.querySelector(".error-text");
+            if (errorText) {
+                errorText.textContent = message;
+                errorText.style.display = "block";
+            }
+        }
+        input.classList.add("error");
+    }
