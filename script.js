@@ -70,6 +70,9 @@ const projects = [
   {
     name: "24-joke-generator",
   },
+  {
+    name: "26-Login_Form",
+  },
 ];
 
 const list = document.getElementById("list");
