@@ -24,10 +24,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" herf="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    
     <title>Fronten Projects | Rajeev</title>
   </head>
   <body>
+     <!-- Scroll-to-Top Button -->
+     <button class="scroll-up-btn">
+      <i class="arrow-up"></i>
+    </button>
     <nav class="navbar navbar-expand-lg bg-body-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
@@ -213,34 +217,14 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-
-    (function() {
-        let headerVisible = false;
-        document.getElementById("menu").addEventListener("click", function () {
-            if (headerVisible === false) {
-                document.getElementById("header").style.height = "290px";
-                headerVisible = true;
-            } else {
-                document.getElementById("header").style.height = "50px";
-                headerVisible = false;
-            }
+    <script>
+      const btn = document.querySelector(".scroll-up-btn");
+      btn.addEventListener("click", () => {
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
-
-        // Show "Go to Top" button after scrolling down
-        const goTopBtn = document.querySelector(".gotopbtn");
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 200) {  // Show the button after scrolling down 200px
-                goTopBtn.style.display = "block";
-            } else {
-                goTopBtn.style.display = "none";
-            }
-        });
-
-    })();  // IIFE to avoid polluting global scope
-</script>
+      });
+    </script>
   </body>
 </html>
