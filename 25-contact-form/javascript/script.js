@@ -103,3 +103,20 @@ document.addEventListener("DOMContentLoaded", function () {
             return true;
         }
     }
+
+    // Event listeners for form validation on blur (when input loses focus)
+    firstNameInput.addEventListener("blur", () =>
+        validateInput(firstNameInput, nameRegex, "Please enter a valid first name.")
+    );
+    lastNameInput.addEventListener("blur", () =>
+        validateInput(lastNameInput, nameRegex, "Please enter a valid last name.")
+    );
+    emailInput.addEventListener("blur", () =>
+        validateInput(emailInput, emailRegex, "Please enter a valid email address.")
+    );
+    messageInput.addEventListener("blur", () =>
+        validateRequired(messageInput, "This field is required.")
+    );
+    consentCheckbox.addEventListener("change", () =>
+        validateCheckbox(consentCheckbox)
+    );
