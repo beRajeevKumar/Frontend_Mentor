@@ -45,3 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
             return true;
         }
     }
+
+    
+    // Validate if input is not empty
+    function validateRequired(input, message) {
+        if (input.value.trim() === "") {
+            showError(input, message);
+            return false;
+        } else {
+            hideError(input);
+            return true;
+        }
+    }
