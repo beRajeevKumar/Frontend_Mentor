@@ -27,6 +27,10 @@
     <title>Frontend Projects | Rajeev</title>
   </head>
   <body>
+     <!-- Scroll-to-Top Button -->
+     <button class="scroll-up-btn">
+      <i class="arrow-up"></i>
+    </button>
     <nav class="navbar navbar-expand-lg bg-body-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
@@ -212,5 +216,14 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      const btn = document.querySelector(".scroll-up-btn");
+      btn.addEventListener("click", () => {
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
