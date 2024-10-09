@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: rgb(93, 93, 109);
+    color: rgb(179, 178, 178);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.container{
+    background-color: rgb(3, 3, 17);
+    width : 400px;
+    height: min-content;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0px 0px 18px 0px rgb(0, 0, 0); 
+}
+
+.search{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color: rgb(187, 187, 199);
+    border-radius: 14px;
+    padding: 15px;
+    margin-right: 13px;
+}
+
+.search button{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(187,187,199) ;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.search button:hover{
+    background-color: rgb(54, 54, 70);
+    color: white;
+}
+
+.weatherbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weatherbody img{
+    width: 60%;
+}
+
+.fa-wind{
+    margin-left: 20px;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.weather-box p{
+    font-family: 'Poppins';
+    font-weight: 1000;
+    text-transform: capitalize;
+}
+
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Poppins';
+}
+
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity,.wind{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 15px;
+}
+
+.wind{
+    margin-right: 15px;
+}
+
+.weather-details i{
+    font-size: 36px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 22px;
+    font-weight: 2000;
+}
+
+@media only screen and (max-width: 440px){
+    body{
+        background-color: rgb(3, 3, 17);
+    }
+
+    .container{
+        background-color: rgb(3, 3, 17);
+        box-shadow: 0px 0px 0px 0px rgb(0, 0, 0); 
+    }
+}
