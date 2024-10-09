@@ -70,6 +70,9 @@ const projects = [
   {
     name: "24-joke-generator",
   },
+  {
+    name: "26-Hahu Globes",
+  },
 ];
 
 const list = document.getElementById("list");
