@@ -273,8 +273,59 @@ input[type="text"] {
   .container {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 1rem;
+    gap: 4rem;
   }
   .content {
-    margin: auto 0;
+    margin: 2rem 0;
+    text-align: center;
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  .mobile {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .less-visible-bg
+  {
+    display: none;
+  }
+
+  .page-description {
+    margin-bottom: 3rem;
+  }
+  .notch {
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+    gap: 3rem;
+    
+  }
+
+  .mobile {
+    max-width: 100%;
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
+  .page-description {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .notch {
+    left: 50%;
+    transform: translate(-50%, -30%);
   }
 }
