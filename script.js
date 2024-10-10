@@ -94,6 +94,9 @@ const projects = [
     name: "24-joke-generator",
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
+  {
+    name: "23-login-signup",
+  },
 ];
 
 const list = document.getElementById("list");
