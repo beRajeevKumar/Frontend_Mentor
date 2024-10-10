@@ -151,7 +151,8 @@
                 transition: 0.3s;
                 align-items: center;
                 gap: 0.6em;
-                /* font-weight: bold; */
+               
+                /* font-weight:bolder; */
             }
             
             .btn-1 .arrow-wrapper {
@@ -185,6 +186,7 @@
             
             .btn-1:hover {
                 background-color: var(--hover-color);
+                color:var(--primary-color)
             }
             
             .btn-1:hover .arrow {
