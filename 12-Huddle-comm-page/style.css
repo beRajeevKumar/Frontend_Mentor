@@ -29,15 +29,20 @@ body{
   margin: 9.6rem;
 }
 .hero-content{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 6.4rem;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
 }
 .content-container{
-margin-top: 4rem;
+  width:50%;
+  margin:4rem;
+  gap: 4rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .primary-heading{
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: 'Poppins', sans-serif;
   color: #fff;
   font-weight: 600;
@@ -45,11 +50,11 @@ margin-top: 4rem;
 .text{
   font-size:1.6rem;
   font-family: 'Open Sans', sans-serif;
-  margin: 1.8rem 0 3.2rem 0;
   color:#fff;
 }
 .btn{
   padding: 1.6rem 6.4rem;
+  width:45%;
   border: none;
   cursor: pointer;
   border-radius: 8rem;
@@ -57,7 +62,7 @@ margin-top: 4rem;
   color: hsl(257, 40%, 49%);
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   transition: all 0.3s ease-in-out;   
   box-shadow: 0.1rem 0.5rem 1rem rgba(0,0,0,0.6);
 }
@@ -68,12 +73,15 @@ margin-top: 4rem;
   color: #fff;
 }
 .social-media{
+  margin-top:10rem;
   display:flex;
   justify-content: flex-end;
+
 }
+
 .social-icon{
   margin-left: 1rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   border: 2px solid #fff;
   padding: 0.8rem 1.2rem;
   border-radius: 50%;
@@ -85,31 +93,177 @@ margin-top: 4rem;
   color: hsl(300, 69%, 71%);
   border-color: hsl(300, 69%, 71%);
 }
+.facebook{
+  width:50px;
+}
+.fa-facebook-f{
+  padding-left:15px;
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: #000;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
 
 /* Responsive Design */
-@media (max-width: 1135px) {
-html{
-  font-size: 50%;
+/* For screen widths 700px and smaller */
+@media(max-width:916px){
+ html{
+  font-size: 40%;
+ }
+.header img{
+  width:30%;
+}
+.hero-content{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.content-container{
+  display:flex;
+  flex-direction:column;
+}
+.primary-heading {
+  font-size: 3rem;
+}
+.text {
+  font-size: 2rem;
+}
+.btn {
+  width:20rem;
+  font-size: 2rem;
+}
+.facebook{
+  width:4.5rem;
+}
+.social-icon {
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+}
+.fa-facebook-f{
+  padding-left:1.3rem;
 }
 
+
 }
-@media (max-width: 915px) {
-  html{
+/* For screen widths 700px and smaller */
+@media (max-width: 700px) {
+  html {
     font-size: 37.5%;
   }
+
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-position:top;
+    background-size:100%;
   }
-  @media (max-width: 700px) {
-    html{
-      font-size: 37.5%;
-    }
-    body{
-      background-image: url(./images/bg-mobile.svg);
-    }
-    .img{
-      width: 100%;
-    }
-    .hero-content{
-      grid-template-columns: 1fr;
-      gap: 4.8rem;
-    }
+  .header img{
+    width:30%;
   }
+  .img-container{
+    width:90%;
+    padding-top:7rem;
+  }
+  .section-hero {
+    margin: 2rem;
+  }
+  .hero-content{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+  }
+  .content-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .primary-heading {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .btn {
+    width:30rem;
+    font-size: 2rem;
+  }
+  .facebook{
+    width:4.3rem;
+  }
+
+  .social-media {
+    margin-top: 6rem;
+    justify-content: center;
+  }
+
+  .social-icon {
+    font-size: 2rem;
+    padding: 0.6rem 1rem;
+  }
+  .fa-facebook-f{
+    padding-left:1.2rem;
+  }
+}
+
+/* For screen widths 480px and smaller */
+@media (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+  .header img{
+    width:40%;
+  }
+  .img-container{
+    width:95%;
+  }
+  .section-hero {
+    margin-top:10rem;
+  }
+
+  .hero-content {
+    gap: 4rem;
+  }
+  .content-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .primary-heading {
+    font-size: 5rem;
+  }
+
+  .text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .btn {
+    width:30rem;
+    font-size: 2rem;
+  }
+  .facebook{
+    width:4.3rem;
+  }
+  .social-icon {
+    margin-top:5rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .fa-facebook-f{
+    padding-left:5px;
+  }
+  .attribution {
+    font-size: 12px;
+  }
+}
