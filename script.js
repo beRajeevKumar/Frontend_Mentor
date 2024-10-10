@@ -97,6 +97,9 @@ const projects = [
   {
     name: "23-login-signup",
   },
+  {
+    name: "26-Login_Form",
+  },
 ];
 
 const list = document.getElementById("list");
