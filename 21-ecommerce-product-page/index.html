@@ -31,20 +31,15 @@
 
     <title>Frontend Mentor | E-commerce product page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 12px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="main-header">
       <div class="header">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="navbar">
           <a href="#">
             <img class="logo" src="./images/logo.svg" alt="Logo" />
@@ -59,48 +54,64 @@
             </ul>
           </nav>
         </div>
+        
         <div class="nav-images">
           <img class="cart-icon" src="./images/icon-cart.svg" alt="Cart Icon" />
-          <img
-            class="user-profile"
-            src="./images/image-avatar.png"
-            alt="User Profile"
-          />
+          <img class="user-profile" src="./images/image-avatar.png" alt="User Profile" />
         </div>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+          <li><a class="mobile-nav-link" href="#">Collections</a></li>
+          <li><a class="mobile-nav-link" href="#">Men</a></li>
+          <li><a class="mobile-nav-link" href="#">Women</a></li>
+          <li><a class="mobile-nav-link" href="#">About</a></li>
+          <li><a class="mobile-nav-link" href="#">Contact</a></li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="section-images">
         <div class="product-main-img">
+          <button id="prev-btn" class="nav-btn"><</button>
           <img
-            class="thumbnail-img"
-            src="../images/image-product-1.jpg"
-            alt=""
+            id="main-image"
+            src="./images/image-product-1-thumbnail.jpg"
+            alt="Main Product Image"
           />
+          <button id="next-btn" class="nav-btn">></button>
         </div>
         <div class="product-imgs">
           <figure class="product-item-img">
             <img
               src="./images/image-product-1-thumbnail.jpg"
               alt="Thumbnail 1"
+              class="thumbnail"
+              data-full-image="./images/image-product-1.jpg"
             />
           </figure>
           <figure class="product-item-img">
             <img
               src="./images/image-product-2-thumbnail.jpg"
               alt="Thumbnail 2"
+              class="thumbnail"
+              data-full-image="./images/image-product-2.jpg"
             />
           </figure>
           <figure class="product-item-img">
             <img
               src="./images/image-product-3-thumbnail.jpg"
               alt="Thumbnail 3"
+              class="thumbnail"
+              data-full-image="./images/image-product-3.jpg"
             />
           </figure>
           <figure class="product-item-img">
             <img
               src="./images/image-product-4-thumbnail.jpg"
               alt="Thumbnail 4"
+              class="thumbnail"
+              data-full-image="./images/image-product-4.jpg"
             />
           </figure>
         </div>
@@ -113,7 +124,7 @@
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
-
+    
         <div class="amount">
           <span class="current-amount">&dollar; 125.00</span>
           <span class="discount">50%</span>
@@ -126,7 +137,7 @@
             </button>
             <p class="count">0</p>
             <button class="add">
-              <img src="./images/icon-plus.svg" alt="icon-minus" />
+              <img src="./images/icon-plus.svg" alt="icon-plus" />
             </button>
           </div>
           <button class="addCartBtn">
@@ -137,11 +148,12 @@
                 fill-rule="nonzero"
               ></path>
             </svg>
-            <span>Add to cart</span>
+            <span >Add to cart</span>
           </button>
         </div>
       </section>
     </main>
+    
     <!--    $125.00 50% $250.00 0
      -->
 
