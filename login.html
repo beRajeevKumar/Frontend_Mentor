@@ -7,25 +7,29 @@
     <title>Sign In</title>
 </head>
 <body>
-    <form id="signinForm">
+    <form id="signinForm" class="signinform-container">
         <div class="container">
-            <h1>Sign In</h1>
            
-            <hr>
-
+           
             
-           <div class="form">
+           <div class="signinform">
+            <h1>Sign In</h1>
+           <div class="form-fields">
             <label for="email"><b>Email</b></label>
             <input type="email" placeholder="Enter Email" autocomplete="email" id="email" required>
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" autocomplete="new-password" id="psw" required>
-
+        </div>
             <div class="buttons">
                 <button type="button" class="cancelbtn">Cancel</button>
                 <button type="submit" class="signinbtn">Sign In</button>
             </div>
            </div>
+           <div class="signinimage-container">
+            <img src="/login.webp" alt="image" class="sign-in-img" />
+        </div>
+           
         </div>
     </form>
 
