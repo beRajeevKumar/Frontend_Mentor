@@ -97,6 +97,9 @@ const projects = [
   {
     name: "23-login-signup",
   },
+  {
+    name: "26-Hahu Globes",
+  },
 ];
 
 const list = document.getElementById("list");
