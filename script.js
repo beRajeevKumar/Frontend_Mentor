@@ -87,6 +87,9 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
+
+    name: "22-url-shortening",
+  },
     name: "23-Weather-App",
     tags: ["HTML", "CSS", "JavaScript", "API",],
   },
