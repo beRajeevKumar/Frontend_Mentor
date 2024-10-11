@@ -95,7 +95,8 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    name: "23-login-signup",
+    name: "26-Login_Form",
+    tags: ["HTML", "CSS"]
   },
 ];
 
