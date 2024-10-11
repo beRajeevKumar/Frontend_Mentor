@@ -2,9 +2,6 @@
 
 Frontend Mentor is an excellent platform for front-end developers who want to improve their skills and build real-world projects. It offers a range of challenges that cater to different skill levels and provides resources and support to help developers learn and grow their skills in HTML, CSS, and JavaScript.
 
-<p align="center">  
-<img src="./preview.png"/>  
-</p>
 
 Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my Frontend Mentor Profile.
 
