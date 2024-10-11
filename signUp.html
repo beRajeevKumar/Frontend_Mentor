@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css" />
+    <title>Sign Up</title>
+</head>
+<body>
+    <form id="signupForm" >
+        <div class="container">
+            <h1>Sign Up</h1>
+   
+            <hr>
+
+          <div class="form">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" autocomplete="name" id="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" autocomplete="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" autocomplete="new-password" id="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" id="psw-repeat" autocomplete="new-password" required>
+
+            <div class="buttons">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </div>
+    </form>
+
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+        import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js"; // Correct import for Firestore
+        import { getAuth, createUserWithEmailAndPassword ,updateProfile} from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyC7ihLRIl47Iu6nk6qh_Ak8i3pSYw3tO4A",
+            authDomain: "frontend-mentor-cceee.firebaseapp.com",
+            projectId: "frontend-mentor-cceee",
+            storageBucket: "frontend-mentor-cceee.appspot.com",
+            messagingSenderId: "51303965383",
+            appId: "1:51303965383:web:2f8c20fb952bd844dd94e2",
+            measurementId: "G-S2BV64K72R",
+            databaseURL: "https://frontend-mentor-cceee-default-rtdb.firebaseio.com"
+        };
+
+
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+       
+        const db = getFirestore(app); 
+
+       
+        const auth = getAuth();
+
+      
+        const form = document.getElementById('signupForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();  
+
+           
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('psw').value;
+            const name = document.getElementById('name').value;
+
+            try {
+               
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+               
+                const user = userCredential.user;
+                await updateProfile(user, { displayName: name });
+             
+                await addDoc(collection(db, "users"), {  
+                    uid: user.uid,  
+                    name: name,
+                    email: email,
+                });
+
+                alert('Signed up successfully and data stored in Firestore!');
+
+            } catch (error) {
+                const errorMessage = error.message;
+                alert('Error: ' + errorMessage);
+            }
+        });
+    </script>
+</body>
+</html>

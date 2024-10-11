@@ -1,0 +1,35 @@
+.container{
+    text-align: center;
+     border:2px solid black;
+     padding: 10px;
+    
+     
+ 
+ }
+ .buttons{
+     margin-top: 10px;
+ }
+ h1{
+     font-size: 1.2rem;
+ }
+ label{
+     font-size: 1rem;
+ }
+ .form{
+     display: flex;
+     flex-direction: column;
+     gap:2px;
+     align-items: center;
+     
+ 
+ }
+ input{
+     padding:2px;
+     margin-block: 5px;
+ }
+ button{
+     padding-block:8px;
+     padding-inline: 15px;
+     background: #fff;
+     border-radius: 20px;
+ }
