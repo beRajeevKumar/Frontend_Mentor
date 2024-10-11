@@ -23,6 +23,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
 
     <title>Fronten Projects | Rajeev</title>
@@ -72,6 +73,10 @@
  main
   </head>
   <body>
+
+    <!-- Scroll-to-Top Button -->
+    <button class="scroll-up-btn">
+
 <main>
     <header>
       <div class="navbar">
@@ -110,12 +115,12 @@
                         
                     </a>
                 </div>
-                <button class="btn-1">Sign up
+                <a class="btn-1" href="login.html">Login
                     <div class="arrow-wrapper">
                         <div class="arrow"></div>
                     </div>
-                </button>
-                <button class="btn-2">Get Started!</button>
+                  </a>
+                <a class="btn-2" href="signUp.html">Get Started!</a>
             </div>
         </div>
     </div>
@@ -124,6 +129,7 @@
     <!-- <nav class="navbar navbar-expand-lg bg-body-white">
      <!-- Scroll-to-Top Button -->
      <button class="scroll-up-btn">
+
       <i class="arrow-up"></i>
     </button>
     <nav class="navbar navbar-expand-lg bg-body-white">
@@ -323,13 +329,102 @@
         </ul>
       </div>
     </footer>
+
     <script src="script.js"></script>
     <script>
+      // Smooth scroll-to-top button
       const btn = document.querySelector(".scroll-up-btn");
       btn.addEventListener("click", () => {
         document.documentElement.scrollTo({
           top: 0,
           behavior: "smooth",
+        });
+      });
+
+      // GSAP Animations
+      gsap.from(".navbar", { opacity: 0, y: -50, duration: 1.5, ease: "power3.out" });
+      gsap.from(".scroll-up-btn", { opacity: 0, duration: 2, ease: "power2.out", delay: 1 });
+      gsap.from("img", { rotation: 360, duration: 1, ease: "power2.out" });
+
+      // Navbar items animation
+      gsap.utils.toArray(".navbar-nav .nav-item").forEach((item, index) => {
+        gsap.from(item, {
+          x: -50,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.out",
+          delay: index * 0.1 + 0.5,
+        });
+      });
+
+      // Section Titles Animation
+      gsap.utils.toArray("section h2").forEach((title) => {
+        gsap.from(title, {
+          scrollTrigger: {
+            trigger: title,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          scale: 0.8,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+        });
+      });
+
+      // Project List Items Animation
+      gsap.utils.toArray("#list li").forEach((item, index) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          delay: index * 0.1,
+          ease: "power2.out",
+        });
+      });
+
+      // Accordion Animation
+      const accordions = document.querySelectorAll(".accordion");
+      accordions.forEach((accordion) => {
+        accordion.addEventListener("click", function () {
+          const panel = this.nextElementSibling;
+          const isOpen = panel.style.maxHeight;
+          gsap.to(panel, {
+            maxHeight: isOpen ? 0 : panel.scrollHeight,
+            duration: 0.5,
+            ease: "power2.out",
+          });
+        });
+      });
+
+      // Footer Social Icons Hover Animation
+      const socials = document.querySelectorAll(".socials a");
+      socials.forEach((icon) => {
+        icon.addEventListener("mouseover", () => {
+          gsap.to(icon, { rotation: 15, duration: 0.3 });
+        });
+        icon.addEventListener("mouseleave", () => {
+          gsap.to(icon, { rotation: 0, duration: 0.3 });
+        });
+      });
+
+      // Scroll-based animation for the FAQs and sections
+      gsap.utils.toArray(".faq, .footer-section").forEach((element) => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 50,
+          duration: 1.5,
+          ease: "power2.out",
         });
       });
     </script>
