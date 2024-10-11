@@ -94,6 +94,10 @@ const projects = [
     name: "24-joke-generator",
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
+  {
+    name: "25-to-do-app",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
 ];
 
 const list = document.getElementById("list");
