@@ -95,6 +95,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
+
     name: "25-to-do-app",
     tags: ["HTML", "CSS", "JavaScript"],
   },

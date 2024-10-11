@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Main Content Area -->
+    <main>
+      <form action="">
+        <!-- Form Container -->
+        <div class="form-container">
+          <!-- Form Heading -->
+          <h1 class="text-heading">Contact Us</h1>
+
+          <!-- Input Fields for Name (First and Last) -->
+          <div class="input-container flex-row query-container">
+            <!-- First Name -->
+            <div class="input-holder flex-col">
+              <div class="flex flex-row">
+                <label for="first-name">First Name <span> * </span></label>
+              </div>
+              <input type="text" id="first-name" />
+              <p class="error-text">This Field is required</p>
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-holder flex-col">
+              <div class="flex flex-row">
+                <label for="last-name">Last Name <span> * </span></label>
+              </div>
+              <input type="text" id="last-name" />
+              <p class="error-text">This Field is required</p>
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="input-container">
+            <div class="input-holder flex-col">
+              <div class="flex flex-row">
+                <label for="email">Email <span> * </span></label>
+              </div>
+              <input type="email" id="email" />
+              <p class="error-text">This Field is required</p>
+            </div>
+          </div>
+
+          <!-- Query Type (Radio Buttons) -->
+          <div class="input-container query-input">
+            <div class="flex flex-row">
+              <label for="email">Query Type <span> * </span></label>
+            </div>
+            <div class="query-container">
+              <!-- General Inquiry -->
+              <div class="input-holder flex-col">
+                <button type="" class="btn flex sec-btn">
+                  <input type="radio" id="general-inquiry" name="query-type" />
+                  <label for="general-inquiry"> General Inquiry </label>
+                </button>
+              </div>
+
+              <!-- Support Request -->
+              <div class="input-holder flex-col">
+                <button type="" class="btn flex sec-btn">
+                  <input
+                    type="radio"
+                    id="support-request"
+                    name="query-type"
+                  />
+                  <label for="support-request"> Support Request </label>
+                </button>
+              </div>
+            </div>
+            <p class="error-text">Please Select Query Type</p>
+          </div>
+
+          <!-- Message Text Area -->
+          <div class="input-holder flex-col">
+            <div class="flex-row label-container">
+              <label for="message">Message <span> * </span></label>
+            </div>
+            <textarea name="message" id="message"></textarea>
+            <p class="error-text">This Field is required</p>
+          </div>
+
+        <!-- Consent Checkbox -->
+<div class="input-holder flex checkbox-container">
+  <div class="input-holder flex">
+    <input type="checkbox" id="consent" />
+    <div>
+      <label for="consent">
+        I consent to being contacted by the team
+        <span> * </span></label
+      >
+    </div>
+  </div>
+  <!-- Error Message for Consent -->
+  <p class="error-text consent-error">To submit this form please consent to be contacted</p>
+</div>
+
+
+          <!-- Submit Button -->
+          <div class="input-holder flex-col">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- success modal -->
+      <div class="modal-container">
+        <div class="modal">
+          <div class="modal-header">
+            <i class="fas fa-check-circle"></i>
+            <h2>Message sent!</h2>
+          </div>
+          <div class="modal-body">
+            <p>Thanks for completing the form, we will be in touch soon!</p>
+          </div>
+        </div>
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
