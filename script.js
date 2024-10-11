@@ -17,7 +17,7 @@ const projects = [
     tags: ["HTML", "CSS"],
   },
   {
-    name: "05-intractive-rating",
+    name: "05-interactive-rating",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -87,6 +87,10 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
+    name: "22-url-shortening",
+    tags: ["HTML", "CSS"],
+  },
+  {
     name: "23-Weather-App",
     tags: ["HTML", "CSS", "JavaScript", "API",],
   },
@@ -94,8 +98,20 @@ const projects = [
     name: "24-joke-generator",
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
+  // {
+  //   name: "25-contact-form",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  // },
+  // {
+  //   name: "23-login-signup",
+  // },
   {
-    name: "23-login-signup",
+    name: "27-four-card-section",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "28-tip-calculator-app",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
