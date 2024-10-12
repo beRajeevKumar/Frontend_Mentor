@@ -5,19 +5,30 @@
 }
 
 .lists {
-  margin-right: 20rem;
- list-style: none;
+    margin-right: 20rem;
+    list-style: none;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    height: 64px;
-    border-bottom: 1px solid #2e2e2e;
-    padding: 0 80px;
-    margin: 0 50px;
-  }
-  
+    height: 86px; 
+    padding: 0 80px;    
+    margin: 0 50px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nav-link:hover {
+    color: #000; /* Black color on hover */
+} 
+
+.nav-link.active {
+    color: #007bff; /* Highlight active link */
+    font-weight: 500;
+}
+.navbar-nav {
+    gap: 3rem; 
+    justify-content: center; 
+}
+
     .logo {
         display: flex;
         flex-wrap: wrap;
