@@ -261,6 +261,18 @@
                  filter: hue-rotate(1turn);
                 }
             }
+
+            .nav-item{
+                display: flex;
+                list-style: none;
+                font-family: cursive;
+                text-decoration: none;
+                margin-left: 3.5rem;
+                color:blu;
+                font-size: 1.5rem;
+                letter-spacing: .05rem;
+                position: relative;
+            }
                
             /* button, */
             .btn-2::after {
