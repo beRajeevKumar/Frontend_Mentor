@@ -5,143 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/jpg" href="/images/clipboard.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Fronten Projects | Rajeev</title>
+    <title>Frontend Projects | Rajeev</title>
     <style>
       .chatbot-container {
-          position: fixed;
-          bottom: 20px; /* Adjust as needed */
-          right: 20px; /* Adjust as needed */
-          z-index: 1000; /* Ensure it appears above other elements */
+        position: fixed;
+        bottom: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        z-index: 1000; /* Ensure it appears above other elements */
       }
 
       .chatbot-button {
-          background-color: #007bff; /* Change to your preferred color */
-          border: none;
-          border-radius: 50%;
-          padding: 5px; /* Smaller padding */
-          cursor: pointer;
-          position: relative;
-          width: 50px; /* Adjusted size */
-          height: 50px; /* Adjusted size */
+        background-color: #007bff; /* Change to your preferred color */
+        border: none;
+        border-radius: 50%;
+        padding: 5px; /* Smaller padding */
+        cursor: pointer;
+        position: relative;
+        width: 50px; /* Adjusted size */
+        height: 50px; /* Adjusted size */
       }
 
       .chatbot-button img {
-          width: 30px; /* Adjusted image size */
-          height: 30px; /* Adjusted image size */
+        width: 30px; /* Adjusted image size */
+        height: 30px; /* Adjusted image size */
       }
 
       .tooltip-text {
-          display: none; /* Hide by default */
-          position: absolute;
-          bottom: 100%; /* Position above the button */
-          right: 50%;
-          transform: translateX(50%);
-          background-color: #333; /* Background color for tooltip */
-          color: #fff; /* Tooltip text color */
-          padding: 5px;
-          border-radius: 5px;
-          white-space: nowrap; /* Prevent text from wrapping */
+        display: none; /* Hide by default */
+        position: absolute;
+        bottom: 100%; /* Position above the button */
+        right: 50%;
+        transform: translateX(50%);
+        background-color: #333; /* Background color for tooltip */
+        color: #fff; /* Tooltip text color */
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap; /* Prevent text from wrapping */
       }
 
       .chatbot-button:hover .tooltip-text {
-          display: block; /* Show on hover */
+        display: block; /* Show on hover */
       }
-      </style>
+
+      /* Styles for footer */
+      .footer {
+        background-color: #f8f9fa; /* Light background color */
+        padding: 40px 20px; /* Padding for footer */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Wrap if necessary */
+        border-top: 1px solid #dee2e6; /* Border on top */
+      }
+
+      .footer-section {
+        flex: 1; /* Allow each section to grow */
+        min-width: 250px; /* Minimum width for each section */
+        margin: 10px; /* Margin between sections */
+      }
+
+      .footer-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-list a {
+        text-decoration: none; /* No underline */
+        color: #007bff; /* Link color */
+      }
+
+      .footer-list a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+
+      .socials a {
+        margin-right: 10px; /* Spacing between icons */
+        color: #333; /* Icon color */
+      }
+
+      .socials a:hover {
+        color: #007bff; /* Change color on hover */
+      }
+
+      .btn-sub {
+        background-color: #007bff; /* Button color */
+        color: white; /* Button text color */
+        border: none;
+      }
+
+      .btn-sub:hover {
+        background-color: #0056b3; /* Darker color on hover */
+      }
+    </style>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg bg-body-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/"><img  src="logo.png"alt="Logo" width="80" height="84" class="d-inline-block align-text-top"></a>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="logo.png"
+            alt="Logo"
+            width="80"
+            height="84"
+            class="d-inline-block align-text-top"
+        /></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login-sginup.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Projects" >Challenges</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login-sginup.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Challenges</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    <section>
+      <h2 id="Projects" class="mt-4">Projects</h2>
+      <ul id="list" class="list"></ul>
+    </section>
+
+    <div class="chatbot-container">
+      <a href="chatbot.html">
+        <button class="chatbot-button group">
+          <img class="h-20" src="chatbot.gif" alt="chatbot" />
+          <span class="tooltip-text">
+            Welcome to Frontend Mentor! <br />
+            How can I help You? ^_^
+          </span>
+        </button>
+      </a>
     </div>
-  </nav>
-<section>
-<h2 id="Projects" class="">Projects</h2>
-<ul id="list" class="list"></ul>
-</section>
 
-<a href="chatbot.html">
-  <div class="fixed bottom-0 right-2 chatbot-container">
-    <button class="chatbot-button group">
-      <img class="h-20" src="chatbot.gif" alt="chatbot">
-      <span class="tooltip-text">
-        Welcome to Frontend Mentor! <br>
-        How can I help You? ^_^ 
-      </span>
-    </button>
-  </div>
-</a>
-
-<footer class="footer">
-
-  <div class="footer-section">
-      <h1>Contact Us</h1>
-      <ul class="footer-list">
-          <li><a href="mailto:trendtrove1004@gmail.com">frontentmentor1004@gmail.com</a></li>
+    <footer class="footer">
+      <div class="footer-section">
+        <h1>Contact Us</h1>
+        <ul class="footer-list">
+          <li>
+            <a href="mailto:trendtrove1004@gmail.com"
+              >frontendmentor1004@gmail.com</a
+            >
+          </li>
           <li>2nd Floor, Bandra West, Mumbai, Maharashtra 400050, India</li>
           <li><a href="tel:+91xxxxxxxx2020">+91 xxxxxx2020</a></li>
           <li class="border-list"></li>
           <li class="socials">
             <a href="https://www.linkedin.com/in/berajeevkumar/" id="linkedin" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/beRajeevKumar/Frontend_Mentor" id="github" target="_blank">
+            </a>
+            <a href="https://github.com/beRajeevKumar/Frontend_Mentor" id="github" target="_blank">
               <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://x.com/be_rajeevkumar" id="twitter" target="_blank">
+            </a>
+            <a href="https://x.com/be_rajeevkumar" id="twitter" target="_blank">
               <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/your_instagram" id="instagram" target="_blank">
+            </a>
+            <a href="https://www.instagram.com/your_instagram" id="instagram" target="_blank">
               <i class="fa-brands fa-instagram"></i>
-          </a>
+            </a>
           </li>
-      </ul>
-  </div>
-  <div class="footer-section">
-      <h1>Quick Links</h1>
-      <ul class="footer-list">
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h1>Quick Links</h1>
+        <ul class="footer-list">
           <li><a href="about.html">About Us</a></li>
           <li><a href="/terms-conditions">Terms & Conditions</a></li>
           <li><a href="/return-policy">Return Policy</a></li>
           <li><a href="https://github.com/beRajeevKumar/Frontend_Mentor" target="_blank">Star Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-  </div>
+        </ul>
+      </div>
 
-  <div class="footer-section">
-      <h1>Subscribe to Newsletter</h1>
-      <ul class="footer-list">
-          <li>Maxime quae inventore sunt odio perspiciatis vitae saepe officia dolorem.</li>
-          <li class="sub">
-              <input type="text" placeholder="Enter your email">
-              <button class="btn-sub">Subscribe</button>
+      <div class="footer-section">
+        <h1>Subscribe to Newsletter</h1>
+        <ul class="footer-list">
+          <li>
+            Maxime quae inventore sunt odio perspiciatis vitae saepe officia dolorem.
           </li>
-      </ul>
-  </div>
-</footer>    
+          <li class="sub">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn-sub">Subscribe</button>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
