@@ -6,7 +6,10 @@
 
 .lists {
   margin-right: 20rem;
+ text-decoration: none;
  list-style: none;
+ background-color: wheat;
+ color: white;
 }
 
 .navbar {
@@ -294,86 +297,132 @@ h2 {
   font-weight: 600;
   margin-top: 2.4rem;
   text-align: center;
-  color:black;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(6, 6, 6);
+  text-decoration: none;
 }
 
 .list {
+    text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: 0.4  ease-in-out;
   list-style-type: none;
+  gap: 60px;
+  border: 10px 10px 20px 20px;
+  margin: 100px 10px 100px 10px;
+ padding:  12px 14px 12px 13px ;
 }
 
 .list li {
-  background-color: #fff;
+ text-decoration: none;
+  background-color: #211f1f;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
   margin: 20px;
-  border-radius: 25px;
-  width: 350px;
+  border-radius: 20px;
+  height: 100%;
+  width: 500px;
+  transition: 0.4 ease-in-out;
 }
 .list li:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 0px 4px #9f9b9b;
-  transition: 0.5s ease;
+transform: scale(1.1);
+box-shadow: 0px 0px 2px 2px #000000;
+transition: 0.4  ease-in-out;
 }
 
-.list li a {
+.list li a::after ,.list li .active::after {
+    content: "";
+    text-decoration: none   ;
+    background-color:rgb(14, 14, 19);
+    position:absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom:-5px ;
+    cursor: pointer;
+    transform: scaleX(0);
+    transition: 0.4  ease-in-out;
+    transform-origin: right;
+}
+.link li a:hover::after,.link li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    text-decoration: none;
+}.list li a {
   color: #000;
   text-decoration: none;
 }
 
 .list li img {
+background-color: white;
   display: block;
+  cursor: pointer;
   object-fit: cover;
   margin-bottom: 15px;
-  border-radius: 25px;
-  transition: transform 0.3s ease;
+  border-radius: 15px;
+  transition: 0.4   ease-in-out;
   height: 200px;
-  width: 350px;
+  width: 500px;
 }
 
 .list li p {
-  padding: 0 1.6rem;
+  text-decoration: none;
+  padding: 1.6rem;
   font-size: 1.6rem;
   font-weight: 600;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  
 } 
+.list li .tag{
+    text-decoration: none;
+}
 .list li .tags {
-    background-color: #34a0e9;
+    background-color: #fff3cd;
     text-align: center;
-    color: #fff; 
-    font-weight: 500;
-    padding: 10px 15px; 
-    border-radius: 5px;
+    text-decoration: none;
+    color: black; 
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: 30px;
+    width: auto;
+    font-weight: 600;
+    padding: 20px 5px 4px 10px; 
+    border-radius: 2px;
     box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .links-container {
   padding: 1.5rem;
   margin-top: 2.4rem;
+  transition: 0.4 ease-in-out;
 }
 
 .links-container a {
-  color: #fff;
+  color: #2332a4;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  height: 35px;
+  height: 25px;
   width: 35px;
-  transition: transform 0.3s ease;
+  transition: 0.4 ease-in-out;
 }
 
 .links-container a.blue {
-  background-color: #34a0e9;
+  background-color: #b1cee0;
 }
 
 .links-container a.youtube {
-  background-color: #ea0000;
+  background-color: #211c1c;
 }
 
 .links-container a:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .btn-sub{
