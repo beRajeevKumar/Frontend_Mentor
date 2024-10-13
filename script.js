@@ -42,7 +42,7 @@ const projects = [
   },
   {
 
-    name: "11-Order-summery-component",
+    name: "11-Order-summary-component",
     tags: ["HTML", "CSS"],
 
   },
