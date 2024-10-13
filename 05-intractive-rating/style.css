@@ -122,3 +122,38 @@ body {
 .hidden {
   display: none;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container, .thanks {
+    padding: 2rem;
+    margin:3rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .parah, .btn, .submit {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btns {
+    flex-direction:row;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .submit {
+    padding: 1.2rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
