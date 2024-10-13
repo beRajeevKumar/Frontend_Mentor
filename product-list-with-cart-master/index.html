@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Frontend Mentor | Product list with cart</title>
+	</head>
+	<body>
+		<div class="overlay hidden"></div>
+		<div class="container">
+			<div class="desserts-container">
+				<h1>Desserts</h1>
+				<div class="desserts">
+					<template id="card-template">
+						<div class="card">
+							<div class="card-image-and-button">
+								<picture>
+									<source media="(min-width: 1024px)" srcset="" />
+									<source media="(min-width: 768px)" srcset="" />
+									<img src="" alt="" />
+								</picture>
+
+								<div class="card-btn">
+									<button class="add-to-cart-btn" onClick="handleAddToCart(event)">
+										<img src="./assets/images/icon-add-to-cart.svg" alt="add to cart icon" />
+										<p>Add to Cart</p>
+									</button>
+									<div class="minus-plus-btn hidden">
+										<button onClick="handleDecrementQuantity(event)"><img src="./assets/images/icon-decrement-quantity.svg" alt="" /></button>
+										<div class="quantity-display">1</div>
+										<button onClick="handleIncrementQuantity(event)"><img src="./assets/images/icon-increment-quantity.svg" alt="" /></button>
+									</div>
+								</div>
+							</div>
+							<div class="card-text">
+								<div class="category"></div>
+								<div class="name"></div>
+								<div class="price">$</div>
+							</div>
+						</div>
+					</template>
+				</div>
+			</div>
+			<div class="cart">
+				<h2 class="cart-counter">Your Cart (<span>0</span>)</h2>
+				<div class="cart-content">
+					<div class="empty-cart">
+						<img src="./assets/images/illustration-empty-cart.svg" alt="empty cart icon" />
+						<p>Your added items will appear here</p>
+					</div>
+					<div class="cart-items hidden">
+						<ul class="cart-item-list">
+							<template id="cart-item-template">
+								<li class="cart-item">
+									<div class="cart-item-text">
+										<p class="name"></p>
+										<div class="lower-row">
+											<div class="quantity">
+												<p><span></span>x</p>
+											</div>
+											<div class="price-per">
+												<p>@$<span></span></p>
+											</div>
+
+											<div class="price-total">
+												<p>$<span></span></p>
+											</div>
+										</div>
+									</div>
+
+									<button class="remove-btn" onClick="handleRemoveCartItem(event)"><img src="./assets/images/icon-remove-item.svg" alt="" /></button>
+								</li>
+							</template>
+						</ul>
+						<div class="cart-footer hidden">
+							<div class="order-total">
+								<p>Order Total</p>
+								<div class="total">$<span></span></div>
+							</div>
+							<div class="carbon-neutral">
+								<img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+								<p>This is a <span>carbon-neutral</span> delivery</p>
+							</div>
+							<button class="confirm-order-btn" onClick="handleConfirmOrder(event)">Confirm Order</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="order-confirmed hidden">
+			<div class="order-confirmed-content">
+				<div class="order-confirmed-icon"><img src="./assets/images/icon-order-confirmed.svg" alt="order confirmed icon" /></div>
+				<div class="order-confirmed-text">
+					<h1>Order Confirmed</h1>
+					<p>We hope you enjoy your food!</p>
+				</div>
+				<div class="ordered-items">
+					<ul class="item-list">
+						<template id="order-item-template">
+							<li class="order-item">
+								<div class="left-part">
+									<img src="" alt="" />
+									<div class="order-item-text">
+										<p class="name"></p>
+										<div class="lower-row">
+											<div class="quantity">
+												<p><span>1</span>x</p>
+											</div>
+											<div class="price-per">
+												<p>@$<span></span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="price-total">
+									<p>$<span></span></p>
+								</div>
+							</li>
+						</template>
+					</ul>
+					<div class="order-total">
+						<p>Order Total</p>
+						<h2>$<span></span></h2>
+					</div>
+				</div>
+			</div>
+
+			<button class="start-new-order" onClick="handleStartNewOrder(event)">Start New Order</button>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
