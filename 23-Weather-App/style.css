@@ -1,16 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-*{
-    font-family: 'Poppins';
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
 }
+/* Existing CSS from before */
 
-body{
-    font-family: 'Poppins';
+/* Add this at the end of your CSS file */
+body.dark-theme {
+    background-color: rgb(18, 18, 28); /* Dark background */
+    color: rgb(220, 220, 220); /* Light text */
+}
+
+.container.dark-theme {
+    background-color: rgb(25, 25, 35); /* Darker container */
+}
+
+.search input.dark-theme {
+    background-color: rgb(75, 75, 85); /* Dark input */
+    color: white; /* Light text in input */
+}
+
+.search button.dark-theme {
+    background-color: rgb(75, 75, 85); /* Dark button */
+    color: white; /* Light text on button */
+}
+
+/* Adjust the hover effect for dark theme */
+.search button.dark-theme:hover {
+    background-color: rgb(54, 54, 70);
+}
+
+/* Adjust other elements as needed for dark theme */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(93, 93, 109);
     color: rgb(179, 178, 178);
     min-height: 100vh;
@@ -20,16 +49,17 @@ body{
     overflow-y: hidden;
 }
 
-.container{
+
+.container {
     background-color: rgb(3, 3, 17);
-    width : 400px;
+    width: 400px;
     height: min-content;
     border-radius: 12px;
     padding: 28px;
     box-shadow: 0px 0px 18px 0px rgb(0, 0, 0); 
 }
 
-.search{
+.search {
     width: 100%;
     height: min-content;
     display: flex;
@@ -37,7 +67,7 @@ body{
     align-items: center;
 }
 
-.search input{
+.search input {
     width: 84%;
     font-size: 20px;
     text-transform: capitalize;
@@ -48,20 +78,20 @@ body{
     margin-right: 13px;
 }
 
-.search button{
+.search button {
     width: 46px;
     height: 46px;
-    background-color: rgb(187,187,199) ;
+    background-color: rgb(187, 187, 199);
     border-radius: 50%;
     font-size: 22px;
 }
 
-.search button:hover{
+.search button:hover {
     background-color: rgb(54, 54, 70);
     color: white;
 }
 
-.weatherbody{
+.weatherbody {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,81 +99,83 @@ body{
     margin-block: 20px;
 }
 
-.weatherbody img{
+.weatherbody img {
     width: 60%;
 }
 
-.fa-wind{
+.fa-wind {
     margin-left: 20px;
 }
 
-.weather-box{
+.weather-box {
     margin-block: 20px;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
-.weather-box p{
-    font-family: 'Poppins';
+.weather-box p {
+    font-family: 'Poppins', sans-serif;
     font-weight: 1000;
     text-transform: capitalize;
 }
 
-.weather-box .temperature{
+.weather-box .temperature {
     font-size: 40px;
     font-weight: 800;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
-.weather-box .temperature sup{
+.weather-box .temperature sup {
     font-size: 20px;
     position: absolute;
     font-weight: 600;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
-.weather-details{
+.weather-details {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.humidity,.wind{
+.humidity, .wind {
     font-weight: 600;
     display: flex;
     align-items: center;
 }
 
-.humidity{
+.humidity {
     margin-left: 15px;
 }
 
-.wind{
+.wind {
     margin-right: 15px;
 }
 
-.weather-details i{
+.weather-details i {
     font-size: 36px;
 }
 
-.weather-details .text{
+.weather-details .text {
     margin-left: 10px;
     font-size: 16px;
 }
 
-.text span{
+.text span {
     font-size: 22px;
     font-weight: 2000;
 }
 
-@media only screen and (max-width: 440px){
-    body{
+@media only screen and (max-width: 440px) {
+    body {
         background-color: rgb(3, 3, 17);
     }
 
-    .container{
+    .container {
         background-color: rgb(3, 3, 17);
         box-shadow: 0px 0px 0px 0px rgb(0, 0, 0); 
     }
+
+
 }

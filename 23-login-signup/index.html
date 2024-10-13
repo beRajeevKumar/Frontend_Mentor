@@ -13,7 +13,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
-            margin: 10px; /* Reduced gap around body */
+            margin: 10px;
         }
         .card {
             width: 400px;
@@ -21,18 +21,18 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            margin: 10px; /* Reduced gap around card */
+            margin: 10px;
         }
         .card-header, .card-footer {
             padding: 16px;
             text-align: center;
-            margin: 10px; /* Reduced gap around card header and footer */
+            margin: 10px;
         }
         .card-title {
             font-size: 24px;
             margin-bottom: 8px;
-            font-weight: bold; /* Make title bold */
-            font-style: italic; /* Make title italic */
+            font-weight: bold;
+            font-style: italic;
         }
         .card-description {
             color: #666;
@@ -43,12 +43,12 @@
             border-bottom: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            margin: 10px; /* Reduced gap around tabs */
+            margin: 10px;
             background-color: rgb(240, 236, 236);
         }
         .tabs button {
             flex: 1;
-            padding: 8px; /* Reduced padding to make the height smaller */
+            padding: 8px;
             background: none;
             border: none;
             cursor: pointer;
@@ -59,8 +59,8 @@
         }
         .tabs button.active {
             border-bottom: 2px solid #eceef0;
-            color: black; /* Change text color to black when active */
-            background-color: white; /* Change background color to white when active */
+            color: black;
+            background-color: white;
         }
         .tabs button:hover {
             background-color: white;
@@ -70,44 +70,40 @@
             background-color: white;
             color: black;
         }
-        .tabs button:not(.active) {
-            background-color: transparent;
-            color: darkgrey;
-        }
         .tab-content {
             display: none;
             padding: 16px;
-            margin: 10px; /* Reduced gap around tab content */
+            margin: 10px;
         }
         .tab-content.active {
             display: block;
         }
         .form-group {
             margin-bottom: 16px;
-            margin: 10px; /* Reduced gap around form group */
-            position: relative; /* Add relative positioning for icon positioning */
+            margin: 10px;
+            position: relative;
         }
         .form-group label {
             display: block;
             margin-bottom: 8px;
-            font-weight: bold; /* Make labels bold */
+            font-weight: bold;
         }
         .form-group input {
             width: 100%;
             padding: 8px;
-            padding-right: 40px; /* Add padding to the right to make room for the icon */
+            padding-right: 40px;
             box-sizing: border-box;
-            border-radius: 8px; /* Add round border to input tags */
-            border: 2px solid grey; /* Add 2px grey border to input tags */
-            transition: border-color 0.3s; /* Smooth transition for border color */
-            margin: 10px 0; /* Reduced gap around input fields */
+            border-radius: 8px;
+            border: 2px solid grey;
+            transition: border-color 0.3s;
+            margin: 10px 0;
         }
         .form-group input:hover {
-            border-color: #888a8d; /* Change border color on hover */
+            border-color: #888a8d;
         }
         .form-group input:focus {
-            border-color: darkgrey; /* Change border color to dark grey on focus */
-            outline: none; /* Remove default outline */
+            border-color: darkgrey;
+            outline: none;
         }
         .form-group .toggle-password {
             position: absolute;
@@ -116,8 +112,8 @@
             transform: translateY(-50%);
             cursor: pointer;
             color: #888a8d;
-            font-size: 1.2em; /* Adjust the size of the icon */
-            margin-top: 12px; /* Add top margin of 1px */
+            font-size: 1.2em;
+            margin-top: 12px;
         }
         .form-group .toggle-password:hover {
             color: darkgrey;
@@ -129,8 +125,8 @@
             color: white;
             border: none;
             cursor: pointer;
-            margin: 10px 0; /* Reduced gap around buttons */
-            border-radius: 50px; /* Make buttons round */
+            margin: 10px 0;
+            border-radius: 50px;
         }
         .btn:disabled {
             background-color: #aaa;
@@ -275,18 +271,18 @@
             </div>
         </div>
         <div class="card-footer">
-            <p>By continuing, you agree to our Terms of Service and Privacy Policy</p>
+            <p>&copy; 2024 TrendTrove. All rights reserved.</p>
         </div>
     </div>
 
-    <!-- Password Recovery Modal -->
+    <!-- Forgot Password Modal -->
     <div id="passwordRecoveryModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Password Recovery</h2>
-            <form id="password-recovery-form">
+            <form id="recovery-form">
                 <div class="form-group">
-                    <label for="recovery-email">Email</label>
+                    <label for="recovery-email">Enter your email</label>
                     <input type="email" id="recovery-email" placeholder="Enter your email" required>
                     <div class="error" id="recovery-email-error"></div>
                 </div>
@@ -297,26 +293,34 @@
     </div>
 
     <script>
-        document.querySelectorAll('.tab-link').forEach(button => {
-            button.addEventListener('click', () => {
-                document.querySelectorAll('.tab-link').forEach(btn => btn.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        // Tabs handling
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-                button.classList.add('active');
-                document.getElementById(button.dataset.tab).classList.add('active');
+        tabLinks.forEach((link) => {
+            link.addEventListener('click', function() {
+                tabLinks.forEach((link) => link.classList.remove('active'));
+                tabContents.forEach((content) => content.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab).classList.add('active');
             });
         });
 
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(String(email).toLowerCase());
+        // Toggle Password Visibility
+        function togglePassword(id, icon) {
+            const input = document.getElementById(id);
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
         }
 
-        function validatePassword(password) {
-            return password.length >= 6;
-        }
-
-        document.getElementById('login-form').addEventListener('submit', async (event) => {
+        // Login Form
+        const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', function(event) {
             event.preventDefault();
             const email = document.getElementById('login-email').value;
             const password = document.getElementById('login-password').value;
@@ -324,39 +328,24 @@
             const passwordError = document.getElementById('login-password-error');
             const successMessage = document.getElementById('login-success');
 
-            let valid = true;
+            emailError.textContent = '';
+            passwordError.textContent = '';
 
             if (!validateEmail(email)) {
                 emailError.textContent = 'Invalid email address';
-                valid = false;
-            } else {
-                emailError.textContent = '';
-            }
-
-            if (!validatePassword(password)) {
+            } else if (password.length < 6) {
                 passwordError.textContent = 'Password must be at least 6 characters';
-                valid = false;
             } else {
-                passwordError.textContent = '';
-            }
-
-            if (valid) {
-                const loginBtn = document.getElementById('login-btn');
-                loginBtn.disabled = true;
-                loginBtn.textContent = 'Logging in...';
-                console.log('Login submitted');
+                successMessage.style.display = 'block';
                 setTimeout(() => {
-                    loginBtn.disabled = false;
-                    loginBtn.textContent = 'Login';
-                    successMessage.style.display = 'block';
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 3000); // Hide success message after 3 seconds
+                    successMessage.style.display = 'none';
                 }, 2000);
             }
         });
 
-        document.getElementById('signup-form').addEventListener('submit', async (event) => {
+        // Signup Form
+        const signupForm = document.getElementById('signup-form');
+        signupForm.addEventListener('submit', function(event) {
             event.preventDefault();
             const email = document.getElementById('signup-email').value;
             const password = document.getElementById('signup-password').value;
@@ -366,105 +355,70 @@
             const confirmPasswordError = document.getElementById('signup-confirm-password-error');
             const successMessage = document.getElementById('signup-success');
 
-            let valid = true;
+            emailError.textContent = '';
+            passwordError.textContent = '';
+            confirmPasswordError.textContent = '';
 
             if (!validateEmail(email)) {
                 emailError.textContent = 'Invalid email address';
-                valid = false;
-            } else {
-                emailError.textContent = '';
-            }
-
-            if (!validatePassword(password)) {
+            } else if (password.length < 6) {
                 passwordError.textContent = 'Password must be at least 6 characters';
-                valid = false;
-            } else {
-                passwordError.textContent = '';
-            }
-
-            if (password !== confirmPassword) {
+            } else if (password !== confirmPassword) {
                 confirmPasswordError.textContent = 'Passwords do not match';
-                valid = false;
             } else {
-                confirmPasswordError.textContent = '';
-            }
-
-            if (valid) {
-                const signupBtn = document.getElementById('signup-btn');
-                signupBtn.disabled = true;
-                signupBtn.textContent = 'Signing up...';
-                console.log('Signup submitted');
+                successMessage.style.display = 'block';
                 setTimeout(() => {
-                    signupBtn.disabled = false;
-                    signupBtn.textContent = 'Sign Up';
-                    successMessage.style.display = 'block';
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 3000); // Hide success message after 3 seconds
+                    successMessage.style.display = 'none';
                 }, 2000);
             }
         });
 
-        // Clear success message on user interaction
-        document.querySelectorAll('#signup-form input').forEach(input => {
-            input.addEventListener('input', () => {
-                document.getElementById('signup-success').style.display = 'none';
-            });
-        });
-
-        document.querySelectorAll('#login-form input').forEach(input => {
-            input.addEventListener('input', () => {
-                document.getElementById('login-success').style.display = 'none';
-            });
-        });
-
-        function togglePassword(id, icon) {
-            const input = document.getElementById(id);
-            if (input.type === 'password') {
-                input.type = 'text';
-                icon.classList.remove('fa-eye');
-                icon.classList.add('fa-eye-slash');
-            } else {
-                input.type = 'password';
-                icon.classList.remove('fa-eye-slash');
-                icon.classList.add('fa-eye');
-            }
-        }
+        // Password Recovery Modal
+        const modal = document.getElementById('passwordRecoveryModal');
+        const recoveryForm = document.getElementById('recovery-form');
 
         function openModal() {
-            document.getElementById('passwordRecoveryModal').style.display = 'flex';
+            modal.style.display = 'flex';
         }
 
         function closeModal() {
-            document.getElementById('passwordRecoveryModal').style.display = 'none';
+            modal.style.display = 'none';
         }
 
-        document.getElementById('password-recovery-form').addEventListener('submit', async (event) => {
+        recoveryForm.addEventListener('submit', function(event) {
             event.preventDefault();
-            const email = document.getElementById('recovery-email').value;
-            const emailError = document.getElementById('recovery-email-error');
+            const recoveryEmail = document.getElementById('recovery-email').value;
+            const recoveryEmailError = document.getElementById('recovery-email-error');
             const successMessage = document.getElementById('recovery-success');
 
-            if (!validateEmail(email)) {
-                emailError.textContent = 'Invalid email address';
+            if (!validateEmail(recoveryEmail)) {
+                recoveryEmailError.textContent = 'Invalid email address';
             } else {
-                emailError.textContent = '';
-                // Simulate sending recovery email
-                console.log('Recovery email sent');
-                successMessage.style.display = 'block';
+                recoveryEmailError.textContent = '';
+                const recoveryBtn = event.target.querySelector('.btn');
+                recoveryBtn.disabled = true;
+                recoveryBtn.textContent = 'Sending...';
+
                 setTimeout(() => {
-                    successMessage.style.display = 'none';
-                    closeModal();
-                }, 3000); // Hide success message after 3 seconds
+                    successMessage.style.display = 'block';
+                    recoveryBtn.disabled = false;
+                    recoveryBtn.textContent = 'Send Recovery Email';
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                        closeModal();
+                    }, 3000);
+                }, 2000);
             }
         });
 
-        function switchToLogin() {
-            document.querySelectorAll('.tab-link').forEach(btn => btn.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        // Utility functions
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
 
-            document.querySelector('.tab-link[data-tab="login"]').classList.add('active');
-            document.getElementById('login').classList.add('active');
+        function switchToLogin() {
+            document.querySelector('button[data-tab="login"]').click();
         }
     </script>
 </body>

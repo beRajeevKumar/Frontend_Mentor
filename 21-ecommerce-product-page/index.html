@@ -3,43 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
     <title>Frontend Mentor | E-commerce product page</title>
 
+    <style>
+      /* Basic reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Kumbh Sans', sans-serif;
+        line-height: 1.6;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        width: 100px;
+      }
+
+      .main-header .navbar .main-nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .main-header .navbar .main-nav-links li {
+        display: inline-block;
+      }
+
+      .main-header .navbar .main-nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .nav-images {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .cart-icon {
+        width: 24px;
+      }
+
+      .user-profile {
+        width: 40px;
+        border-radius: 50%;
+      }
+
+      /* Product Section */
+      .section-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+      }
+
+      .product-main-img {
+        position: relative;
+      }
+
+      .nav-btn {
+        position: absolute;
+        top: 50%;
+        background-color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+
+      #prev-btn {
+        left: -20px;
+      }
+
+      #next-btn {
+        right: -20px;
+      }
+
+      .product-imgs {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        justify-content: center;
+      }
+
+      .thumbnail {
+        cursor: pointer;
+        width: 70px;
+        border-radius: 10px;
+        border: 2px solid transparent;
+      }
+
+      .thumbnail:hover {
+        border: 2px solid hsl(26, 100%, 55%);
+      }
+
+      .section-text {
+        padding: 0 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .heading-tertiary {
+        color: hsl(26, 100%, 55%);
+        font-size: 14px;
+      }
+
+      .heading-primary {
+        font-size: 28px;
+        margin: 20px 0;
+      }
+
+      .text {
+        margin-bottom: 20px;
+        color: #777;
+      }
+
+      .amount {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .current-amount {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .discount {
+        background-color: hsl(25, 100%, 94%);
+        color: hsl(26, 100%, 55%);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      del {
+        color: #bbb;
+      }
+
+      .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .counter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .counter button {
+        background-color: hsl(26, 100%, 55%);
+        border: none;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .counter p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .addCartBtn {
+        background-color: hsl(26, 100%, 55%);
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .attribution {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 50px;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">
       <div class="header">
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <div class="navbar">
           <a href="#">
             <img class="logo" src="./images/logo.svg" alt="Logo" />
@@ -54,22 +225,14 @@
             </ul>
           </nav>
         </div>
-        
+
         <div class="nav-images">
           <img class="cart-icon" src="./images/icon-cart.svg" alt="Cart Icon" />
           <img class="user-profile" src="./images/image-avatar.png" alt="User Profile" />
         </div>
       </div>
-      <div class="mobile-nav" id="mobileNav">
-        <ul class="mobile-nav-links">
-          <li><a class="mobile-nav-link" href="#">Collections</a></li>
-          <li><a class="mobile-nav-link" href="#">Men</a></li>
-          <li><a class="mobile-nav-link" href="#">Women</a></li>
-          <li><a class="mobile-nav-link" href="#">About</a></li>
-          <li><a class="mobile-nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
     </header>
+
     <main>
       <section class="section-images">
         <div class="product-main-img">
@@ -81,41 +244,8 @@
           />
           <button id="next-btn" class="nav-btn">></button>
         </div>
-        <div class="product-imgs">
-          <figure class="product-item-img">
-            <img
-              src="./images/image-product-1-thumbnail.jpg"
-              alt="Thumbnail 1"
-              class="thumbnail"
-              data-full-image="./images/image-product-1.jpg"
-            />
-          </figure>
-          <figure class="product-item-img">
-            <img
-              src="./images/image-product-2-thumbnail.jpg"
-              alt="Thumbnail 2"
-              class="thumbnail"
-              data-full-image="./images/image-product-2.jpg"
-            />
-          </figure>
-          <figure class="product-item-img">
-            <img
-              src="./images/image-product-3-thumbnail.jpg"
-              alt="Thumbnail 3"
-              class="thumbnail"
-              data-full-image="./images/image-product-3.jpg"
-            />
-          </figure>
-          <figure class="product-item-img">
-            <img
-              src="./images/image-product-4-thumbnail.jpg"
-              alt="Thumbnail 4"
-              class="thumbnail"
-              data-full-image="./images/image-product-4.jpg"
-            />
-          </figure>
-        </div>
       </section>
+
       <section class="section-text">
         <h3 class="heading-tertiary">Sneaker Company</h3>
         <h1 class="heading-primary">Fall Limited Edition Sneakers</h1>
@@ -124,46 +254,96 @@
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
-    
+
         <div class="amount">
           <span class="current-amount">&dollar; 125.00</span>
           <span class="discount">50%</span>
         </div>
         <del>&dollar;250.00</del>
+
         <div class="btn-container">
           <div class="counter">
-            <button class="remove">
+            <button id="decrease" class="remove">
               <img src="./images/icon-minus.svg" alt="icon-minus" />
             </button>
-            <p class="count">0</p>
-            <button class="add">
+            <p id="quantity" class="count">0</p>
+            <button id="increase" class="add">
               <img src="./images/icon-plus.svg" alt="icon-plus" />
             </button>
           </div>
           <button class="addCartBtn">
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
-                fill="#fff"
-                fill-rule="nonzero"
-              ></path>
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Z"
+                fill="#FFF"
+              />
             </svg>
-            <span >Add to cart</span>
+            Add to Cart
           </button>
         </div>
       </section>
-    </main>
-    
-    <!--    $125.00 50% $250.00 0
-     -->
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.iamrajeev.me" target="_blank">Rajeev Kumar</a>.
-    </footer>
-    <script src="script.js"></script>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by Keshav Purohit.
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      // Image switching logic
+      const mainImage = document.getElementById('main-image');
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      let currentImageIndex = 0;
+      const imageUrls = [
+        './images/image-product-1.jpg',
+        './images/image-product-2.jpg',
+        './images/image-product-3.jpg',
+        './images/image-product-4.jpg'
+      ];
+
+      thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+          mainImage.src = imageUrls[index];
+          currentImageIndex = index;
+        });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        currentImageIndex =
+          (currentImageIndex - 1 + imageUrls.length) % imageUrls.length;
+        mainImage.src = imageUrls[currentImageIndex];
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+        mainImage.src = imageUrls[currentImageIndex];
+      });
+
+      // Quantity button logic
+      const decreaseBtn = document.getElementById('decrease');
+      const increaseBtn = document.getElementById('increase');
+      const quantityDisplay = document.getElementById('quantity');
+
+      let quantity = 0;
+
+      decreaseBtn.addEventListener('click', () => {
+        if (quantity > 0) {
+          quantity--;
+          quantityDisplay.textContent = quantity;
+        }
+      });
+
+      increaseBtn.addEventListener('click', () => {
+        quantity++;
+        quantityDisplay.textContent = quantity;
+      });
+    </script>
   </body>
 </html>
