@@ -17,7 +17,7 @@ const projects = [
     tags: ["HTML", "CSS"],
   },
   {
-    name: "05-intractive-rating",
+    name: "05-Interactive-Rating",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
