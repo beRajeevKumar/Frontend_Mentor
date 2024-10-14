@@ -1,7 +1,39 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #fefefe;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #a37070;
+  position: fixed;
+  width: 100%;
+}
+.navBar {
+  z-index: 6;
+}
+
+nav img {
+  width: 200px;
+  height: 70px;
+  margin-left: 2rem;
+
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: start;
+
 }
 
 .lists {
@@ -290,10 +322,15 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
+
+  padding: 0;
+  padding-top: 10rem;
+  text-align: center;
 }
 
-.list li {
-  background-color: #fff;
+ul li {
+  background-color: #a88c8c;
+
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
   margin: 20px;
   border-radius: 25px;
@@ -305,8 +342,10 @@ h2 {
   transition: 0.5s ease;
 }
 
-.list li a {
-  color: #000;
+
+ul li a {
+  color: #000000;
+
   text-decoration: none;
 }
 
@@ -345,6 +384,7 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 360px;
   font-size: 1.8rem;
   text-decoration: none;
   height: 35px;
@@ -353,7 +393,7 @@ h2 {
 }
 
 .links-container a.blue {
-  background-color: #34a0e9;
+  background-color: hsl(205, 35%, 13%);
 }
 
 .links-container a.youtube {
