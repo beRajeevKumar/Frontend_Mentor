@@ -108,10 +108,18 @@ I would recommend everyone to check out the official resources for HTML, CSS, an
 
 I would like to thank Frontend Mentor for providing such an amazing platform to practice my coding skills. I would also like to thank the community for providing feedback on my projects and helping me improve my coding skills. Additionally, I'm thankful to my go-to YouTube channels, official docs, Stack Overflow, Udemy courses, and especially the wonderful instructors whose guidance has been crucial throughout this journey.
 
----
+
+## Our Contributors
+
+- We truly appreciate your incredible contributions to this project! Your dedication and hard work are vital to its continued growth and success. If you’ve found value in it, don’t forget to show your support by giving our repository a star! ⭐
+
+<div align="center">
+  <a href="https://github.com/beRajeevKumar/Frontend_Mentor">
+    <img src="https://contrib.rocks/image?repo=beRajeevKumar/Frontend_Mentor&&max=1000&&cachebust=1" />
+  </a>
+</div>
 
 ### License
 This project is licensed under the [MIT LICENSE](./LICENSE).
-
 <hr>
 <h1 align=center>Happy Coding 👨‍💻</h1>
