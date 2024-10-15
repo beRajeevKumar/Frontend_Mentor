@@ -111,13 +111,9 @@ I would like to thank Frontend Mentor for providing such an amazing platform to 
 
 ### License
 
-# This project is licensed under the [MIT LICENSE](./LICENSE).
+This project is licensed under the [MIT LICENSE](./LICENSE).
 
-### License
-
-# This project is licensed under the [MIT LICENSE](./LICENSE).
-
-## Our Contributors
+### Our Contributors
 
 - We truly appreciate your incredible contributions to this project! Your dedication and hard work are vital to its continued growth and success. If you’ve found value in it, don’t forget to show your support by giving our repository a star! ⭐
 
