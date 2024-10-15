@@ -1,0 +1,117 @@
+/* Footer Styles */
+.footer {
+    background-color: #f4f4f9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    border-top: 4px solid #0077b6;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h1 {
+    font-size: 20px;
+    color: #0077b6;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #0077b6;
+  }
+  
+  .footer-section ul li i {
+    margin-right: 10px;
+  }
+  
+  .footer-section .socials a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #0077b6;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section .socials a:hover {
+    color: #ff4500;
+  }
+  
+  .footer-section .sub {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section .sub input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .footer-section .sub button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-section .sub button:hover {
+    background-color: #005f8f;
+  }
+  
+  .footer .border-list {
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  
+    .footer-section .sub {
+      flex-direction: column;
+    }
+  
+    .footer-section .sub input {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  
+    .footer-section .socials {
+      justify-content: center;
+    }
+  }
+  
