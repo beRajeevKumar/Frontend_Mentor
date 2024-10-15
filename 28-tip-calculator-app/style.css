@@ -1,0 +1,338 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  font-family: "Space Mono", monospace;
+  align-content: space-evenly;
+  justify-content: center;
+  background-color: hsl(185, 41%, 84%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.logo {
+  width: 80%;
+}
+
+article {
+  display: flex;
+  max-width: calc(100vw - 41%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.1rem;
+  border-radius: 1rem;
+  transition: all 0.2s linear;
+  gap: 3rem;
+}
+
+span, input, label {
+  display: block;
+  border: none;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  margin: 1rem 0 0 0;
+  padding-bottom: 2rem;
+}
+
+.btn button,
+.custom-percentage {
+  width: 100%;
+  grid-column: span 1;
+}
+
+.btn > button {
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-family: inherit;
+  letter-spacing: 2px;
+}
+.btn > button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.custom-percentage {
+  text-align: center;
+  font-family: inherit;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  outline: none;
+}
+.custom-percentage:active, .custom-percentage:focus {
+  border: 1px solid hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  caret-color: hsl(172, 67%, 45%);
+  font-size: inherit;
+}
+.custom-percentage:focus::-moz-placeholder {
+  color: transparent;
+}
+.custom-percentage:focus::placeholder {
+  color: transparent;
+}
+.custom-percentage:not(:-moz-placeholder-shown) {
+  color: hsl(183, 100%, 15%);
+}
+.custom-percentage:not(:placeholder-shown) {
+  color: hsl(183, 100%, 15%);
+}
+
+.custom-percentage::-moz-placeholder {
+  font-size: inherit;
+}
+
+.custom-percentage::placeholder {
+  font-size: inherit;
+}
+
+.input-field {
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 5px;
+  background-color: hsl(189, 41%, 97%);
+  padding-top: 0.5rem;
+  outline: none;
+}
+.input-field:active, .input-field:focus {
+  border: 1px solid hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  caret-color: hsl(172, 67%, 45%);
+  font-size: inherit;
+}
+.input-field:focus::-moz-placeholder {
+  color: transparent;
+}
+.input-field:focus::placeholder {
+  color: transparent;
+}
+.input-field:not(:-moz-placeholder-shown) {
+  color: hsl(183, 100%, 15%);
+}
+.input-field:not(:placeholder-shown) {
+  color: hsl(183, 100%, 15%);
+}
+
+.placeholder-error {
+  border: 1px solid red;
+}
+.placeholder-error:active {
+  border-color: 1px solid red;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.billInput {
+  margin-bottom: 1.5rem;
+}
+
+.billLabel, .countLabel, .tipLabel {
+  font-size: 0.8em;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+.tipLabel {
+  padding-top: 0.5rem;
+}
+
+.countLabel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.error-text {
+  text-align: right;
+  color: red;
+  font-size: inherit;
+}
+
+.svg {
+  width: 11px;
+  height: 17px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group .svg {
+  position: absolute;
+  top: 65%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.resetBtn {
+  width: 100%;
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(186, 14%, 43%);
+  color: hsl(184, 14%, 56%);
+}
+.resetBtn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.perHead_1, .perHead_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perHead {
+  color: hsl(185, 41%, 84%);
+  font-weight: 700;
+  padding: 0 0 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.perHead_2 {
+  padding-bottom: 3.5rem;
+}
+
+.person {
+  font-weight: 400;
+  color: hsl(186, 14%, 43%);
+}
+
+.amount {
+  font-weight: 800;
+  color: hsl(172, 67%, 45%);
+  font-size: 2.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1200px) {
+  article {
+    max-width: calc(100vw - 36%);
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  article {
+    flex-direction: column;
+    max-width: calc(100vw - 30%);
+    margin-bottom: 2rem;
+  }
+  .logo {
+    margin-top: 1rem;
+  }
+  .right, .left {
+    height: 50%;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  article {
+    flex-direction: column;
+    max-width: 100vw;
+    margin-bottom: 2rem;
+  }
+  .logo {
+    margin-top: 1rem;
+  }
+  .right, .left {
+    height: 50%;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .custom-percentage::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .custom-percentage::placeholder {
+    font-size: 1rem;
+  }
+}
+/*# sourceMapping
+URL=style.css.map *//*# sourceMappingURL=style.css.map */

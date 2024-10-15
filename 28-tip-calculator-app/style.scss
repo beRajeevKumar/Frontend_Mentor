@@ -1,0 +1,338 @@
+
+// Color Variables
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// Mixin for Input Styles
+@mixin input-style {
+  &:active, &:focus {
+    border: 1px solid $strong-cyan;
+    color: $very-dark-cyan;
+    caret-color: $strong-cyan;
+    font-size: inherit;
+  }
+  
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  font-family: "Space Mono", monospace;
+  align-content: space-evenly;
+  justify-content: center;
+  background-color: $light-grayish-cyan;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.logo {
+  width: 80%;
+}
+
+article {
+  display: flex;
+  max-width: calc(100vw - 41%);
+  background-color: $white;
+  padding: 2.1rem;
+  border-radius: 1rem;
+  transition: all 0.2s linear;
+  gap: 3rem;
+}
+
+span, input, label {
+  display: block;
+  border: none;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  background-color: $very-dark-cyan;
+  border-radius: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  margin: 1rem 0 0 0;
+  padding-bottom: 2rem;
+}
+
+.btn button,
+.custom-percentage {
+  width: 100%;
+  grid-column: span 1;
+}
+
+.btn > button {
+  border: none;
+  background-color: $very-dark-cyan;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: $white;
+  font-family: inherit;
+  letter-spacing: 2px;
+  
+  &:hover {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+  }
+}
+
+.custom-percentage {
+  text-align: center;
+  font-family: inherit;
+  background-color: $very-light-grayish-cyan;
+  color: $dark-grayish-cyan;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  outline: none;
+  @include input-style;
+  
+  &:not(:placeholder-shown) {
+    color: $very-dark-cyan;
+  }
+}
+
+.custom-percentage::placeholder {
+  font-size: inherit;
+}
+
+.input-field {
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 5px;
+  background-color: $very-light-grayish-cyan;
+  padding-top: 0.5rem;
+  outline: none;
+  @include input-style;
+  
+  &:not(:placeholder-shown) {
+    color: $very-dark-cyan;
+  }
+}
+
+.placeholder-error {
+  border: 1px solid red;
+  
+  &:active {
+    border-color: 1px solid red;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.billInput {
+  margin-bottom: 1.5rem;
+}
+
+.billLabel, .countLabel, .tipLabel {
+  font-size: 0.8em;
+  color: $dark-grayish-cyan;
+  font-weight: 700;
+}
+
+.tipLabel {
+  padding-top: 0.5rem;
+}
+
+.countLabel {
+  display: flex;
+  align-items: center;
+  position:
+
+ relative;
+  justify-content: space-between;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.error-text {
+  text-align: right;
+  color: red;
+  font-size: inherit;
+}
+
+.svg {
+  width: 11px;
+  height: 17px;
+  object-fit: contain;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group .svg {
+  position: absolute;
+  top: 65%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.resetBtn {
+  width: 100%;
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background-color: $dark-grayish-cyan;
+  color: $grayish-cyan;
+
+  &:hover {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+  }
+}
+
+.perHead_1, .perHead_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perHead {
+  color: $light-grayish-cyan;
+  font-weight: 700;
+  padding: 0 0 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.perHead_2 {
+  padding-bottom: 3.5rem;
+}
+
+.person {
+  font-weight: 400;
+  color: $dark-grayish-cyan;
+}
+
+.amount {
+  font-weight: 800;
+  color: $strong-cyan;
+  font-size: 2.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (max-width:1200px) {
+  article {
+    max-width: calc(100vw - 36%);
+  }
+}
+
+
+@media (min-width:500px) and (max-width: 768px) {
+  article{
+    flex-direction: column;
+    max-width: calc(100vw - 30%);
+    margin-bottom: 2rem;
+  }
+  .logo{
+    margin-top: 1rem;
+  }
+  .right, .left{
+    height: 50%;
+    width: 100%;
+  }
+}
+
+
+  @media (max-width: 500px){
+    article{
+      flex-direction: column;
+      max-width: 100vw;
+      margin-bottom: 2rem;
+    }
+    .logo{
+      margin-top: 1rem;
+    }
+    .right, .left{
+      height: 50%;
+      width: 100%;
+    }
+  }
+  @media  (max-width: 320px) {
+    .custom-percentage::placeholder{
+      font-size: 1rem;
+    }
+  }
+/*# sourceMapping
+URL=style.css.map */
