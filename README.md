@@ -119,5 +119,9 @@ I would like to thank Frontend Mentor for providing such an amazing platform to 
   </a>
 </div>
 
+### License
+
+This project is licensed under the [MIT LICENSE](./LICENSE).
+
 <hr>
 <h1 align=center>Happy Coding 👨‍💻</h1>
