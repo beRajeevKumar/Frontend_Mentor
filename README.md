@@ -67,6 +67,20 @@ By consistently investing in my development and exploring new technologies, I wi
 
 ### Useful Resources & Courses
 
+## ⚙️ How to get started with the code 
+
+1. Fork the repository
+2. Clone it on ur local Machine:
+    git clone https://github.com/Your_Github_username/Frontend_Mentor.git
+3. Create New Branch:
+    git branch -c "New Branch Name"
+4. Navigate to the New Branch:
+    git checkout"New Branch Name"
+5. Make your changes and Commit them:
+    git commit -m "Add Some feature"
+6. Push the Branch:
+    git push origin New Branch 
+7. Open Pull requestto main Repository and Submit.
 - **Courses**
 
   - [Course 01](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/) - This is an amazing course which helped me finally understand HTML, CSS & Responsive Design.
@@ -74,7 +88,7 @@ By consistently investing in my development and exploring new technologies, I wi
   - [Course 03](https://www.udemy.com/course/the-complete-javascript-course/) - This is an amazing course which helped me Master JavaScript.
   - [Course 04](https://www.udemy.com/course/the-ultimate-react-course/) - This is an amazing course which helped me Master ReactJs, NextJs, TailwindCSS.
 
-- **Resources**
+- **Resources** 
 
   - [Resource 01](https://developer.mozilla.org/en-US/docs/Learn/HTML) - This is an amazing articles which helped me finally understand HTML.
   - [Resource 02](https://developer.mozilla.org/en-US/docs/Learn/CSS) - This is an amazing articles which helped me finally understand CSS.
@@ -93,6 +107,11 @@ I would recommend everyone to check out the official resources for HTML, CSS, an
 ## Acknowledgments
 
 I would like to thank Frontend Mentor for providing such an amazing platform to practice my coding skills. I would also like to thank the community for providing feedback on my projects and helping me improve my coding skills. Additionally, I'm thankful to my go-to YouTube channels, official docs, Stack Overflow, Udemy courses, and especially the wonderful instructors whose guidance has been crucial throughout this journey.
+
+---
+
+### License
+This project is licensed under the [MIT LICENSE](./LICENSE).
 
 <hr>
 <h1 align=center>Happy Coding 👨‍💻</h1>
