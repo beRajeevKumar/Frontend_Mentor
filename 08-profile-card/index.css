@@ -131,6 +131,25 @@ body {
   color: hsl(228, 53%, 18%);
   padding-bottom: 10px;
 }
+
+
+@media (max-width: 768px) {
+  .bg-top,
+  .bg-bottom {
+    width: 80vw;
+  }
+  .bg-top {
+    top: 100px;
+    left: 0;
+  }
+  
+  .bg-bottom {
+    bottom: 100px;
+    right: 0;
+  }
+
+}
+
 @media (max-width: 375px) {
   html {
     font-size: 50%;
@@ -138,4 +157,12 @@ body {
   .container {
     margin: 1rem;
   }
+  .bg-top,
+  .bg-bottom {
+    width: 90vw;
+  }
 }
+
+
+
+
