@@ -169,7 +169,7 @@
                 width: var(--arrow-width);
                 background: var(--primary-color);
                 height: var(--arrow-stroke);
-                position: relative;
+                position: absolute;
                 transition: 0.2s;
             }
             
