@@ -1,3 +1,30 @@
+//toggle button: 
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
+
+// Scroll-to-Top Button Functionality
+const scrollUpBtn = document.querySelector('.scroll-up-btn');
+
+// Show the button when the user scrolls down 100px
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        scrollUpBtn.style.display = 'block';
+    } else {
+        scrollUpBtn.style.display = 'none';
+    }
+});
+
+// Scroll to top smoothly when the button is clicked
+scrollUpBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
 "use strict";
 const projects = [
   {
