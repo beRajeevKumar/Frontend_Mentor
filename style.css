@@ -922,3 +922,48 @@ input {
 .panel p{
   padding-top: 5px;
 }
+
+
+
+
+
+/* Ensuring that the navbar items are scrollable on small screens */
+.navbar-collapse {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px;
+    max-height: 100vh; /* Max height to avoid overflow */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+  }
+  
+  /* Centering the navbar items and ensuring visibility on small screens */
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0; /* Add space between navbar items */
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background-color: #e0e0e0;
+      height: 100vh; /* Ensuring full height on small screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-collapse {
+      background-color: #d3d3d3;
+      height: 100vh; /* Full height for mobile view */
+    }
+  
+    .navbar-nav {
+      text-align: center; /* Centering the items */
+      padding-bottom: 20px;
+    }
+  }
+  
