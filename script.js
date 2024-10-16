@@ -6,7 +6,7 @@ const projects = [
   },
   {
     name: "02-qr-code-component",
-    tags: ["HTML","CSS", "JavaScript"],
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "03-social-proof",
@@ -41,10 +41,8 @@ const projects = [
     tags: ["HTML", "CSS"],
   },
   {
-
     name: "11-Order-summery-component",
     tags: ["HTML", "CSS"],
-
   },
   {
     name: "12-Huddle-comm-page",
@@ -87,15 +85,24 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
-    name: "23-Weather-App",
-    tags: ["HTML", "CSS", "JavaScript", "API",],
+    name: "22-url-shortening",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+  },
+  {
+    name: "23-login-signup",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
     name: "24-joke-generator",
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    name: "23-login-signup",
+    name: "25-contact-form",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+  },
+  {
+    name: "26-checkers-game",
+    tags: ["HTML", "CSS", "JavaScript", "CDN"],
   },
 ];
 
@@ -103,7 +110,9 @@ const list = document.getElementById("list");
 
 projects.forEach(({ name }, i) => {
   const listItem = document.createElement("li");
-  const tags = projects[i].tags.map(tag => `<span class="tag">${tag}</span>`).join(" ");
+  const tags = projects[i].tags
+    .map((tag) => `<span class="tag">${tag}</span>`)
+    .join(" ");
   listItem.innerHTML = `
     <a href="./${name}/index.html" target="_blank">
       <img src="./${name}/design/desktop-design.jpg" alt="${name}" />
@@ -128,7 +137,6 @@ function formatProjectName(name) {
     .join(" ");
 }
 
-
 // FAQs Section Script
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -144,4 +152,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
