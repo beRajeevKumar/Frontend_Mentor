@@ -24,9 +24,7 @@
 
 <body>
 
-  <!-- <nav class="navbar navbar-expand-lg bg-body-white">
-=======
-     Scroll-to-Top Button -->
+
 
 
   <nav class="navbar navbar-expand-lg bg-body-white">
@@ -34,17 +32,7 @@
     <div class="container-fluid">
       <a href="/"><img src="logo.png" alt="Logo" width="100%" height="84" /> </a>
 
-      <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
+   
       <div id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -80,7 +68,7 @@
     <ul id="list" class="list"></ul>
   </section>
 
-  <!-- FAQs Section -->
+  
   <section class="faq-section">
     <h2>FAQs</h2>
     <div class="faq">
@@ -207,12 +195,11 @@
   <script src="script.js"></script>
   <script>
 
-    // GSAP Animations
+  
     gsap.from(".navbar", { opacity: 0, y: -50, duration: 1.5, ease: "power3.out" });
     gsap.from(".scroll-up-btn", { opacity: 0, duration: 2, ease: "power2.out", delay: 1 });
     gsap.from("img", { rotation: 360, duration: 1, ease: "power2.out" });
 
-    // Navbar items animation
     gsap.utils.toArray(".navbar-nav .nav-item").forEach((item, index) => {
       gsap.from(item, {
         x: -50,
@@ -223,7 +210,7 @@
       });
     });
 
-    // Section Titles Animation
+ 
     gsap.utils.toArray("section h2").forEach((title) => {
       gsap.from(title, {
         scrollTrigger: {
@@ -238,7 +225,6 @@
       });
     });
 
-    // Project List Items Animation
     gsap.utils.toArray("#list li").forEach((item, index) => {
       gsap.from(item, {
         scrollTrigger: {
@@ -255,7 +241,6 @@
       });
     });
 
-    // Accordion Animation
     const accordions = document.querySelectorAll(".accordion");
     accordions.forEach((accordion) => {
       accordion.addEventListener("click", function () {
@@ -269,7 +254,6 @@
       });
     });
 
-    // Footer Social Icons Hover Animation
     const socials = document.querySelectorAll(".socials a");
     socials.forEach((icon) => {
       icon.addEventListener("mouseover", () => {
@@ -280,7 +264,6 @@
       });
     });
 
-    // Scroll-based animation for the FAQs and sections
     gsap.utils.toArray(".faq, .footer-section").forEach((element) => {
       gsap.from(element, {
         scrollTrigger: {
