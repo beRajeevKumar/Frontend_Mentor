@@ -26,30 +26,31 @@ body {
 
 .bg-top {
   position: absolute;
-  top: -50%;
-  left: -20%;
+  top: -25vh; 
+  left: 2vw;
   z-index: -1;
-  max-width: 100%;
+  max-width: 40vw;
 }
 
 .bg-bottom {
   position: absolute;
-  bottom: -50%;
-  right: -20%;
+  bottom: -10vh; 
+  right: 2vw;
   z-index: -1;
-  max-width: 100%;
+  max-width: 40vw; 
 }
 
 .container {
   background-color: #fff;
-  /* width: 100%; */
   max-width: 50rem;
   border-radius: 10px;
 }
-.container:hover{
+
+.container:hover {
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
+
 .container article:first-child {
   position: relative;
 }
@@ -123,7 +124,7 @@ body {
   margin-top: 1rem;
   color: #fff;
 }
-.name{
+.name {
   padding-bottom: 7px;
 }
 
@@ -131,11 +132,45 @@ body {
   color: hsl(228, 53%, 18%);
   padding-bottom: 10px;
 }
+
+@media (max-width: 1316px) {
+  .bg-top {
+    top: -25vh; 
+    left: 2vw;
+    max-width: 50vw; 
+  }
+  
+  .bg-bottom {
+    bottom: -10vh;
+    right: 2vw;
+    max-width: 50vw;
+  }
+}
+
+/* For screens below 946px */
+@media (max-width: 946px) {
+  .bg-top {
+    top: 0%; 
+    left: 2vw;
+    max-width: 65vw;
+  }
+
+  .bg-bottom {
+    bottom: 0%; 
+    right: 2vw;
+    max-width: 65vw;
+  }
+}
+
 @media (max-width: 375px) {
   html {
     font-size: 50%;
   }
   .container {
     margin: 1rem;
+  }
+
+  .bg-top, .bg-bottom {
+    max-width: 100vw; 
   }
 }
