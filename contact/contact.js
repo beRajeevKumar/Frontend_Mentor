@@ -1,6 +1,6 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     // Basic form validation
     let firstName = document.getElementById('firstName').value;
     let lastName = document.getElementById('lastName').value;
@@ -36,3 +36,6 @@ function isValidEmail(email) {
 function isValidPhone(phone) {
     return /^\+?[\d\s-]{10,}$/.test(phone);
 }
+
+    e.preventDefault(); //
+    alert('Thank you for submitting!'); 
