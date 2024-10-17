@@ -95,6 +95,10 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
+    name: "26-responsive-restaurant-website",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     name: "23-login-signup",
   },
 ];
