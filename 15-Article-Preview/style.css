@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -52,7 +52,7 @@ body {
   /* color: hsl(214, 17%, 51%); */
   color: hsl(212, 23%, 69%);
   line-height: 1.4;
-}
+ }
 .author-img {
   width: 4.8rem;
   height: 4.8rem;
@@ -141,7 +141,7 @@ body {
     margin: 1rem;
   }
   .share__media {
-    top: 79%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
@@ -154,4 +154,8 @@ body {
   .triangle {
     display: none;
   }
-}
+} 
+
+
+ 
+
