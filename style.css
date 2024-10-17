@@ -10,12 +10,16 @@
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    height: 64px;
-    border-bottom: 1px solid #2e2e2e;
-    padding: 0 80px;
-    margin: 0 50px;
+    
+    position: fixed;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+
+    
+    
+   
   }
   
     .logo {
@@ -29,12 +33,15 @@
         .logo a {
             text-decoration: none;
             color:#2bb4f1;
+            display: flex;
+            flex-direction: column;
             font-weight: 700;
             font-size: 20px;
             letter-spacing: 2px;
             padding-top: 2px;
-            margin-left: 5px;
+            padding-left: 330px;
             line-height: 25px;
+            align-items: center;
             cursor: pointer;
         }
     .navbar-function {
@@ -42,14 +49,12 @@
         align-items: center;
         flex: 1;
         justify-content: space-between;
-    }
-        .nav-elements {
-            width: 350px;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            padding-left: 50px;
-        }
+      }
+    .nav-elements {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;  /* Aligns elements to the right */
+      }
             .dropdown {
                 position: relative;
                 cursor: pointer;
@@ -66,7 +71,7 @@
                 translate: 0 2px;
             }
             .menu {
-                position: absolute;
+                position: relative;
                 top: 60px;
                 right: -20px;
                 width: 180px;
@@ -76,7 +81,7 @@
                 display: grid;
                 /* background: #121212; */
                 opacity: 0;
-                visibility: hidden;
+                visibility: inherit;
                 transition: 0.3s;
             }
             .dropdown:hover .menu {
@@ -98,7 +103,7 @@
             .menu > a {
                 padding: 12px 20px;
                 font-size: 14px;
-                text-decoration: none;
+                text-decoration: block;
             }
             .menu > a:hover {
                 background: #2e2e2e;
@@ -399,7 +404,7 @@ h2 {
 
 .footer {
     width: 100%;
-    padding: 30px 20%;
+    padding: 40px 100px;
     background-color: #f6f5fa;
     font-family: 'futura';
     display: flex;
@@ -417,7 +422,7 @@ h2 {
 }
 
 
-.footer-list {
+.footer-list ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -427,8 +432,12 @@ h2 {
 .footer-list li a {
     color: black;
     text-decoration: none;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
 
 }
+
 
 .border-list {
     margin-top: 20px;
@@ -442,7 +451,7 @@ h2 {
     display: flex;
     font-size: 20px;
     column-gap: 30px;
-
+    
 }
 
 .socials a {
@@ -476,7 +485,7 @@ h2 {
 .sub {
     margin-top: 2px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
 }
 
@@ -536,7 +545,7 @@ input {
     }
 
     .footer-section {
-        width: 100%;
+        width: auto;
 
     }
 
@@ -582,6 +591,7 @@ input {
 .contact-email:hover {
     text-decoration: underline;
 }
+
 
 /* About Section Styles */
 .about-section {
