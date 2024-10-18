@@ -122,8 +122,11 @@ body {
 }
 
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;          /* Center items vertically */
+    width: 60vw;
+    display: flex;
+    margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 8px;
@@ -140,7 +143,9 @@ hr {
 }
 
 .form {
+height: fit-content;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -223,7 +228,7 @@ align-items:flex-end;
 }
 .container{
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
 
 }
 .form-container{
