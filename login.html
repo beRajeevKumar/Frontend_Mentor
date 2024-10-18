@@ -121,25 +121,25 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Sign In</h1>
-        <form id="signinForm">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter Email" required>
-                <div class="error" id="emailError"></div>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                <div class="error" id="passwordError"></div>
-            </div>
+    <form id="signinForm" class="signinform-container">
+        <div class="container">
+           
+           
+            
+           <div class="signinform">
+            <h1>Sign In</h1>
+           <div class="form-fields">
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" autocomplete="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" autocomplete="new-password" id="psw" required>
+        </div>
+
             <div class="buttons">
                 <button type="button" class="cancelbtn">Cancel</button>
                 <button type="submit" class="signinbtn">Sign In</button>
             </div>
-        </form>
-    </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";

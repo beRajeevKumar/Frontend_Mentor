@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #4a90e2;
     --secondary-color: #f5f5f5;
@@ -111,3 +112,254 @@ button {
         flex-direction: column;
     }
 }
+=======
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    width: 48%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.signupbtn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.signupbtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancelbtn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.image-container{
+   display: flex;
+align-items:flex-end;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.form-container{
+background-color: #B7E0FF;  
+  justify-content: center;
+    display: flex;
+     align-items: center;
+     width:100vw;
+     height:100vh;
+     
+ 
+ }
+ .signinform-container{
+    
+    background-color: #D3E2FA;  
+  justify-content: center;
+    display: flex;
+     align-items: center;
+     width:100vw;
+     height:100vh;
+     
+ 
+ }
+
+ .form-fields{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+   gap:5px;
+    
+ }
+ .buttons{
+     margin-top: 10px;
+ }
+ h1{
+     font-size: 2rem;
+     color:#091057;
+ }
+ label{
+     font-size: 1rem;
+ }
+ .form{
+background-color:white;
+display: flex;
+     flex-direction: column;
+     gap:20px;
+     align-items: center;
+      justify-content: center;
+    border-radius: 10px;
+     width:30vw;
+     height:80vh;
+ padding-inline:30px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ }
+ .signinform{
+    background-color:white;
+    display: flex;
+         flex-direction: column;
+         gap:30px;
+         align-items: center;
+          justify-content: center;
+         width:30vw;
+         height:80vh;
+     padding-inline:30px;
+     box-shadow: rgba(255, 116, 143, 0.4) 5px 5px, rgba(255, 116, 143, 0.3) 10px 10px, rgba(255, 116, 143, 0.2) 15px 15px, rgba(255, 116, 143, 0.1) 20px 20px, rgba(255, 116, 143, 0.05) 25px 25px;
+    
+     }
+ input{
+     padding:12px;
+     width:100%;
+     margin-bottom:20px;
+     border-radius: 8px;
+    border:2px solid #9bd1fa
+    
+ }
+ label{
+    color:#093d82;
+ }
+ button{
+     padding:10px;
+     background: #fff;
+     width:9vw;
+     border-radius: 10px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     border-style:none;
+     
+ }
+
+ .cancelbtn{
+    background-color: rgb(249, 89, 89);
+    border:2px solid rgb(249, 89, 89);
+    color:white;
+    
+ }
+ .cancelbtn:hover{
+    background-color: red;
+    border:2px solid red;
+    cursor: pointer;
+    font-weight: bold;
+ }
+.buttons{
+    display: flex;
+    gap:12px;
+}
+
+.signupbtn{
+    background-color:#091057;
+    border:2px solid #091057;
+    color:white;
+}
+.signupbtn:hover{
+    cursor: pointer;
+    background-color: white;
+    border:2px solid #091057;
+    color:#091057;
+    font-weight: bold;
+}
+
+.signinimage-container{
+    background: #fff;
+    width:50%;
+
+}
+.sign-in-img{
+    width:100%;
+    height: 100%; 
+}
+.signinbtn{
+    background-color: #4F6BFC;
+    color:white;
+}
+.signinbtn:hover{
+    color: #4F6BFC;
+    background-color:white;
+    border:2px solid #4F6BFC ;
+    font-weight: bold;
+    cursor:pointer;
+}
+
