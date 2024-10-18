@@ -30,13 +30,71 @@ const projects = [
 
 // Menu toggle functionality
 const menuToggle = document.querySelector(".menu-toggle");
-const navbarFunction = document.querySelector(".navbar-function");
-
+const navbarFunction = document.querySelector(".navbar-funct
+  },
+  {
+    name: "12-Huddle-comm-page",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "13-stat-preview-card",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "14-Huddle-landing-page",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "15-Article-Preview",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "16-base-apparel-coming-soon",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "17-advice-generator-app",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "18-chat-app-css-illustration",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "19-news-homepage",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "20-testimonials-grid-section",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "21-ecommerce-product-page",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "23-Weather-App",
+    tags: ["HTML", "CSS", "JavaScript", "API",],
+  },
+  {
+    name: "24-joke-generator",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+  },
+  {
+    name: "26-responsive-restaurant-website",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "23-login-signup",
+  },
+];
+=======
 if (menuToggle && navbarFunction) {
   menuToggle.addEventListener("click", () => {
     navbarFunction.classList.toggle("active"); // Toggle class to show/hide nav
   });
 }
+
 
 // Populate the list of projects dynamically
 const list = document.getElementById("list");
