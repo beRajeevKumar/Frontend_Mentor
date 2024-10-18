@@ -68,6 +68,7 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   border: none;
+  margin-left: 10px;
 }
 
 .btn-1 {
