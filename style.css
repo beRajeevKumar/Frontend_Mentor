@@ -453,27 +453,41 @@ h2 {
     font-size: 1.1rem;
     margin-bottom: 10px;
     border-radius: 5px;
-  }
-  
-  .accordion:hover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:hover {
     background-color: #0056b3;
-  }
-  
-  .panel {
+}
+
+.accordion .icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the accordion is open */
+.accordion.active .icon {
+    transform: rotate(45deg); /* Rotate "+" to "x" */
+}
+
+.panel {
     padding: 0 18px;
     background-color: #f1f1f1;
     display: none;
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-  
-  .panel p {
+}
+
+.panel p {
     padding: 15px;
     margin: 0;
     line-height: 1.6;
-  }
-  
+}
+
   /* Responsive styling */
   @media (max-width: 768px) {
     h2 {
