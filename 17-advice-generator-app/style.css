@@ -54,6 +54,12 @@ body {
   box-shadow: 0 0.1rem 2rem hsl(150, 100%, 66%);
   transition: all 0.5s;
 }
+.loading{
+  margin: auto;
+  width: 100px;
+  height: 80px;
+  display: none; 
+}
 @media (max-width: 40em) {
   html {
     font-size: 50%;
