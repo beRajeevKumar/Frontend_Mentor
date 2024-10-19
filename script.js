@@ -23,9 +23,10 @@ const projects = [
   { name: "19-news-homepage", tags: ["HTML", "CSS"] },
   { name: "20-testimonials-grid-section", tags: ["HTML", "CSS"] },
   { name: "21-ecommerce-product-page", tags: ["HTML", "CSS", "JavaScript"] },
-  { name: "22-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
-  { name: "23-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
-  { name: "24-login-signup" },
+  { name: "22-url-shortening", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "23-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "24-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "25-contact-form",tags:["HTML", "CSS", "JavaScript"] },
   { name: "26-CSS-Animations", tags: ["HTML", "CSS"] }
 ];
 
