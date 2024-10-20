@@ -122,6 +122,13 @@ This project is licensed under the [MIT LICENSE](./LICENSE).
     <img src="https://contrib.rocks/image?repo=beRajeevKumar/Frontend_Mentor&&max=1000&&cachebust=1" />
   </a>
 </div>
+<div align="right">
+<p style="font-size: 14px; color: #555; margin-top: 20px;">
+    <a href="#readme-top" style="text-decoration: none; color: #007bff; font-weight: bold;">
+        Back to Top ↑
+    </a>
+</p>
+</div>
 
 <hr>
 <h1 align=center>Happy Coding 👨‍💻</h1>
