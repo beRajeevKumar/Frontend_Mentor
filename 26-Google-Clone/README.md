@@ -15,7 +15,8 @@ A simple replica of the Google homepage with search functionality built using HT
 
 ## Demo
 
-![Google Clone Screenshot](screenshot.png)  
+![image](https://github.com/user-attachments/assets/12896a60-591a-4bad-a1fb-97650187b5d9)
+  
 This project replicates the basic UI of Google Search. Check it out by opening the `index.html` file locally in your browser.
 
 ## Features
