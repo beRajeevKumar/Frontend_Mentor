@@ -42,7 +42,7 @@ const projects = [
   },
   {
 
-    name: "11-Order-summery-component",
+    name: "11-Order-summary-component",
     tags: ["HTML", "CSS"],
 
   },
@@ -95,7 +95,15 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    name: "23-login-signup",
+    name:"25-contact-form",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name:"26-product-list-with-cart",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "login-signup",
   },
 ];
 
