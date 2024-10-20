@@ -87,7 +87,11 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
-    name: "23-Weather-App",
+    name: "22-url-shortening",
+    tags: ["HTML", "CSS", "JavaScript",],
+  },
+  {
+    name: "23-login-signup",
     tags: ["HTML", "CSS", "JavaScript", "API",],
   },
   {
@@ -95,16 +99,19 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    name:"25-contact-form",
+    name:"25-Weather-app",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
-    name:"26-product-list-with-cart",
+    name:"26-contact-form",
     tags: ["HTML", "CSS", "JavaScript"],
   },
+  
   {
-    name: "login-signup",
+    name:"27-product-list-with-cart",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
+  
 ];
 
 const list = document.getElementById("list");
