@@ -28,6 +28,8 @@ const projects = [
   { name: "24-login-signup" },
   { name:"26-guess-the-number-game",tags:["HTML","CSS","JavaScript"]}
 ];
+    name: "11-Order-summary-component",
+    tags: ["HTML", "CSS"],
 
 // Menu toggle functionality
 const menuToggle = document.querySelector(".menu-toggle");
