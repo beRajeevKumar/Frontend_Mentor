@@ -67,18 +67,18 @@ Guess-the-Number-Game/
 
 Include screenshots of different states (e.g., game home page, game interface, correct input and game over message) to give users a visual understanding of the game's functionality.
 ### Game Homepage
-![Game Homepage](./screenshots/homepage.png)
+![Game Homepage](./design/design-desktop.png)
 ### Game Interface (Hard & Easy)
-![Hard Mode](./screenshots/hard-1.png)
-![Easy Mode](./screenshots/easy-1.png)
+![Hard Mode](./design/hard-1.png)
+![Easy Mode](./design/easy-1.png)
 ### High Input
-![High](./screenshots/high.png)
+![High](./design/high.png)
 ### Low Input
-![Low](./screenshots/low.png)
+![Low](./design/low.png)
 ### Correct Input Message (Winning the game) and Interface
-![Correct Input](./screenshots/correct.png)
+![Correct Input](./design/correct.png)
 ### Game Over Message (Losing the game) and Interface 
-![Game Over](./screenshots/loose.png)
+![Game Over](./design/loose.png)
 
 
 ## Contributing
