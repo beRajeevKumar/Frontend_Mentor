@@ -26,13 +26,95 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Projects | Rajeev</title>
+    <style>
+      .chatbot-container {
+          position: fixed;
+          bottom: 20px; /* Adjust as needed */
+          right: 20px; /* Adjust as needed */
+          z-index: 1000; /* Ensure it appears above other elements */
+      }
+
+      .chatbot-button {
+          background-color: #007bff; /* Change to your preferred color */
+          border: none;
+          border-radius: 50%;
+          padding: 5px; /* Smaller padding */
+          cursor: pointer;
+          position: relative;
+          width: 50px; /* Adjusted size */
+          height: 50px; /* Adjusted size */
+      }
+
+      .chatbot-button img {
+          width: 30px; /* Adjusted image size */
+          height: 30px; /* Adjusted image size */
+      }
+
+      .tooltip-text {
+          display: none; /* Hide by default */
+          position: absolute;
+          bottom: 100%; /* Position above the button */
+          right: 50%;
+          transform: translateX(50%);
+          background-color: #333; /* Background color for tooltip */
+          color: #fff; /* Tooltip text color */
+          padding: 5px;
+          border-radius: 5px;
+          white-space: nowrap; /* Prevent text from wrapping */
+      }
+
+      .chatbot-button:hover .tooltip-text {
+          display: block; /* Show on hover */
+      }
+
+      .scroll-up-btn {
+          position: fixed;
+          bottom: 20px; /* Adjust position */
+          right: 80px; /* Adjust position to create space between buttons */
+          background-color: #007bff; /* Change to your preferred color */
+          border: none;
+          border-radius: 50%;
+          padding: 3px;
+          cursor: pointer;
+          z-index: 1000; /* Ensure it appears above other elements */
+      }
+
+      .scroll-up-btn i {
+          color: white; /* Icon color */
+          font-size: 20px; /* Adjust icon size */
+      }
+
+      .button-container {
+          position: fixed;
+          bottom: 20px; /* Align with buttons */
+          right: 20px; /* Align with buttons */
+          display: flex; /* Use flexbox for alignment */
+          gap: 10px; /* Space between buttons */
+          z-index: 1000; /* Ensure it appears above other elements */
+      }
+    </style>
   </head>
   <body>
 
     <!-- Scroll-to-Top Button -->
-    <button class="scroll-up-btn">
-      <i class="arrow-up"></i>
-    </button>
+    <div class="button-container">
+      <button class="scroll-up-btn">
+        <i class="arrow-up"></i> <!-- Use a simple up arrow for demonstration -->
+      </button>
+
+      <!-- Chatbot Container -->
+      <a href="chatbot.html">
+        <div class="chatbot-container">
+          <button class="chatbot-button group">
+            <img class="h-20" src="chatbot.gif" alt="chatbot">
+            <span class="tooltip-text">
+              Welcome to Frontend Mentor! <br>
+              How can I help You? ^_^ 
+            </span>
+          </button>
+        </div>
+      </a>
+    </div>
 
     <!-- Header with Navbar -->
     <nav class="navbar">
@@ -62,8 +144,6 @@
       </div>
   </nav>
 
-    
-  
     <!-- Main Content -->
     <main>
       <section>
