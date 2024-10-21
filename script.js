@@ -25,7 +25,8 @@ const projects = [
   { name: "21-ecommerce-product-page", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "22-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "23-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
-  { name: "24-login-signup" }
+  { name: "24-login-signup" },
+  { name:"26-guess-the-number-game",tags:["HTML","CSS","JavaScript"]}
 ];
 
 // Menu toggle functionality
