@@ -1,22 +1,40 @@
-'use strict';
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.btn');
+  const submitButton = document.querySelector('.submit');
+  const ratingSection = document.querySelector('.container');
+  const thankYouSection = document.querySelector('.thanks');
+  const userRatingDisplay = document.querySelector('.points');
+  const starsContainer = document.querySelector('.stars-container');
+  let selectedRating = null;
 
-const ratingBtn = document.querySelectorAll('.btn');
-const submitBtn = document.querySelector('.submit');
-const thanks = document.querySelector('.thanks');
-const container = document.querySelector('.container');
-const ratingValue = document.querySelector('.points');
-const overlay = document.querySelector('.overlay');
-for (let i = 0; i < ratingBtn.length; i++) {
-  ratingBtn[i].addEventListener('click', function () {
-    ratingBtn[i].style.backgroundColor = 'hsl(25, 97%, 53%)';
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove the 'selected' class from all buttons
+      buttons.forEach(btn => btn.classList.remove('selected'));
+      // Add the 'selected' class to the clicked button
+      button.classList.add('selected');
+      // Update the selected rating
+      selectedRating = button.textContent;
+
+      // Update the stars directly in the container
+      updateStars(selectedRating);
+    });
   });
-}
-submitBtn.addEventListener('click', function () {
-  thanks.classList.remove('hidden');
-  container.classList.add('hidden');
-});
-ratingBtn.forEach(rate => {
-  rate.addEventListener('click', function () {
-    ratingValue.innerHTML = rate.innerHTML;
+
+  submitButton.addEventListener('click', () => {
+    if (selectedRating) {
+      userRatingDisplay.textContent = selectedRating;
+      ratingSection.classList.add('hidden');
+      thankYouSection.classList.remove('hidden');
+    }
   });
+
+  function updateStars(rating) {
+    // Create a string to hold the stars
+    let starsHTML = '';
+    for (let i = 1; i <= 5; i++) {
+      starsHTML += `<img class ="img" src="${i <= rating ? './images/icon-star.svg' : './images/grey-star.svg'}" />`;
+    }
+    starsContainer.innerHTML = starsHTML; // Update stars in the container
+  }
 });
