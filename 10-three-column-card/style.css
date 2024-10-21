@@ -7,32 +7,22 @@ html {
   font-size: 62.5%;
 }
 body {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   justify-content: center;
   align-items: center;
 }
 main {
   display: flex;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  padding-top: 20px;
-  justify-content: center;
-  min-height: 80vh;
+  /* justify-content: center; */
   align-items: center;
 }
 .article {
   font-size: 1.6rem;
-  position: relative;
-  width: 100%;
   display: flex;
   gap: 3.2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  max-width: 60%;
 }
 .card-1 {
   background-color: hsl(31, 77%, 52%);
@@ -113,11 +103,11 @@ transition: .5s ease;
 }
 .div_last{
   width: 100%;
-  min-height: 30vh;
 }
-
+footer{
+  margin-top: 9rem;
+}
 .footer {
-  margin-top: 30px;
   background-color: rgb(234, 238, 240);
   display: flex;
   padding: 3.2rem 9.6rem;
@@ -198,9 +188,6 @@ transition: .5s ease;
   html {
     font-size: 37.5%;
   }
-  main{
-    margin-top: 40px;
-  }
 }
 @media only screen and (max-width: 480px) {
   html {
@@ -251,9 +238,6 @@ transition: .5s ease;
   .social-media{
     margin-top: 2rem;
   }
-  main{
-    margin-top: 40px;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -302,19 +286,21 @@ transition: .5s ease;
   .card-1,
   .card-2,
   .card-3 {
-    /* padding: 2.4rem; */
+    padding: 2.4rem;
     padding-bottom: 4rem;
     width: 400px;
     text-align: center;
+  }
+  .card-1 {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .card-3 {
     border-radius: 0 0 1rem 1rem;
   }
-  
   .card-text {
     margin-bottom: 4.4rem;
     width: 325px;
   }
 
-  main{
-    margin-top: 20px;
-  }
+  
 }
