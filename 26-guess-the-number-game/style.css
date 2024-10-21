@@ -1,0 +1,246 @@
+/* Some basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #1414de, #dea9b2, #913ae2);
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* Responsive styling */
+@media (min-width: 280px) {
+  /* Styling for headings and containers */
+  h1 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 1px 1px #e8e8ea;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .container,
+  .buttons {
+    padding: 0.88rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons button {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  button {
+    margin: 0.5rem;
+    padding: 0.88rem;
+    outline-color: transparent;
+    border-color: transparent;
+    border-radius: 0.6rem;
+    cursor: pointer;
+  }
+  /* Styling for specific buttons */
+  .back {
+    position: absolute;
+    left: -7px;
+    top: 10px;
+    font-size: 0.67rem;
+
+    color: #fff;
+    background: linear-gradient(149deg, #000000 0%, #454445 72.88%);
+    box-shadow: 15.8975px 26.4579px 61.7333px rgb(49 13 2 / 38%),
+      inset -6.39433px -10.642px 12.4153px #000000,
+      inset 6.39433px 10.642px 12.4153px #8f898f;
+  }
+
+  .easy {
+    background: linear-gradient(149deg, #75069e 0%, #e70dff 72.88%);
+    box-shadow: 15.8975px 26.4579px 61.7333px rgb(49 13 2 / 38%),
+      inset -6.39433px -10.642px 12.4153px #90079a,
+      inset 6.39433px 10.642px 12.4153px #f70eff;
+  }
+
+  .hard {
+    background: linear-gradient(149deg, #040d90 0%, #6149ff 72.88%);
+    box-shadow: 15.8975px 26.4579px 61.7333px rgb(49 13 2 / 38%),
+      inset -6.39433px -10.642px 12.4153px #040d90,
+      inset 6.39433px 10.642px 12.4153px #5736ff;
+  }
+
+  /* Hidden initially, shown on difficulty selection */
+  #easy {
+    color: #7e059c;
+    display: none;
+    margin: 1rem;
+  }
+  #hard {
+    color: #3f06c3;
+    margin-top: 0;
+    display: none;
+    margin: 1rem;
+  }
+
+  /* Styling for the card and game area */
+  .card,
+  #gameArea {
+    margin: 0.6rem 1rem;
+    background: linear-gradient(149deg, #bebcbe 0%, #ffffff 72.88%);
+    box-shadow: 15.8975px 26.4579px 61.7333px #310d0261,
+      inset -6.39433px -10.642px 12.4153px #a39fa3,
+      inset 6.39433px 10.642px 12.4153px #ffffff;
+    padding: 1.9rem 0.9rem;
+    border-color: transparent;
+    border-radius: 0.6rem;
+    position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game {
+    width: 100%;
+  }
+  .newGame {
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
+
+    background: linear-gradient(149deg, #75069e 0%, #e70dff 72.88%);
+    box-shadow: 15.8975px 26.4579px 61.7333px #310d0261,
+      inset -6.39433px -10.642px 12.4153px #90079a,
+      inset 6.39433px 10.642px 12.4153px #f70eff;
+  }
+  #enter {
+    font-size: 0.99rem;
+    padding: 1rem;
+    color: white;
+
+    background: linear-gradient(149deg, #830365 0%, #ff0d96 72.88%);
+    box-shadow: 15.8975px 26.4579px 61.7333px #310d0261,
+      inset -6.39433px -10.642px 12.4153px #9a076e,
+      inset 6.39433px 10.642px 12.4153px #f82991;
+  }
+
+  .gameZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #guessinput {
+    width: 50%;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  .guesses {
+    color: #ff0000;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .attempts {
+    color: #0000ff;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 375px) {
+  .back {
+    left: -3px;
+    top: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .back {
+    left: 10px;
+    top: 8px;
+  }
+
+  .card {
+    width: 50%;
+  }
+  #gameArea {
+    width: 50%;
+  }
+  .buttons button {
+    font-size: 1.15rem;
+  }
+  .guesses,
+  .attempts {
+    font-size: 1rem;
+  }
+  #guessinput {
+    font-size: 1.14rem;
+  }
+  .newGame,
+  #enter {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 40%;
+  }
+  #gameArea {
+    width: 40%;
+  }
+  .buttons button {
+    font-size: 1.3rem;
+  }
+  .guesses,
+  .attempts {
+    font-size: 1rem;
+  }
+  #guessinput {
+    font-size: 1.3rem;
+  }
+  .newGame,
+  #enter {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 30%;
+  }
+  #gameArea {
+    width: 30%;
+  }
+}
+/* Styling the footer h4 */
+footer > h4 {
+  color: #000000;
+  text-align: center;
+}
