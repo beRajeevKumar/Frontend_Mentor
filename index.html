@@ -23,11 +23,110 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Projects | Rajeev</title>
+    <style>
+      .chatbot-container {
+        position: fixed;
+        bottom: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        z-index: 1000; /* Ensure it appears above other elements */
+      }
+
+      .chatbot-button {
+        background-color: #007bff; /* Change to your preferred color */
+        border: none;
+        border-radius: 50%;
+        padding: 5px; /* Smaller padding */
+        cursor: pointer;
+        position: relative;
+        width: 50px; /* Adjusted size */
+        height: 50px; /* Adjusted size */
+      }
+
+      .chatbot-button img {
+        width: 30px; /* Adjusted image size */
+        height: 30px; /* Adjusted image size */
+      }
+
+      .tooltip-text {
+        display: none; /* Hide by default */
+        position: absolute;
+        bottom: 100%; /* Position above the button */
+        right: 50%;
+        transform: translateX(50%);
+        background-color: #333; /* Background color for tooltip */
+        color: #fff; /* Tooltip text color */
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap; /* Prevent text from wrapping */
+      }
+
+      .chatbot-button:hover .tooltip-text {
+        display: block; /* Show on hover */
+      }
+
+      /* Styles for footer */
+      .footer {
+        background-color: #f8f9fa; /* Light background color */
+        padding: 40px 20px; /* Padding for footer */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Wrap if necessary */
+        border-top: 1px solid #dee2e6; /* Border on top */
+      }
+
+      .footer-section {
+        flex: 1; /* Allow each section to grow */
+        min-width: 250px; /* Minimum width for each section */
+        margin: 10px; /* Margin between sections */
+      }
+
+      .footer-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-list a {
+        text-decoration: none; /* No underline */
+        color: #007bff; /* Link color */
+      }
+
+      .footer-list a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+
+      .socials a {
+        margin-right: 10px; /* Spacing between icons */
+        color: #333; /* Icon color */
+      }
+
+      .socials a:hover {
+        color: #007bff; /* Change color on hover */
+      }
+
+      .btn-sub {
+        background-color: #007bff; /* Button color */
+        color: white; /* Button text color */
+        border: none;
+      }
+
+      .btn-sub:hover {
+        background-color: #0056b3; /* Darker color on hover */
+      }
+    </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="logo.png"
+            alt="Logo"
+            width="80"
+            height="84"
+            class="d-inline-block align-text-top"
+        /></a>
 
     <!-- Scroll-to-Top Button -->
     <button class="scroll-up-btn">
@@ -40,6 +139,23 @@
           <img src="logo.png" alt="Logo">
           <a href="#">Frontend Mentor</a>
       </div>
+    </nav>
+    <section>
+      <h2 id="Projects" class="mt-4">Projects</h2>
+      <ul id="list" class="list"></ul>
+    </section>
+
+    <div class="chatbot-container">
+      <a href="chatbot.html">
+        <button class="chatbot-button group">
+          <img class="h-20" src="chatbot.gif" alt="chatbot" />
+          <span class="tooltip-text">
+            Welcome to Frontend Mentor! <br />
+            How can I help You? ^_^
+          </span>
+        </button>
+      </a>
+    </div>
       <div class="navbar-function">
           <div class="nav-elements">
               <a href="#">Home</a>
@@ -142,6 +258,9 @@
         <h1>Contact Us</h1>
         <ul class="footer-list">
           <li>
+            <a href="mailto:trendtrove1004@gmail.com"
+              >frontendmentor1004@gmail.com</a
+            >
             <a href="mailto:trendtrove1004@gmail.com">frontentmentor1004@gmail.com</a>
           </li>
           <li>2nd Floor, Bandra West, Mumbai, Maharashtra 400050, India</li>
@@ -163,13 +282,13 @@
           </li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h1>Quick Links</h1>
         <ul class="footer-list">
           <li><a href="about.html">About Us</a></li>
           <li><a href="/terms-conditions">Terms & Conditions</a></li>
           <li><a href="/return-policy">Return Policy</a></li>
+          <li><a href="https://github.com/beRajeevKumar/Frontend_Mentor" target="_blank">Star Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
@@ -178,8 +297,7 @@
         <h1>Subscribe to Newsletter</h1>
         <ul class="footer-list">
           <li>
-            Get the latest updates, exclusive offers, and industry insights
-            delivered straight to your inbox.
+            Maxime quae inventore sunt odio perspiciatis vitae saepe officia dolorem.
           </li>
           <li class="sub">
             <input type="text" placeholder="Enter your email" />
@@ -188,7 +306,6 @@
         </ul>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
