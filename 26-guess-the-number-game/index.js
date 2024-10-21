@@ -17,7 +17,7 @@ let music1 = new Audio("./sounds/music1.wav");
 let music2 = new Audio("./sounds/music2.wav");
 let music3 = new Audio("./sounds/music3.wav");
 let music4 = new Audio("./sounds/music4.wav");
-let error = new Audio("./sounds/error.mp3");
+let error_alert = new Audio("./sounds/error.mp3");
 
 //play this audio whenever the page loads or reloads
 window.onload = function () {
@@ -70,7 +70,7 @@ const compareGuess = (maxGuess) => {
 
   const userNum = Number(document.getElementById("guessinput").value);
   if (userNum <= 0 || userNum>100) {
-    error.play();
+    error_alert.play();
     alert("Please enter a valid number");
     gameInput.value = "";
   } else {
