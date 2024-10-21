@@ -17,6 +17,7 @@ let music1 = new Audio("./sounds/music1.wav");
 let music2 = new Audio("./sounds/music2.wav");
 let music3 = new Audio("./sounds/music3.wav");
 let music4 = new Audio("./sounds/music4.wav");
+let error = new Audio("./sounds/error.mp3");
 
 //play this audio whenever the page loads or reloads
 window.onload = function () {
@@ -66,12 +67,14 @@ const SelectMode = (mode, totalGuess) => {
 
 //function to compare between the user guess and computer guess as per the game mode
 const compareGuess = (maxGuess) => {
-  music4.play();
+
   const userNum = Number(document.getElementById("guessinput").value);
   if (userNum <= 0 || userNum>100) {
+    error.play();
     alert("Please enter a valid number");
     gameInput.value = "";
   } else {
+      music4.play();
     userGuess = [...userGuess, userNum];
     //userGuess=[(spread operator which includes previous values to the array),userNum];
     document.querySelector(".guesses").innerHTML = userGuess;
