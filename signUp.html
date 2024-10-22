@@ -13,32 +13,37 @@
             <img src="signup.webp" alt="Sign Up Image">
         </div>
         <form id="signupForm" class="form-container">
-            <div class="form-fields">
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" autocomplete="name" id="name" required>
-                <div class="error" id="nameError"></div>
+            <div class="form">
+                <br>
+                <div class="form-fields">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" autocomplete="name" id="name" required>
+                    <div class="error" id="nameError"></div>
 
-                <label for="email"><b>Email</b></label>
-                <input type="email" placeholder="Enter Email" autocomplete="email" id="email" required>
-                <div class="error" id="emailError"></div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" autocomplete="email" id="email" required>
+                    <div class="error" id="emailError"></div>
 
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" autocomplete="new-password" id="password" required>
-                <div class="error" id="passwordError"></div>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" autocomplete="new-password" id="password" required>
+                    <div class="error" id="passwordError"></div>
 
-                <label for="confirmPassword"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" id="confirmPassword" autocomplete="new-password" required>
-                <div class="error" id="confirmPasswordError"></div>
-            </div>
-            <div class="buttons">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                    <label for="confirmPassword"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" id="confirmPassword" autocomplete="new-password" required>
+                    <div class="error" id="confirmPasswordError"></div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
             </div>
         </form>
     </div>
-    
+
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
         import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
         import { getAuth, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 
@@ -54,17 +59,19 @@
         };
 
         const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
         const db = getFirestore(app);
         const auth = getAuth();
 
         const form = document.getElementById('signupForm');
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const passwordInput = document.getElementById('password');
-        const confirmPasswordInput = document.getElementById('confirmPassword');
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirmPassword');
 
             if (validateForm()) {
                 try {

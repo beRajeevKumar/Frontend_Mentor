@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Guess the number | Guess a number between 1 to 100</title>
+  </head>
+  <body>
+    <div class="container">
+       <!-- Main container for the game -->
+      <h1 style="color: white;">Guess the number</h1>
+      <div class="card">
+        <h2>Guess a number between 1 to 100</h2>
+        <img src="./img/game.png" alt="gaming" class="game" />
+        <div class="eventSection">
+           <!-- Game difficulty selection -->
+          <h2 style="text-align: center">Choose Game Difficulty Level</h2>
+          <div class="buttons">
+            <button class="easy" id="easyM" >
+               Easy : 10 attempts
+            </button>
+            <button class="hard" id="hardM">
+               Hard : 5 attempts
+            </button>
+          </div>
+        </div>
+      </div>
+  <!-- Game area that becomes visible after starting -->
+      <div id="gameArea">
+           <button class="back">Back</button>
+        <div class="gameBtn">
+          <button class="newGame" title="Click to go to new game">New Game</button>
+        </div>
+        <section class="gameZone">
+       
+          <h2 id="easy">Easy : 10 attempts</h2>
+          <h2 id="hard">Hard : 5 attempts</h2>
+          <h2 id="guHeader">Your Guess</h2>
+          
+            <!-- User input for the guess -->
+          <input
+            type="number"
+            name="guessinput"
+            id="guessinput"
+            min="1"
+            max="100"
+            placeholder="1 to 100"
+          />
+          <button id="enter"  title="Click to enter your answer" >Enter</button>
+          <div class="stats">
+            <div class="info">
+                <h3>Number of previous attempts</h3>
+                <span class="attempts">0</span>
+            </div>
+            <div class="info">
+                <h3> Previous guesses</h3>
+                <span class="guesses">0</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <h4 >Made with &#128150; by Eshita</h4>
+    </footer>
+ <!-- Link to the JavaScript file -->
+    <script src="./index.js"></script>
+  </body>
+</html>
