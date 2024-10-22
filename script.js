@@ -26,7 +26,8 @@ const projects = [
   { name: "22-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "23-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "24-login-signup" },
-  { name:"26-guess-the-number-game",tags:["HTML","CSS","JavaScript"]}
+  { name:"26-guess-the-number-game",tags:["HTML","CSS","JavaScript"]},
+  {name: "27-Apple-clone", tags:['ReactJS','CSS','HTML']}
 ];
     name: "11-Order-summary-component",
     tags: ["HTML", "CSS"],
