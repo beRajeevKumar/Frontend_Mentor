@@ -80,7 +80,7 @@ By consistently investing in my development and exploring new technologies, I wi
    git commit -m "Add Some feature"
 6. Push the Branch:
    git push origin New Branch
-7. Open Pull requestto main Repository and Submit.
+7. Open Pull request to main Repository and Submit.
 
 - **Courses**
 
