@@ -7,30 +7,6 @@
     <title>Sign Up</title>
 </head>
 <body>
-<<<<<<< HEAD
-    <div class="container">
-        <h1>Sign Up</h1>
-        <form id="signupForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <div class="error" id="nameError"></div>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error" id="emailError"></div>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                <div class="error" id="passwordError"></div>
-            </div>
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                <div class="error" id="confirmPasswordError"></div>
-=======
     <form id="signupForm" class="form-container" >
         <div class="container">
             <div class="image-container">
@@ -52,21 +28,23 @@
 
             <label for="psw-repeat"><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" id="psw-repeat" autocomplete="new-password" required>
->>>>>>> 96be6ff5afd1ed167873adf9043313ec8867dd6a
             </div>
+
             <div class="buttons">
                 <button type="button" class="cancelbtn">Cancel</button>
                 <button type="submit" class="signupbtn">Sign Up</button>
             </div>
-        </form>
-    </div>
-    <script type="module">
-        // Firebase imports
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
-        import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
-        import { getAuth, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+          </div>
+        </div>
+    </form>
 
-        // Firebase configuration
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+        import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js"; // Correct import for Firestore
+        import { getAuth, createUserWithEmailAndPassword ,updateProfile} from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+
         const firebaseConfig = {
             apiKey: "AIzaSyC7ihLRIl47Iu6nk6qh_Ak8i3pSYw3tO4A",
             authDomain: "frontend-mentor-cceee.firebaseapp.com",
@@ -78,103 +56,47 @@
             databaseURL: "https://frontend-mentor-cceee-default-rtdb.firebaseio.com"
         };
 
-        // Initialize Firebase
+
+      
         const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
+        const analytics = getAnalytics(app);
+
+       
+        const db = getFirestore(app); 
+
+       
         const auth = getAuth();
 
-        // Form handling
+      
         const form = document.getElementById('signupForm');
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const passwordInput = document.getElementById('password');
-        const confirmPasswordInput = document.getElementById('confirmPassword');
-
         form.addEventListener('submit', async (e) => {
-            e.preventDefault();
+            e.preventDefault();  
 
-            if (validateForm()) {
-                try {
-                    // Sign up user with Firebase Authentication
-                    const userCredential = await createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value);
-                    const user = userCredential.user;
+           
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('psw').value;
+            const name = document.getElementById('name').value;
 
-                    // Update the user's display name
-                    await updateProfile(user, { displayName: nameInput.value });
+            try {
+               
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+               
+                const user = userCredential.user;
+                await updateProfile(user, { displayName: name });
+             
+                await addDoc(collection(db, "users"), {  
+                    uid: user.uid,  
+                    name: name,
+                    email: email,
+                });
 
-                    // Save user info to Firestore
-                    await addDoc(collection(db, "users"), {
-                        uid: user.uid,
-                        name: nameInput.value,
-                        email: emailInput.value
-                    });
+                alert('Signed up successfully and data stored in Firestore!');
 
-                    // Success message
-                    alert('Signed up successfully and data stored in Firestore!');
-                    form.reset();
-                } catch (error) {
-                    // Error handling
-                    alert('Error: ' + error.message);
-                }
+            } catch (error) {
+                const errorMessage = error.message;
+                alert('Error: ' + errorMessage);
             }
         });
-
-        function validateForm() {
-            let isValid = true;
-
-            // Name validation
-            if (nameInput.value.trim() === '') {
-                showError('nameError', 'Name is required');
-                isValid = false;
-            } else {
-                showError('nameError', '');
-            }
-
-            // Email validation
-            if (emailInput.value.trim() === '') {
-                showError('emailError', 'Email is required');
-                isValid = false;
-            } else if (!isValidEmail(emailInput.value)) {
-                showError('emailError', 'Please enter a valid email');
-                isValid = false;
-            } else {
-                showError('emailError', '');
-            }
-
-            // Password validation
-            if (passwordInput.value === '') {
-                showError('passwordError', 'Password is required');
-                isValid = false;
-            } else if (passwordInput.value.length < 6) {
-                showError('passwordError', 'Password must be at least 6 characters');
-                isValid = false;
-            } else {
-                showError('passwordError', '');
-            }
-
-            // Confirm password validation
-            if (confirmPasswordInput.value === '') {
-                showError('confirmPasswordError', 'Please confirm your password');
-                isValid = false;
-            } else if (confirmPasswordInput.value !== passwordInput.value) {
-                showError('confirmPasswordError', 'Passwords do not match');
-                isValid = false;
-            } else {
-                showError('confirmPasswordError', '');
-            }
-
-            return isValid;
-        }
-
-        function showError(id, message) {
-            const errorElement = document.getElementById(id);
-            errorElement.textContent = message;
-        }
-
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
     </script>
 </body>
 </html>

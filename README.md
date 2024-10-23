@@ -40,7 +40,8 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 | 20.  | Social Proof Section        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
 | 21.  | Single Price Grid Component | [Project Demo]()  | [Project Code]() | [Read Blog]() |
 | 22.  | QR Code Component           | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 26.  | Google Clone                | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| 22.  | SHOE WEBSITE                | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+
 
 ### Tech stack
 
@@ -124,5 +125,23 @@ This project is licensed under the [MIT LICENSE](./LICENSE).
   </a>
 </div>
 
-<hr>
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## Stargazers  ❤️
+
+<div align='left'>
+
+[![Stargazers repo roster for @beRajeevKumar/Frontend_Mentor](https://reporoster.com/stars/beRajeevKumar/Frontend_Mentor)](https://github.com/beRajeevKumar/Frontend_Mentor/stargazers)
+
+</div>
+
+## Forkers  ❤️
+
+[![Forkers repo roster for @beRajeevKumar/Frontend_Mentor](https://reporoster.com/forks/beRajeevKumar/Frontend_Mentor)](https://github.com/beRajeevKumar/Frontend_Mentor/network/members)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+
+
 <h1 align=center>Happy Coding 👨‍💻</h1>
