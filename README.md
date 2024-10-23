@@ -124,5 +124,23 @@ This project is licensed under the [MIT LICENSE](./LICENSE).
   </a>
 </div>
 
-<hr>
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## Stargazers  ❤️
+
+<div align='left'>
+
+[![Stargazers repo roster for @beRajeevKumar/Frontend_Mentor](https://reporoster.com/stars/beRajeevKumar/Frontend_Mentor)](https://github.com/beRajeevKumar/Frontend_Mentor/stargazers)
+
+</div>
+
+## Forkers  ❤️
+
+[![Forkers repo roster for @beRajeevKumar/Frontend_Mentor](https://reporoster.com/forks/beRajeevKumar/Frontend_Mentor)](https://github.com/beRajeevKumar/Frontend_Mentor/network/members)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+
+
 <h1 align=center>Happy Coding 👨‍💻</h1>
