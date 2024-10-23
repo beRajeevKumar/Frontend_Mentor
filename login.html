@@ -3,40 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signUp.css" />
     <title>Sign In</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --error-color: #e74c3c;
+            --success-color: #2ecc71;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .error {
+            color: var(--error-color);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cancelbtn {
+            background-color: #ccc;
+            color: var(--text-color);
+        }
+
+        .signinbtn {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .cancelbtn:hover {
+            background-color: #bbb;
+        }
+
+        .signinbtn:hover {
+            background-color: #3a80d2;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <form id="signinForm">
+    <form id="signinForm" class="signinform-container">
         <div class="container">
-            <h1>Sign In</h1>
            
-            <hr>
-
+           
             
-           <div class="form">
+           <div class="signinform">
+            <h1>Sign In</h1>
+           <div class="form-fields">
             <label for="email"><b>Email</b></label>
             <input type="email" placeholder="Enter Email" autocomplete="email" id="email" required>
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" autocomplete="new-password" id="psw" required>
+        </div>
 
             <div class="buttons">
                 <button type="button" class="cancelbtn">Cancel</button>
                 <button type="submit" class="signinbtn">Sign In</button>
             </div>
-           </div>
-        </div>
-    </form>
 
     <script type="module">
-        
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
-        import { getFirestore, addDoc, collection,getDoc } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js"; // Correct import for Firestore
-        import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 
-      
         const firebaseConfig = {
             apiKey: "AIzaSyC7ihLRIl47Iu6nk6qh_Ak8i3pSYw3tO4A",
             authDomain: "frontend-mentor-cceee.firebaseapp.com",
@@ -48,42 +158,49 @@
             databaseURL: "https://frontend-mentor-cceee-default-rtdb.firebaseio.com"
         };
 
-      
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-
-       
-        const db = getFirestore(app); 
-
-       
+        const db = getFirestore(app);
         const auth = getAuth();
 
-      
         const form = document.getElementById('signinForm');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+
         form.addEventListener('submit', async (e) => {
-            e.preventDefault();  
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('psw').value;
+            e.preventDefault();
+            
+            // Reset error messages
+            emailError.textContent = '';
+            passwordError.textContent = '';
 
-           
-            signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    
-    const user = userCredential.user;
-const uid=user.uid;
-console.log(user);
-const displayName = user.displayName ? user.displayName : "User";
-            alert("Welcome, " + displayName);
-    
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    console.log(errorCode, errorMessage);
-  });
-})
+            const email = emailInput.value;
+            const password = passwordInput.value;
 
+            try {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                const displayName = user.displayName ? user.displayName : "User";
+                alert("Welcome, " + displayName);
+                // Redirect to dashboard or home page here
+            } catch (error) {
+                console.error(error);
+                if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
+                    emailError.textContent = 'Invalid email or password';
+                } else {
+                    emailError.textContent = 'An error occurred. Please try again.';
+                }
+            }
+        });
+
+        // Cancel button functionality
+        document.querySelector('.cancelbtn').addEventListener('click', () => {
+            form.reset();
+            emailError.textContent = '';
+            passwordError.textContent = '';
+        });
     </script>
 </body>
 </html>
