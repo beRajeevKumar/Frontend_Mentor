@@ -45,6 +45,8 @@
 }
 
 .nav-elements a {
+  border-radius: 12px;
+  padding: 8px 10px;
   font-size: 14px;
   text-decoration: none;
   color: #ffffff;
@@ -52,7 +54,8 @@
 }
 
 .nav-elements a:hover {
-  color: #bbdefb;
+  color: #008cff;
+  background-color: white;
 }
 
 .nav-buttons {
