@@ -1,0 +1,7 @@
+const BASE_URL1 ="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+ Above is old link which has stopped working so failed to fetch data but did not know whats the issue after a lot of search I got to know that
+ ADMIN of this github repos has change the URLs then API started working
+
+LINK OF CHANGES MADE
+
+https://github.com/fawazahmed0/exchange-api/blob/main/MIGRATION.md
