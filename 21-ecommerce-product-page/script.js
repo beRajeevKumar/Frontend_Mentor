@@ -51,9 +51,13 @@ let count = 0;
 const productName = "Fall Limited Edition Sneakers";
 const productPrice = 125;
 
-// Update count display
+// Update count display and total price
 const updateCountDisplay = () => {
+  if (count > 0){
   countDisplay.textContent = count;
+  const totalPrice = (count * productPrice).toFixed(2); // Calculate total price
+  document.querySelector('.total-price').textContent = `$${totalPrice}`; // Update total price display
+  }
 };
 
 // Add to cart functionality
