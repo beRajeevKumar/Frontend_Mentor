@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Basic styles */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+/* Modal styling */
+.edit-todo-modal,
+.add-todo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0b0cba;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+}
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.5rem 0.9rem;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+
+.cross-icon {
+  background-color: white;
+  padding: 1.2rem 1.5rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+input,
+option,
+select,
+label {
+  font-size: 0.9rem;
+}
+input,
+option,
+select {
+  padding: 0.3rem;
+}
+
+option,
+select {
+  cursor: pointer;
+}
+
+form > button {
+  cursor: pointer;
+  font-size: 1.04rem;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+.add-todo-modal > form > button,
+.edit-todo-modal > form > button {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+
+  color: #ffff;
+}
+
+.edit-todo-modal > form > button {
+  background-color: #171617;
+}
+
+.add-todo-modal > form > button {
+  background-color: #024e4d;
+}
+
+.open-add-todo-modal {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.89rem;
+  background-color: #171617;
+  color: #ffff;
+
+  cursor: pointer;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 300px) {
+  .tasks-container > div {
+    width: 98%;
+    padding: 0.55rem;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .tasks-container > div {
+    width: 45%;
+    padding: 0.55rem;
+  }
+}
+
+.tasks-container > div > h2 {
+  border-bottom: 1.8px solid #5c5c5c;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+/* Task item styles */
+.todo-item {
+  position: relative;
+  padding: 0.4rem 1rem;
+  border: 0.5px solid black;
+
+  display: flex;
+  flex-direction: column;
+}
+.todo-item .top-part {
+  display: flex;
+  flex-direction: row;
+  gap: 0.99rem;
+
+  justify-content: start;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.todo-item .content {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.todo-item .pr {
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: absolute;
+  padding: 0.4rem;
+  top: -13px;
+  right: -6px;
+
+  border-radius: 0.4rem;
+}
+
+.todo-item .high {
+  background-color: rgb(255, 226, 221);
+  color: rgb(93, 23, 21);
+}
+.todo-item .low {
+  background-color: rgb(219, 237, 219);
+  color: rgb(28, 56, 41);
+}
+
+.todo-item .med {
+  background-color: rgb(253, 236, 200);
+  color: rgb(64, 44, 27);
+}
+
+.todo-item .btns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.todo-item .edit,
+.todo-item .delete {
+  cursor: pointer;
+}
+
+.todo-item .edit {
+  color: #4d13a2;
+}
+
+.todo-item .delete {
+  color: #ce1111;
+}
+.todo-item .progress {
+  font-size: 0.79rem;
+  margin: 0.8rem 0;
+}
+.todo-item .done {
+  color: green;
+}
+
+.todo-item .in-progress {
+  color: #2e7cd1;
+}
+
+.todo-item .not-started {
+  color: #858181;
+}
+/* Show modal */
+.show {
+  visibility: visible;
+  z-index: 10;
+}

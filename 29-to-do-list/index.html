@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a508d8e351.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+        <!-- Button to open the "Add Todo" modal -->
+      <button class="open-add-todo-modal">
+        Add a Todo&nbsp;<i class="fa-solid fa-plus"></i>
+      </button>
+      <!-- Here starts add todo modal -->
+      <div class="add-todo-modal">
+        <form id="add-todo_form">
+          <h2>Add a Todo</h2>
+          <div class="options-container">
+              <!-- Mode selection -->
+            <div class="option">
+              <label for="s-mode">Select Mode</label>
+              <br />
+              <select name="mode" id="s-mode" class="s-mode" required>
+                <option value="School/Work">School/Work</option>
+                <option value="Personal" selected>Personal</option>
+              </select>
+            </div>
+            <!-- Priority selection -->
+            <div class="option">
+              <label for="s-p">Priority</label>
+              <br />
+              <select name="priority" id="s-p" class="s-p" required>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low" selected>Low</option>
+              </select>
+            </div>
+          </div>
+            <!-- Todo description input -->
+          <input
+            type="text"
+            name="t-i"
+            id="t-i"
+            class="todo_input"
+            placeholder="Add a todo"
+            required
+          />
+            <!-- Status display (disabled by default) -->
+          <input
+            type="text"
+            name="status"
+            id="status"
+            class="status"
+            value="⬤ Not Started"
+            disabled
+            size="8"
+          />
+    <!-- Submit button -->
+          <button type="submit" class="add-todo">Add</button>
+        </form>
+         <!-- Close modal icon -->
+        <i class="fa-solid fa-xmark cross-icon"></i>
+      </div>
+
+<!-- Here starts edit todo modal -->
+
+      <div class="edit-todo-modal">
+        <form id="edit-todo_form">
+          <h2>Edit</h2>
+          <div class="options-container">
+            <div class="option" style="text-align: center;">
+              <label for="edit_s-p">Priority</label>
+              <br />
+              <select name="priority" id="edit_s-p"  class="edit_s-p">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" name="t-i" id="edit_t-i" class="edit-todo_input" />
+          <select name="status" id="edit_status" class="edit-status">
+            <option value="⬤ Not Started">⬤ Not Started</option>
+            <option value="⬤ In Progress">⬤ In Progress</option>
+            <option value="⬤ Done">⬤ Done</option>
+          </select>
+ <!-- Submit button -->
+          <button type="button"  class="edit-todo edit-todo-btn">Edit </i>
+          </button>
+        </form>
+         <!-- Close modal button -->
+        <i class="fa-solid fa-xmark cross-icon"></i>
+      </div>
+<!-- Tasks Container -->
+      <div class="tasks-container">
+        <!-- work or school tasks -->
+        <div class="work">
+          <h2>&nbsp;&nbsp;Work / School Tasks</h2>
+          <div class="tasks">
+            
+          </div>
+        </div>
+        <!-- personal tasks -->
+        <div class="personal">
+          <h2>&nbsp;&nbsp;Personal Tasks</h2>
+           <div class="tasks">
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
