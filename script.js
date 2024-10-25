@@ -26,7 +26,8 @@ const projects = [
   { name: "22-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "23-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "24-login-signup", tags: ["HTML", "CSS", "JavaScript", "API"] },
-  { name: "26-shoe-website", tags: ["HTML", "CSS", "JavaScript"] }
+
+  { name: "33-shoe-website", tags: ["HTML", "CSS", "JavaScript"] }
 
 
     name: "11-Order-summary-component",
@@ -100,6 +101,13 @@ const projects = [
   },
   
 
+
+
+  { name: "28-guess-the-number-game", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "29-shoe-website", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "30-swiggy-clone", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "31-Zomato-clone", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "32-to-do-list", tags: ["HTML", "CSS", "JavaScript"] },
 
 ];
     
