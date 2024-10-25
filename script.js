@@ -25,8 +25,14 @@ const projects = [
   { name: "21-ecommerce-product-page", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "22-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "23-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
-  { name: "24-login-signup" }
+  { name: "24-login-signup", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "26-guess-the-number-game", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "26-shoe-website", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "27-swiggy-clone", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "28-Zomato-clone", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "29-to-do-list", tags: ["HTML", "CSS", "JavaScript"] },
 ];
+    
 
 // Menu toggle functionality
 const menuToggle = document.querySelector(".menu-toggle");
