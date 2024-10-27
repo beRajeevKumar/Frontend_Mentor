@@ -28,6 +28,7 @@ const projects = [
   { name: "24-login-signup", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "26-shoe-website", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "27-Code_Editor", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "30-Age_Calc", tags: ["HTML", "CSS", "JavaScript"] },
 ];
 
 // Menu toggle functionality

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age_Calc</title>
+    <link rel="stylesheet" href="Age_Calc.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="age-box">
+        <h1>Age<span>Calc</span></h1>
+        <div class="input-container">
+            <input type="date" id="dobInput" />
+            <button onclick="displayAge()">Calculate Age</button>
+        </div>
+        <p id="outputResult"></p>
+    </div>
+</div>
+
+<script>
+    const dobInput = document.getElementById("dobInput");
+    dobInput.max = new Date().toISOString().split("T")[0];
+
+    const output = document.getElementById("outputResult");
+
+    function displayAge() {
+        const birthDate = new Date(dobInput.value);
+
+        if (isNaN(birthDate)) {
+            output.innerHTML = "<span>Please enter a valid date.</span>";
+            return;
+        }
+
+        const today = new Date();
+
+        let years = today.getFullYear() - birthDate.getFullYear();
+        let months = today.getMonth() - birthDate.getMonth();
+        let days = today.getDate() - birthDate.getDate();
+
+        if (days < 0) {
+            months--;
+            days += getDaysInMonth(today.getFullYear(), today.getMonth());
+        }
+
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        output.innerHTML = 
+            `<strong>${years}</strong> years, <strong>${months}</strong> months, and <strong>${days}</strong> days old.`;
+    }
+
+    function getDaysInMonth(year, month) {
+        return new Date(year, month + 1, 0).getDate();
+    }
+</script>
+</body>
+</html>
