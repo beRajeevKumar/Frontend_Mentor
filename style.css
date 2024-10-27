@@ -22,7 +22,8 @@
 }
 
 .logo img {
-  height: 40px;
+  height: 55px;
+  width: 50px;
   cursor: pointer;
 }
 
@@ -200,7 +201,8 @@
   }
 
   .logo img {
-      height: 30px;
+      height: 40px;
+      width: 35px;
   }
 
   .btn-1, .btn-2 {
