@@ -20,7 +20,7 @@ p {
   background-color: hsl(224, 93%, 58%);
 }
 
-li button {
+li a {
   color: hsl(238, 22%, 44%);
   font-size: 15px;
   font-family: "Raleway", sans-serif;
@@ -41,6 +41,34 @@ button {
 
 footer {
   background-color: hsl(243, 87%, 12%);
+}
+
+.hover{
+  color: hsl(238, 22%, 44%);
+}
+
+.hover:hover{
+  color: white;
+  font-size: bold;
+  transform: scale(1.5);
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.links ul{
+  padding: 20px;
+
 }
 
 @media (min-width: 1024px) {
