@@ -9,14 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      // Remove the 'selected' class from all buttons
       buttons.forEach(btn => btn.classList.remove('selected'));
-      // Add the 'selected' class to the clicked button
       button.classList.add('selected');
-      // Update the selected rating
       selectedRating = button.textContent;
-
-      // Update the stars directly in the container
       updateStars(selectedRating);
     });
   });
@@ -26,15 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
       userRatingDisplay.textContent = selectedRating;
       ratingSection.classList.add('hidden');
       thankYouSection.classList.remove('hidden');
+
+      // Add confetti animation
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
     }
   });
 
   function updateStars(rating) {
-    // Create a string to hold the stars
     let starsHTML = '';
     for (let i = 1; i <= 5; i++) {
-      starsHTML += `<img class ="img" src="${i <= rating ? './images/icon-star.svg' : './images/grey-star.svg'}" />`;
+      starsHTML += `<img class="img" src="${i <= rating ? './images/icon-star.svg' : './images/grey-star.svg'}" />`;
     }
-    starsContainer.innerHTML = starsHTML; // Update stars in the container
+    starsContainer.innerHTML = starsHTML;
   }
 });
