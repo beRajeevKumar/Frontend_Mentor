@@ -2,7 +2,7 @@
 
 A sleek and modern calculator web application built with HTML, CSS, and JavaScript. This calculator features a clean, minimalist design with a beautiful gradient background and glass-morphism effects.
 
-![Calculator Preview](/placeholder.svg?height=300&width=300)
+![Calculator Preview](https://github.com/user-attachments/assets/5b5efc9a-a83b-4161-9936-42e8908f0b3b)
 
 ## Features
 
