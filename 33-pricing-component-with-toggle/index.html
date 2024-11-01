@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="toggle">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly</span>
+        </div>
+        
+        <div class="pricing-options">
+            <div class="pricing-plan" id="basicPlan">
+                <h2>Basic Plan</h2>
+                <p class="price" data-monthly="10" data-yearly="100">Rs10/month</p>
+                <p>Features: Feature 1, Feature 2, Feature 3</p>
+                <button>Select</button>
+            </div>
+            <div class="pricing-plan" id="proPlan">
+                <h2>Pro Plan</h2>
+                <p class="price" data-monthly="20" data-yearly="200">Rs20/month</p>
+                <p>Features: Feature A, Feature B, Feature C</p>
+                <button>Select</button>
+            </div>
+            <div class="pricing-plan" id="premiumPlan">
+                <h2>Premium Plan</h2>
+                <p class="price" data-monthly="30" data-yearly="300">Rs30/month</p>
+                <p>Features: Feature X, Feature Y, Feature Z</p>
+                <button>Select</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
