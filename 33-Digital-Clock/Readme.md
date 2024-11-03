@@ -1,6 +1,6 @@
 # Advanced UI/UX Digital Clock
 
-![Digital Clock Screenshot](https://api.placeholder.com/400/320)
+![Digital Clock Screenshot](https://github.com/user-attachments/assets/d533e26e-ba79-4133-9e59-5dd60da46acf)
 
 An elegant and feature-rich digital clock web application built with HTML, CSS, and JavaScript. This project demonstrates modern web development techniques and UI/UX principles.
 
