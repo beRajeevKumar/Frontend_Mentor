@@ -32,7 +32,9 @@ const projects = [
   { name: "28-Zomato-clone", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "29-to-do-list", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "30-currency-converter", tags: ["HTML", "CSS", "JavaScript"] },
-  { name: "31-tic-tac-toe", tags: ["HTML", "CSS", "JavaScript"] }
+  { name: "31-tic-tac-toe", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "33-Butterfly-book-card", tags: ["HTML", "CSS"] }
+
 
 
 ];
