@@ -1,0 +1,72 @@
+Here’s a simple README file tailored for a beginner contributor for a weather app:
+
+---
+
+# Weather App
+
+Welcome to the **Weather App** project! This is a beginner-friendly project designed to help you learn how to build and contribute to a simple web-based weather application.
+
+## Features
+
+- Search for the current weather in any city.
+- Get details like temperature, humidity, wind speed, and weather conditions.
+- Responsive design, works on both desktop and mobile.
+
+## Getting Started
+
+### Prerequisites
+
+Before contributing, make sure you have the following installed:
+
+- **Git**: For version control.
+- **Node.js**: To run the app locally.
+- **A Weather API key**: We use a third-party API (like OpenWeatherMap) to fetch weather data. You'll need to sign up for a free account and get an API key.
+
+### Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Create an `.env` file** in the project root and add your Weather API key:
+   ```env
+   REACT_APP_API_KEY=your_api_key_here
+   ```
+
+4. **Run the app**:
+   ```bash
+   npm start
+   ```
+   The app will open in your browser at `http://localhost:3000`.
+
+## How to Contribute
+
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Make your changes** and **commit** them:
+   ```bash
+   git commit -m "Add feature: [description]"
+   ```
+4. **Push your branch** to your fork:
+   ```bash
+   git push origin feature-name
+   ```
+5. **Create a pull request** from your branch to the main repository.
+
+## Contact
+
+If you have any questions or need help, feel free to open an issue or reach out!
+
+---
+
+This README is kept simple and concise, perfect for a beginner. Let me know if you'd like to add more sections!
