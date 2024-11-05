@@ -239,7 +239,7 @@ h2 {
     background-color: #fff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
     margin: 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     width: 350px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -253,15 +253,17 @@ h2 {
   .list li img {
     display: block;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 200px;
     width: 100%;
   }
   
   .list li p {
-    padding: 1.6rem;
+    padding: 1rem;
     font-size: 1.6rem;
     font-weight: 600;
+    text-decoration: none;
+    
   }
   
   .list li .tags {
@@ -272,11 +274,14 @@ h2 {
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
   }
   
   .links-container {
-    padding: 1.5rem;
-    margin-top: 2.4rem;
+    padding: 1rem;
+    margin-top: 0.4rem;
+    text-align: center;
+    
   }
   
   .links-container a {
@@ -435,8 +440,9 @@ h2 {
   
   h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
   }
   
   /* Accordion button styles */
