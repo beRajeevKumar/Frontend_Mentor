@@ -143,6 +143,7 @@ background-color: #B7E0FF;
     flex-direction: column;
     width:100%;
    gap:5px;
+    margin-top: 8px;
     
  }
  .buttons{
@@ -159,7 +160,6 @@ background-color: #B7E0FF;
 background-color:white;
 display: flex;
      flex-direction: column;
-     gap:20px;
      align-items: center;
       justify-content: center;
     border-radius: 10px;
