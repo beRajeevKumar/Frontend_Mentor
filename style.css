@@ -45,14 +45,15 @@
 }
 
 .nav-elements a {
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
 }
 
 .nav-elements a:hover {
-  color: #bbdefb;
+  color: #062f50;
+  font-size: 21px;
 }
 
 .nav-buttons {
@@ -214,13 +215,15 @@
 }
 
 /* General Styles */
-h2 {
-    font-size: 2.4rem;
+h1 {
+    font-size: 3.4rem;
     position: relative;
-    font-weight: 600;
-    margin-top: 2.4rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 1.9rem;
     text-align: center;
     color: black;
+    
   }
   
   ul {
