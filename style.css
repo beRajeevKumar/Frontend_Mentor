@@ -33,6 +33,43 @@
   font-size: 20px;
   margin-left: 10px;
 }
+/* Add a new class for dark mode */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Add styles for dark mode toggle button */
+.dark-mode-btn {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.dark-mode-btn i {
+  color: #333;
+}
+
+/* Add styles for dark mode */
+.dark-mode .navbar {
+  background-color: #333;
+}
+
+.dark-mode .navbar-function {
+  background-color: #333;
+}
+
+.dark-mode .nav-elements a {
+  color: #fff;
+}
+
+.dark-mode .nav-buttons button {
+  background-color: #444;
+  color: #fff;
+}
 
 .navbar-function {
   display: flex;

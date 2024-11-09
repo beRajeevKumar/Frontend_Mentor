@@ -134,3 +134,21 @@ if (typeof gsap !== "undefined") {
     delay: 0.5,
   });
 }
+
+// Get the dark mode toggle button
+const darkModeBtn = document.querySelector('.dark-mode-btn');
+const darkModeIcon = darkModeBtn.querySelector('img');
+
+// Add an event listener to the button
+darkModeBtn.addEventListener('click', () => {
+  // Toggle the dark mode class on the HTML element
+  document.documentElement.classList.toggle('dark-mode');
+  document.body.classList.toggle('dark-mode');
+
+  // Toggle the button's icon
+  if (document.body.classList.contains('dark-mode')) {
+    darkModeIcon.src = 'sun.svg';
+  } else {
+    darkModeIcon.src = 'moon.svg';
+  }
+});
