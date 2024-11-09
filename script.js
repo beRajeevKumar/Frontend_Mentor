@@ -23,6 +23,12 @@ const projects = [
   { name: "19-news-homepage", tags: ["HTML", "CSS"] },
   { name: "20-testimonials-grid-section", tags: ["HTML", "CSS"] },
   { name: "21-ecommerce-product-page", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "22-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "23-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "24-login-signup", tags: ["HTML", "CSS", "JavaScript", "API"] },
+  { name: "26-shoe-website", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "27-Code_Editor", tags: ["HTML", "CSS", "JavaScript"] },
+  { name: "30-Age_Calc", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "22-url-shortening", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "23-Weather-App", tags: ["HTML", "CSS", "JavaScript", "API"] },
   { name: "24-joke-generator", tags: ["HTML", "CSS", "JavaScript", "API"] },
@@ -35,10 +41,7 @@ const projects = [
   { name: "31-tic-tac-toe", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "32-calculator-application", tags: ["HTML", "CSS", "JavaScript"] },
   { name: "33-CSS-Animations", tags: ["HTML", "CSS", "JavaScript"] }
-
-
 ];
-    
 
 // Menu toggle functionality
 const menuToggle = document.querySelector(".menu-toggle");
@@ -57,7 +60,9 @@ if (list) {
   projects.forEach(({ name }, i) => {
     const listItem = document.createElement("li");
     const tags = projects[i].tags
-      ? projects[i].tags.map((tag) => `<span class="tag">${tag}</span>`).join(" ")
+      ? projects[i].tags
+          .map((tag) => `<span class="tag">${tag}</span>`)
+          .join(" ")
       : "";
     listItem.innerHTML = `
       <a href="./${name}/index.html" target="_blank">
@@ -108,13 +113,24 @@ if (btn) {
   btn.addEventListener("click", () => {
     document.documentElement.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 }
 
 // GSAP Animations
 if (typeof gsap !== "undefined") {
-  gsap.from(".navbar", { opacity: 0, y: -50, duration: 1.5, ease: "power2.out" });
-  gsap.from(".footer", { opacity: 0, y: 50, duration: 1.5, ease: "power2.out", delay: 0.5 });
+  gsap.from(".navbar", {
+    opacity: 0,
+    y: -50,
+    duration: 1.5,
+    ease: "power2.out",
+  });
+  gsap.from(".footer", {
+    opacity: 0,
+    y: 50,
+    duration: 1.5,
+    ease: "power2.out",
+    delay: 0.5,
+  });
 }
