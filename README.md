@@ -16,31 +16,45 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 
 ### Listing of all the projects
 
-| S.No | Name of the Project         | Live Project View | Source Code      | Read Blog     |
-| :--: | :-------------------------- | :---------------- | :--------------- | :------------ |
-|  1.  | Community Card              | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  2.  | E-Commerce Product Page     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  3.  | Testimonials Grid Section   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  4.  | News Homepage Website       | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  5.  | Chat App CSS Illustration   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  6.  | Advice Generator App        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  7.  | Base Apparel Coming Soon    | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  8.  | Article Preview Component   | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-|  9.  | Huddle Landing Page         | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 10.  | Stats Preview Card          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 11.  | Huddle Introductory Section | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 12.  | Order Summary Component     | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 13.  | Three Column Cards          | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 14.  | Clipboard Landing Page      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 15.  | Profile Card Component      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 16.  | Fylo Two Column Layout      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 17.  | Product Preview Card        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 18.  | Intractive Rating Card      | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 19.  | NFT Preview Card            | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 20.  | Social Proof Section        | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 21.  | Single Price Grid Component | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 22.  | QR Code Component           | [Project Demo]()  | [Project Code]() | [Read Blog]() |
-| 22.  | SHOE WEBSITE                | [Project Demo]()  | [Project Code]() | [Read Blog]() |
+| S.No | Name of the Project                  | Live Project View | Source Code                                                                                         | Read Blog     |
+| :--: | :----------------------------------- | :---------------- | :-------------------------------------------------------------------------------------------------- | :------------ |
+|  1.  | Community Card                       | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/01-Community-Card)       | [Read Blog]() |
+|  2.  | QR Code Component                    | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/02-qr-code-component)    | [Read Blog]() |
+|  3.  | Social Proof Section                 | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/03-social-proof)         | [Read Blog]() |
+|  4.  | NFT Project                          | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/04-nft-project)          | [Read Blog]() |
+|  5.  | Interactive Rating Card              | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/05-intractive-rating)    | [Read Blog]() |
+|  6.  | Product Preview Card                 | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/06-product-preview)      | [Read Blog]() |
+|  7.  | Fylo Two Column Layout               | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/07-fylo-two-column-layout) | [Read Blog]() |
+|  8.  | Profile Card                         | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/08-profile-card)         | [Read Blog]() |
+|  9.  | Clipboard Landing Page               | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/09-clipboard-landing-page) | [Read Blog]() |
+| 10.  | Three Column Card                    | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/10-three-column-card)    | [Read Blog]() |
+| 11.  | Order Summary Component              | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/11-Order-summery-component) | [Read Blog]() |
+| 12.  | Huddle Introductory Section          | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/12-Huddle-comm-page)     | [Read Blog]() |
+| 13.  | Stats Preview Card                   | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/13-stat-preview-card)    | [Read Blog]() |
+| 14.  | Huddle Landing Page                  | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/14-Huddle-landing-page)  | [Read Blog]() |
+| 15.  | Article Preview Component            | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/15-Article-Preview)      | [Read Blog]() |
+| 16.  | Base Apparel Coming Soon             | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/16-base-apparel-coming-soon) | [Read Blog]() |
+| 17.  | Advice Generator App                 | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/17-advice-generator-app) | [Read Blog]() |
+| 18.  | Chat App CSS Illustration            | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/18-chat-app-css-illustration) | [Read Blog]() |
+| 19.  | News Homepage                        | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/19-news-homepage)        | [Read Blog]() |
+| 20.  | Testimonials Grid Section            | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/20-testimonials-grid-section) | [Read Blog]() |
+| 21.  | E-commerce Product Page              | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/21-ecommerce-product-page) | [Read Blog]() |
+| 22.  | URL Shortening                       | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/22-url-shortening)       | [Read Blog]() |
+| 23.  | Weather App                          | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/23-Weather-App)          | [Read Blog]() |
+| 24.  | Login/Signup                         | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/23-login-signup)         | [Read Blog]() |
+| 25.  | Joke Generator                       | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/24-joke-generator)       | [Read Blog]() |
+| 26.  | Contact Form                         | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/25-contact-form)         | [Read Blog]() |
+| 27.  | Guess the Number Game                | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/26-guess-the-number-game) | [Read Blog]() |
+| 28.  | Shoe Website                         | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/26-shoe-website)         | [Read Blog]() |
+| 29.  | Code Editor                          | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/27-Code_Editor)          | [Read Blog]() |
+| 30.  | Swiggy Clone                         | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/27-swiggy-clone)         | [Read Blog]() |
+| 31.  | Zomato Clone                         | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/28-Zomato-Clone)         | [Read Blog]() |
+| 32.  | To-do List                           | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/29-to-do-list)           | [Read Blog]() |
+| 33.  | Age Calculator                       | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/30-Age_Calc)             | [Read Blog]() |
+| 34.  | Currency Converter                   | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/30-currency-converter)   | [Read Blog]() |
+| 35.  | Tic-Tac-Toe                          | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/31-tic-tac-toe)          | [Read Blog]() |
+| 36.  | Calculator Application               | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/32-calculator-application) | [Read Blog]() |
+| 37.  | CSS Animations                       | [Project Demo]()  | [Project Code](https://github.com/beRajeevKumar/Frontend_Mentor/tree/main/33-CSS-Animations)       | [Read Blog]() |
 
 ### Tech stack
 
