@@ -46,9 +46,8 @@
 
       <nav>
         <ul class="flex items-center justify-center gap-2 lg:gap-8">
-          <li><button>Features</button></li>
-          <li><button>Team</button></li>
-          <li><button>Sign In</button></li>
+          <li><a href="#getStarted">Get Started</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
         </ul>
       </nav>
     </header>
@@ -56,7 +55,7 @@
     <section
       class="flex flex-col-reverse px-8 py-20 md:grid md:grid-cols-2 md:place-items-center gap-8 max-w-7xl mx-auto"
     >
-      <article class="text-center md:text-left">
+      <article class="text-center md:text-left" id="getStarted">
         <h1 class="font-bold text-4xl mb-8">
           All your files in one secure location, accessible anywhere.
         </h1>
@@ -105,7 +104,7 @@
         <article>
           <h2
             class="text-center font-bold text-2xl mb-8 md:text-left md:text-3xl lg:text-4xl"
-          >
+          id="testimonials">
             Stay productive, wherever you are
           </h2>
 
@@ -191,12 +190,12 @@
 
     <footer class="py-20 px-8">
       <div class="max-w-7xl mx-auto">
-        <article class="mb-8">
-          <img src="./images/footer-logo.svg" alt="" />
-        </article>
-
-        <div class="md:grid grid-cols-3 gap-8 lg:grid-cols-4">
+        
+        <div class="footer">
           <article class="mb-8">
+            <article class="mb-8">
+              <img src="./images/footer-logo.svg" alt="" />
+            </article>
             <ul>
               <li class="flex items-center gap-2 text-white mb-4">
                 <img src="./images/icon-phone.svg" alt="" />Phone:
@@ -208,38 +207,38 @@
             </ul>
           </article>
 
-          <article>
+          <article class="links">
             <ul>
               <li>
-                <button class="text-white font-normal mb-3">About Us</button>
+                <a href="#" class="hover font-normal mb-3">About Us</a>
               </li>
-              <li><button class="text-white font-normal mb-3">Jobs</button></li>
+              <li><a  class="hover font-normal mb-3">Jobs</a></li>
               <li>
-                <button class="text-white font-normal mb-3">Press</button>
+                <a href="#" class="hover font-normal mb-3">Press</a>
               </li>
-              <li><button class="text-white font-normal mb-3">Blog</button></li>
+              <li><a href="#" class="hover font-normal mb-3">Blog</a></li>
             </ul>
+            <article>
+              <ul>
+                <li>
+                  <a href="#" class="hover font-normal mb-3">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" class="hover font-normal mb-3">Terms</a>
+                </li>
+                <li>
+                  <a href="#" class="hover font-normal mb-3">Privacy</a>
+                </li>
+              </ul>
+            </article>
           </article>
 
-          <article class="mt-8 md:mt-0">
-            <ul>
-              <li>
-                <button class="text-white font-normal mb-3">Contact Us</button>
-              </li>
-              <li>
-                <button class="text-white font-normal mb-3">Terms</button>
-              </li>
-              <li>
-                <button class="text-white font-normal mb-3">Privacy</button>
-              </li>
-            </ul>
-          </article>
 
           <article class="mt-8 lg:mt-0">
             <ul class="flex items-center justify-center gap-6 md:justify-start">
-              <li><i class="fab fa-facebook text-white"></i></li>
-              <li><i class="fab fa-twitter text-white"></i></li>
-              <li><i class="fab fa-instagram text-white"></i></li>
+              <li><a href="#"><i class="fab fa-facebook hover "></i></li></a>
+              <li><a href="#"><i class="fab fa-twitter hover"></i></li></a>
+              <li><a href="#"><i class="fab fa-instagram hover"></i></li></a>
             </ul>
           </article>
         </div>
