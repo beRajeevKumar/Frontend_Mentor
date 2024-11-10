@@ -1,0 +1,93 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+ :root {
+     --primary-color: #3a7bd5;
+     --secondary-color: #00d2ff;
+     --text-color: #333;
+     --bg-color: #f0f4f8;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+     background-color: var(--bg-color);
+     transition: background-color 0.3s ease;
+ }
+
+ .clock-container {
+     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+     border-radius: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     padding: 40px;
+     color: white;
+     text-align: center;
+     transition: all 0.3s ease;
+ }
+
+ .clock-container:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+ }
+
+ #time {
+     font-size: 4rem;
+     font-weight: 700;
+     margin-bottom: 10px;
+ }
+
+ #date {
+     font-size: 1.2rem;
+     font-weight: 300;
+     margin-bottom: 20px;
+ }
+
+ #greeting {
+     font-size: 1.5rem;
+     font-weight: 400;
+     margin-bottom: 20px;
+ }
+
+ .info-container {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 20px;
+ }
+
+ .info-item {
+     text-align: center;
+ }
+
+ .info-label {
+     font-size: 0.9rem;
+     opacity: 0.8;
+ }
+
+ .info-value {
+     font-size: 1.2rem;
+     font-weight: 700;
+ }
+
+ #theme-toggle {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     background: none;
+     border: none;
+     color: var(--text-color);
+     font-size: 1.5rem;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+ }
+
+ #theme-toggle:hover {
+     transform: scale(1.1);
+ }
+
+ .dark-theme {
+     --bg-color: #1a1a2e;
+     --text-color: #ffffff;
+ }
