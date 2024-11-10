@@ -256,6 +256,7 @@ h2 {
     border-radius: 25px;
     height: 200px;
     width: 100%;
+    padding: 10px;
   }
   
   .list li p {
