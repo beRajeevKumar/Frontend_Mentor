@@ -1,9 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
+TextAlignment
+* {
+
+    margin:  0px;
+    padding:  0px;
     box-sizing: border-box;
+    text-align:  center;
+
 }
-/* Navbar Styling */
+ 
+.lists {
+  margin-right: 20rem;
+ list-style: none;
+}
+
+ main
 .navbar {
   display: flex;
   align-items: center;
@@ -75,30 +85,48 @@
   background-color: #ffffff;
   color: #2196f3;
 }
+TextAlignment
+ 
+ 
+.footer-list {
+ 
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap:  8px;
+    margin-left:  -35px;
 
-.btn-1:hover {
-  background-color: #bbdefb;
-  color: #1565c0;
 }
+ 
+.footer-list li a {
+    color: black;
+    text-decoration: none;
 
-.btn-2 {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
 }
+ 
+.border-list {
 
-.btn-2:hover {
-  background-color: #ffffff;
-  color: #2196f3;
+    margin-top:  20px;
+    border-top:  1px solid lightgray;
+    width:  70%;
+    margin-left:  46px;
+
 }
+ 
+.socials {
+ 
+    margin-top:  20px;
+    display: flex;
+    font-size:  20px;
+    column-gap:  30px;
+    margin-left:  66px;
 
-.gitstatus {
-  margin-left: 20px;
 }
-
-.gitstatus a i {
-  font-size: 20px;
-  color: #ffffff;
+ 
+.socials a {
+    transition: all .38s ease;
+    color: black;
+ main
 }
 
 .gitstatus a i:hover {
