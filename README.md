@@ -42,6 +42,7 @@ Click [here](https://www.frontendmentor.io/profile/beRajeevKumar) to checkout my
 | 22.  | QR Code Component           | [Project Demo]()  | [Project Code]() | [Read Blog]() |
 | 22.  | SHOE WEBSITE                | [Project Demo]()  | [Project Code]() | [Read Blog]() |
 
+
 ### Tech stack
 
 - `HTML` | `CSS` | `SASS` | `TailwindCSS` | `Responsive Design`
