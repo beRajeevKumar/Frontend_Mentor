@@ -1,6 +1,5 @@
 "use strict";
 
-// Correct projects numbering (Removed duplicate "23" key)
 const projects = [
   { name: "01-Community-Card", tags: ["HTML", "CSS"] },
   { name: "02-qr-code-component", tags: ["HTML", "CSS", "JavaScript"] },

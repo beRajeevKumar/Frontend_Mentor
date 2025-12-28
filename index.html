@@ -1,195 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="/images/clipboard.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Projects | Rajeev</title>
-    <link rel="icon" type="image/x-icon" href="01-Community-Card/images/favlogo.png">
-  </head>
-  <body>
 
-    <!-- Scroll-to-Top Button -->
-    <button class="scroll-up-btn">
-      <i class="arrow-up"></i>
-    </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/jpg" href="/images/clipboard.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Projects | Rajeev</title>
+  <link rel="icon" type="image/x-icon" href="01-Community-Card/images/favlogo.png">
+</head>
 
-    <!-- Header with Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-          <img src="logo.png" alt="Logo">
-          <a href="#">Frontend Mentor</a>
+<body>
+
+  <!-- Scroll-to-Top Button -->
+  <button class="scroll-up-btn">
+    <i class="arrow-up"></i>
+  </button>
+
+  <!-- Header with Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <a href="#">Frontend Mentor</a>
+    </div>
+    <div class="navbar-function">
+      <div class="nav-elements">
+        <a href="#">Home</a>
+        <a href="#">Project</a>
+        <a href="#">Challenge</a>
       </div>
-      <div class="navbar-function">
-          <div class="nav-elements">
-              <a href="#">Home</a>
-              <a href="#">Project</a>
-              <a href="#">Challenge</a>
-          </div>
-          <div class="nav-buttons">
-              <a href="signUp.html"><button class="btn-1">Sign Up</button></a>
-              <a href="login.html"><button class="btn-2">Login</button></a>
-          </div>
-          <div class="gitstatus">
-              <a href="https://github.com/beRajeevKumar/Frontend_Mentor">
-      <i class="fab fa-github"></i></a>
-          </div>
+      <div class="nav-buttons">
+        <a href="signUp.html"><button class="btn-1">Sign Up</button></a>
+        <a href="login.html"><button class="btn-2">Login</button></a>
       </div>
-      <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="gitstatus">
+        <a href="https://github.com/beRajeevKumar/Frontend_Mentor">
+          <i class="fab fa-github"></i></a>
       </div>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 
-    
-  
-    <!-- Main Content -->
-    <main>
-      <section>
-        <h2 id="Projects" class="">Projects</h2>
-        <ul id="list" class="list"></ul>
-      </section>
 
-      <!-- FAQs Section -->
-      <section class="faq-section">
-        <h2>FAQs</h2>
-        <div class="faq">
-          <button class="accordion">
-            Can I use these projects in my portfolio?
-          </button>
-          <div class="panel">
-            <p>
-              Definitely! Please do feel free to use whatever you build in your
-              portfolio. Frontend Mentor is an excellent platform for front-end
-              developers who want to improve their skills and build real-world
-              projects.
-            </p>
-          </div>
-        </div>
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2 id="Projects" class="">Projects</h2>
+      <ul id="list" class="list"></ul>
+    </section>
+      <!-- Load Feature -->
 
-        <div class="faq">
-          <button class="accordion">Can I take the challenges as a beginner?</button>
-          <div class="panel">
-            <p>
-              For sure! Our challenges have different levels of difficulty. We'd
-              recommend starting with the newbie ones. You might also want to
-              start with the HTML & CSS only challenges first. As you build up
-              your skills and confidence, you can take on more complex projects.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq">
-          <button class="accordion">How do I start?</button>
-          <div class="panel">
-            <p>
-              To start a challenge, click the eye button on the challenge page.
-              This will take you to the Challenge, where you can go through the
-              design. We'd recommend starting with one of our newbie level
-              challenges. You can then work your way up from there.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq">
-          <button class="accordion">Can I use libraries/frameworks on these projects?</button>
-          <div class="panel">
-            <p>
-              Yes! Our challenges provide professional designs but there are no
-              rules on what tools to use. So feel free to use anything you like
-              to build your projects.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq">
-          <button class="accordion">Is it free?</button>
-          <div class="panel">
-            <p>
-              The majority of our challenges are free, yes. It will say on each
-              challenge whether they are free or premium, so it's easy to tell
-              the difference.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-section">
-        <h1>Contact Us</h1>
-        <ul class="footer-list">
-          <li>
-            <a href="mailto:trendtrove1004@gmail.com">frontentmentor1004@gmail.com</a>
-          </li>
-          <li>2nd Floor, Bandra West, Mumbai, Maharashtra 400050, India</li>
-          <li><a href="tel:+91xxxxxxxx2020">+91 xxxxxx2020</a></li>
-          <li class="border-list"></li>
-          <li class="socials">
-            <a href="https://www.linkedin.com/in/berajeevkumar/" id="linkedin" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/beRajeevKumar/Frontend_Mentor" id="github" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://x.com/be_rajeevkumar" id="twitter" target="_blank">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/your_instagram" id="instagram" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="button-wrap">
+        <button id="load-more">Load More</button>
       </div>
 
-      <div class="footer-section">
-        <h1>Quick Links</h1>
-        <ul class="footer-list">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="/terms-conditions">Terms & Conditions</a></li>
-          <li><a href="/return-policy">Return Policy</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+
+    <!-- FAQs Section -->
+    <section class="faq-section">
+      <h2>FAQs</h2>
+      <div class="faq">
+        <button class="accordion">
+          Can I use these projects in my portfolio?
+        </button>
+        <div class="panel">
+          <p>
+            Definitely! Please do feel free to use whatever you build in your
+            portfolio. Frontend Mentor is an excellent platform for front-end
+            developers who want to improve their skills and build real-world
+            projects.
+          </p>
+        </div>
       </div>
 
-      <div class="footer-section">
-        <h1>Subscribe to Newsletter</h1>
-        <ul class="footer-list">
-          <li>
-            Get the latest updates, exclusive offers, and industry insights
-            delivered straight to your inbox.
-          </li>
-          <li class="sub">
-            <input type="text" placeholder="Enter your email" />
-            <button class="btn-sub">Subscribe</button>
-          </li>
-        </ul>
+      <div class="faq">
+        <button class="accordion">Can I take the challenges as a beginner?</button>
+        <div class="panel">
+          <p>
+            For sure! Our challenges have different levels of difficulty. We'd
+            recommend starting with the newbie ones. You might also want to
+            start with the HTML & CSS only challenges first. As you build up
+            your skills and confidence, you can take on more complex projects.
+          </p>
+        </div>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="faq">
+        <button class="accordion">How do I start?</button>
+        <div class="panel">
+          <p>
+            To start a challenge, click the eye button on the challenge page.
+            This will take you to the Challenge, where you can go through the
+            design. We'd recommend starting with one of our newbie level
+            challenges. You can then work your way up from there.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">Can I use libraries/frameworks on these projects?</button>
+        <div class="panel">
+          <p>
+            Yes! Our challenges provide professional designs but there are no
+            rules on what tools to use. So feel free to use anything you like
+            to build your projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">Is it free?</button>
+        <div class="panel">
+          <p>
+            The majority of our challenges are free, yes. It will say on each
+            challenge whether they are free or premium, so it's easy to tell
+            the difference.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h1>Contact Us</h1>
+      <ul class="footer-list">
+        <li>
+          <a href="mailto:trendtrove1004@gmail.com">frontentmentor1004@gmail.com</a>
+        </li>
+        <li>2nd Floor, Bandra West, Mumbai, Maharashtra 400050, India</li>
+        <li><a href="tel:+91xxxxxxxx2020">+91 xxxxxx2020</a></li>
+        <li class="border-list"></li>
+        <li class="socials">
+          <a href="https://www.linkedin.com/in/berajeevkumar/" id="linkedin" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/beRajeevKumar/Frontend_Mentor" id="github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/be_rajeevkumar" id="twitter" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/your_instagram" id="instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h1>Quick Links</h1>
+      <ul class="footer-list">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="/terms-conditions">Terms & Conditions</a></li>
+        <li><a href="/return-policy">Return Policy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h1>Subscribe to Newsletter</h1>
+      <ul class="footer-list">
+        <li>
+          Get the latest updates, exclusive offers, and industry insights
+          delivered straight to your inbox.
+        </li>
+        <li class="sub">
+          <input type="text" placeholder="Enter your email" />
+          <button class="btn-sub">Subscribe</button>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

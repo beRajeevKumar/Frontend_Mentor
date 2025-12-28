@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar{
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+  background:linear-gradient(rgb(0, 157, 255), skyblue, rgb(46, 99, 131));
+  border-radius: 2px;
+}
 /* Navbar Styling */
 .navbar {
   display: flex;
@@ -426,6 +433,27 @@ h2 {
     }
   }
   
+  /* Load More Feature style */
+
+  .button-wrap{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  button{
+    padding: 10px 20px ;
+    background-color: white;
+    border: 1px solid navy;
+    color: navy;
+    transition: all .35s ease;
+    cursor: pointer;
+    &:hover{
+      background-color: navy;
+      color: white;
+      transition: all .35s ease;
+    }
+    
+  }
 
   .faq-section {
     max-width: 900px;
