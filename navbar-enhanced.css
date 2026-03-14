@@ -1,0 +1,123 @@
+/* === Navbar Enhancement === */
+
+/* Overall Navbar */
+.navbar {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo Section */
+.navbar .logo img {
+  height: 45px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+.navbar .logo img:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.nav-elements a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-elements a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+.nav-elements a:hover {
+  color: #fff;
+}
+.nav-elements a:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.nav-buttons .btn-1,
+.nav-buttons .btn-2 {
+  border-radius: 30px;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-buttons .btn-1 {
+  background: #fff;
+  color: #6610f2;
+}
+.nav-buttons .btn-1:hover {
+  background: #e4e4e4;
+  transform: translateY(-2px);
+}
+.nav-buttons .btn-2 {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.nav-buttons .btn-2:hover {
+  background: #fff;
+  color: #6610f2;
+  transform: translateY(-2px);
+}
+
+/* GitHub Icon */
+.gitstatus a i {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+.gitstatus a i:hover {
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-toggle span {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-function {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
